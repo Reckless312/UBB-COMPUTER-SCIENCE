@@ -169,7 +169,7 @@ class RentalServices:
             _id = int(_id)
             return _id
         except ValueError:
-            raise TypeError("Not an integer.")
+            raise RepositoryError("Not an integer.")
 
 
 if __name__ == "__main__":
