@@ -1,0 +1,100 @@
+ID: 1
+Book: ID: 1 - Title: Gone with the Wind - Author: Margaret Mitchell
+Client: ID: 13 - Name: Mayra Merritt
+Start Date: 2023-08-21 16:00:00
+End Date: 2023-09-11 16:00:00
+ID: 2
+Book: ID: 2 - Title: Jane Eyre - Author: Charlotte Bronte
+Client: ID: 3 - Name: Jayson Kemp
+Start Date: 2023-08-27 20:00:00
+End Date: 2023-09-26 20:00:00
+ID: 3
+Book: ID: 3 - Title: Pride and Prejudice - Author: Jane Austen
+Client: ID: 14 - Name: Samson Moses
+Start Date: 2023-10-16 14:00:00
+End Date: 2023-11-16 14:00:00
+ID: 4
+Book: ID: 4 - Title: To Kill a Mockingbird - Author: Harper Lee
+Client: ID: 15 - Name: Howard Mays
+Start Date: 2023-07-16 19:00:00
+End Date: 2023-07-21 19:00:00
+ID: 5
+Book: ID: 5 - Title: The Hobbit - Author: J.R.R Tolkien
+Client: ID: 17 - Name: Nevaeh Mcmillan
+Start Date: 2023-10-20 08:00:00
+End Date: 2023-10-27 08:00:00
+ID: 6
+Book: ID: 6 - Title: Wuthering Heights - Author: Emily Bronte
+Client: ID: 4 - Name: Cedric Jones
+Start Date: 2023-05-27 16:00:00
+End Date: 2023-06-18 16:00:00
+ID: 7
+Book: ID: 7 - Title: Little Women - Author: Louisa May Alcott
+Client: ID: 7 - Name: Darian Zuniga
+Start Date: 2023-03-18 08:00:00
+End Date: 2023-03-19 08:00:00
+ID: 8
+Book: ID: 8 - Title: A Tale of Two Cities - Author: Charles Dickens
+Client: ID: 19 - Name: Jewel Atkins
+Start Date: 2023-08-10 08:00:00
+End Date: 2023-08-20 08:00:00
+ID: 9
+Book: ID: 9 - Title: Alice's Adventures in Wonderland - Author: Lewis Carroll
+Client: ID: 11 - Name: Hamza Garza
+Start Date: 2023-12-03 11:00:00
+End Date: 2023-12-08 11:00:00
+ID: 10
+Book: ID: 10 - Title: Anne of Green Gables - Author: L.M.Montgomery
+Client: ID: 14 - Name: Samson Moses
+Start Date: 2023-03-02 14:00:00
+End Date: 2023-03-15 14:00:00
+ID: 11
+Book: ID: 11 - Title: The Wonderful Wizard of Oz - Author: L.Frank Baum
+Client: ID: 18 - Name: Lukas Keith
+Start Date: 2023-03-28 11:00:00
+End Date: 2023-04-05 11:00:00
+ID: 12
+Book: ID: 12 - Title: Emma - Author: Jane Austen
+Client: ID: 13 - Name: Mayra Merritt
+Start Date: 2023-05-07 08:00:00
+End Date: 2023-05-14 08:00:00
+ID: 13
+Book: ID: 13 - Title: The Raven - Author: Edgar Allan Poe
+Client: ID: 20 - Name: Akira Harris
+Start Date: 2023-09-16 10:00:00
+End Date: 2023-10-07 10:00:00
+ID: 14
+Book: ID: 14 - Title: Les Miserables - Author: Victor Hugo
+Client: ID: 12 - Name: Yaritza Burton
+Start Date: 2023-04-10 13:00:00
+End Date: 2023-05-06 13:00:00
+ID: 15
+Book: ID: 15 - Title: Doctor Zhivago - Author: Boris Pasternak
+Client: ID: 3 - Name: Jayson Kemp
+Start Date: 2023-10-20 14:00:00
+End Date: 2023-10-31 14:00:00
+ID: 16
+Book: ID: 16 - Title: Treasure Island - Author: Robert Louis Stevenson
+Client: ID: 17 - Name: Nevaeh Mcmillan
+Start Date: 2023-09-06 14:00:00
+End Date: 2023-09-14 14:00:00
+ID: 17
+Book: ID: 17 - Title: The Complete Grimm's Fairy Tales - Author: Jacob Grimm
+Client: ID: 20 - Name: Akira Harris
+Start Date: 2023-04-11 15:00:00
+End Date: 2023-04-21 15:00:00
+ID: 18
+Book: ID: 18 - Title: A Little Princess - Author: Frances Hodgson Burnett
+Client: ID: 4 - Name: Cedric Jones
+Start Date: 2023-03-18 18:00:00
+End Date: 2023-04-16 18:00:00
+ID: 19
+Book: ID: 19 - Title: A Murder Is Announced - Author: Agatha Christie
+Client: ID: 6 - Name: Cesar Best
+Start Date: 2023-03-14 08:00:00
+End Date: 2023-03-20 08:00:00
+ID: 20
+Book: ID: 20 - Title: The Mysterious Affair at Styles - Author: Agatha Christie
+Client: ID: 8 - Name: Kameron Blankenship
+Start Date: 2023-01-18 09:00:00
+End Date: 2023-01-22 09:00:00
