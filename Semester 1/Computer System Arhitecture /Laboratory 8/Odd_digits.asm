@@ -15,7 +15,7 @@ segment data use32 class=data
     len equ 100
     buffer times len db 0
     acces_read db "r", 0
-    even_digits db "1", "3", "5", "7", "9", 0
+    odd_digits db "1", "3", "5", "7", "9", 0
     digits dd 0
 segment code use32 class=code
     start:
@@ -50,14 +50,14 @@ segment code use32 class=code
                 
                 lodsb
                 mov ecx, 5
-                mov edi, even_digits
+                mov edi, odd_digits
                 
                 go_in_digits:
                     scasb
-                    je increase_even_digits
+                    je increase_odd_digits
                     jmp skip_increase
                     
-                    increase_even_digits:
+                    increase_odd_digits:
                         inc dword [digits]
                         jmp prepare_for_repeat
                         
