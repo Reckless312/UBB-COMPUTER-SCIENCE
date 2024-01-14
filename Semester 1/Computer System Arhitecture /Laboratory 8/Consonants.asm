@@ -79,7 +79,7 @@ segment code use32 class=code
         close_file:
             push dword [file_descriptor]
             call [fclose]
-            add esp, 4 * 2
+            add esp, 4
         
         end_of_program:
             push    dword 0
