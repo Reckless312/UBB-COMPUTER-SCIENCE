@@ -42,6 +42,10 @@ segment code use32 class=code
                     cmp edx, 0
                     jne prepare_to_loop
                 
+                check_if_space:
+                    cmp byte[esi], ' '
+                    je prepare_to_loop
+                
                 pop eax
                 mov [esi], al
                 inc esi
