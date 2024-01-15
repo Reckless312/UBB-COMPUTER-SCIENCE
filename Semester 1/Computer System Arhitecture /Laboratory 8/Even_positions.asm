@@ -15,6 +15,7 @@ segment data use32 class=data
     access_mode db "w", 0
 segment code use32 class=code
     start:
+        ; the program works but the printing in file is weird
         create_file:
             push dword access_mode
             push dword file_name
