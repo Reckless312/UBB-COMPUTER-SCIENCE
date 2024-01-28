@@ -1,0 +1,6 @@
+5;Which number is the largest;-2;-1;8;8;easy
+48;Which is not a fish;marlin;herring;horse;horse;medium
+21;Which is not a fish;bass;trout;tomato;tomato;medium
+3;Which number is the largest;5;0;4;5;easy
+21;Which is not a fish;bass;trout;tomato;tomato;medium
+36;Which is not a fish;herring;marlin;monkey;monkey;medium

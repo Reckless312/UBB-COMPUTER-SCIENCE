@@ -1,0 +1,5 @@
+8;Which number is the smallest;-2;-6;7;-6;easy
+11;Which number is the smallest;-3;3;5;-3;easy
+10;Which number is the largest;9;5;-6;9;easy
+19;Which number is the smallest;-1;6;-9;-9;easy
+2;Which number is the largest;3;-8;-7;3;easy

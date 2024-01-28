@@ -1,0 +1,100 @@
+8;Which number is the largest;6;3;6;6;easy
+19;Which number is the smallest;-3;4;5;-3;easy
+92;Which Apollo mission did not make it to the moon;8;2;7;8;hard
+46;Which is not a fish;marlin;carp;stylo;stylo;medium
+59;Which is not a fish;eel;marlin;cow;cow;medium
+66;Which Apollo mission did not make it to the moon;4;17;12;12;hard
+68;Which Apollo mission did not make it to the moon;3;11;17;11;hard
+43;Which is not a fish;marlin;bass;cow;cow;medium
+69;Which Apollo mission did not make it to the moon;16;8;2;8;hard
+1;Which number is the smallest;-3;1;3;-3;easy
+7;Which number is the largest;7;7;0;7;easy
+26;Which is not a fish;bass;eel;stylo;stylo;medium
+38;Which is not a fish;carp;herring;apple;apple;medium
+69;Which Apollo mission did not make it to the moon;16;8;2;8;hard
+55;Which is not a fish;crab;trout;tomato;tomato;medium
+6;Which number is the largest;-4;-7;7;7;easy
+60;Which Apollo mission did not make it to the moon;4;9;15;9;hard
+8;Which number is the largest;6;3;6;6;easy
+2;Which number is the largest;7;3;-8;7;easy
+72;Which Apollo mission did not make it to the moon;17;2;12;12;hard
+63;Which Apollo mission did not make it to the moon;13;7;11;7;hard
+68;Which Apollo mission did not make it to the moon;3;11;17;11;hard
+8;Which number is the largest;6;3;6;6;easy
+3;Which number is the largest;-7;-5;-8;-5;easy
+9;Which number is the largest;-4;-5;-1;-1;easy
+2;Which number is the largest;7;3;-8;7;easy
+5;Which number is the largest;-6;-9;8;8;easy
+26;Which is not a fish;bass;eel;stylo;stylo;medium
+97;Which Apollo mission did not make it to the moon;4;5;17;5;hard
+7;Which number is the largest;7;7;0;7;easy
+68;Which Apollo mission did not make it to the moon;3;11;17;11;hard
+93;Which Apollo mission did not make it to the moon;8;17;16;17;hard
+86;Which Apollo mission did not make it to the moon;7;13;11;13;hard
+4;Which number is the largest;6;6;3;6;easy
+5;Which number is the largest;-6;-9;8;8;easy
+49;Which is not a fish;marlin;bass;tomato;tomato;medium
+44;Which is not a fish;herring;carp;cow;cow;medium
+89;Which Apollo mission did not make it to the moon;17;4;8;4;hard
+10;Which number is the smallest;-8;9;-1;-8;easy
+25;Which is not a fish;trout;marlin;horse;horse;medium
+65;Which Apollo mission did not make it to the moon;14;6;12;14;hard
+23;Which is not a fish;herring;herring;stylo;stylo;medium
+40;Which is not a fish;herring;eel;apple;apple;medium
+80;Which Apollo mission did not make it to the moon;7;13;17;17;hard
+31;Which is not a fish;trout;crab;cow;cow;medium
+1;Which number is the smallest;-3;1;3;-3;easy
+71;Which Apollo mission did not make it to the moon;7;1;14;7;hard
+10;Which number is the smallest;-8;9;-1;-8;easy
+30;Which is not a fish;trout;marlin;apple;apple;medium
+26;Which is not a fish;bass;eel;stylo;stylo;medium
+17;Which number is the largest;8;1;8;8;easy
+17;Which number is the largest;8;1;8;8;easy
+76;Which Apollo mission did not make it to the moon;5;9;2;5;hard
+93;Which Apollo mission did not make it to the moon;8;17;16;17;hard
+4;Which number is the largest;6;6;3;6;easy
+8;Which number is the largest;6;3;6;6;easy
+75;Which Apollo mission did not make it to the moon;10;16;9;10;hard
+25;Which is not a fish;trout;marlin;horse;horse;medium
+8;Which number is the largest;6;3;6;6;easy
+14;Which number is the smallest;2;-5;0;-5;easy
+85;Which Apollo mission did not make it to the moon;11;11;16;11;hard
+33;Which is not a fish;herring;trout;apple;apple;medium
+5;Which number is the largest;-6;-9;8;8;easy
+35;Which is not a fish;marlin;crab;tomato;tomato;medium
+62;Which Apollo mission did not make it to the moon;2;15;15;15;hard
+60;Which Apollo mission did not make it to the moon;4;9;15;9;hard
+86;Which Apollo mission did not make it to the moon;7;13;11;13;hard
+17;Which number is the largest;8;1;8;8;easy
+21;Which is not a fish;herring;crab;horse;horse;medium
+69;Which Apollo mission did not make it to the moon;16;8;2;8;hard
+2;Which number is the largest;7;3;-8;7;easy
+19;Which number is the smallest;-3;4;5;-3;easy
+39;Which is not a fish;eel;carp;apple;apple;medium
+25;Which is not a fish;trout;marlin;horse;horse;medium
+33;Which is not a fish;herring;trout;apple;apple;medium
+7;Which number is the largest;7;7;0;7;easy
+82;Which Apollo mission did not make it to the moon;14;5;9;9;hard
+68;Which Apollo mission did not make it to the moon;3;11;17;11;hard
+75;Which Apollo mission did not make it to the moon;10;16;9;10;hard
+39;Which is not a fish;eel;carp;apple;apple;medium
+70;Which Apollo mission did not make it to the moon;8;1;1;8;hard
+4;Which number is the largest;6;6;3;6;easy
+68;Which Apollo mission did not make it to the moon;3;11;17;11;hard
+48;Which is not a fish;trout;eel;cow;cow;medium
+36;Which is not a fish;herring;marlin;monkey;monkey;medium
+6;Which number is the largest;-4;-7;7;7;easy
+85;Which Apollo mission did not make it to the moon;11;11;16;11;hard
+38;Which is not a fish;carp;herring;apple;apple;medium
+68;Which Apollo mission did not make it to the moon;3;11;17;11;hard
+72;Which Apollo mission did not make it to the moon;17;2;12;12;hard
+41;Which is not a fish;eel;herring;stylo;stylo;medium
+29;Which is not a fish;eel;marlin;tomato;tomato;medium
+82;Which Apollo mission did not make it to the moon;14;5;9;9;hard
+31;Which is not a fish;trout;crab;cow;cow;medium
+57;Which is not a fish;carp;trout;apple;apple;medium
+41;Which is not a fish;eel;herring;stylo;stylo;medium
+5;Which number is the largest;-6;-9;8;8;easy
+38;Which is not a fish;carp;herring;apple;apple;medium
+61;Which Apollo mission did not make it to the moon;5;16;17;16;hard
+72;Which Apollo mission did not make it to the moon;17;2;12;12;hard
