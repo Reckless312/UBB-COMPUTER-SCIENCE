@@ -1,0 +1,10 @@
+1, Theodor Mihali, 10, 12, 20
+2, Theodor Mihali, 15, 16, 30
+3, Mihail Kogalniceanu, 1, 40, 45
+4, Dorobantilor, 20, 50, 100
+5, Dorobantilor, 22, 54, 100
+6, Salciilor, 2, 2, 20
+7, Salciilor, 50, 46, 18
+8, Mihai Eminescu, 2, 90, 90
+9, Mihai Eminescu, 3, 90, 92
+10, Titulescu, 10, 10, 12
