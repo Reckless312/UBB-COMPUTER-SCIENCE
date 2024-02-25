@@ -7,3 +7,7 @@ Archive with all problems from university
 - Mathematical Analysis
 - Linear Algebra
 - Computer System Architecture
+
+## Semester 2
+- Geometry
+- Operating Systems
