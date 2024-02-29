@@ -11,3 +11,7 @@ Archive with all problems from university
 ## Semester 2
 - Geometry
 - Operating Systems
+- Object Oriented Programming
+- Dynamical Systems
+- Graphs
+- Data Structures and Algorithms
