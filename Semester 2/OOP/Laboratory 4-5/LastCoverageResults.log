@@ -1,0 +1,21 @@
+[2024-04-09 17:24:38] [info] Start Program:
+Path:"C:\Users\ionut\Source\Repos\cs-ubbcluj-ro\oop-a4-5-Reckless312\AdoptAPet\x64\Debug\AdoptAPet.exe"
+Arguments:
+Working directory: "C:\Users\ionut\source\repos\cs-ubbcluj-ro\oop-a4-5-Reckless312\AdoptAPet\AdoptAPet\"
+Modules: Selected: C:\Users\ionut\source\repos\cs-ubbcluj-ro\oop-a4-5-Reckless312\AdoptAPet\x64\Debug\AdoptAPet.exe Excluded: 
+Sources: Selected: C:\Users\ionut\source\repos\cs-ubbcluj-ro\oop-a4-5-Reckless312\AdoptAPet\AdoptAPet Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\ionut\AppData\Local\Temp\hesn3evh.sdh 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-04-09 17:24:39] [info] Module: C:\Users\ionut\source\repos\cs-ubbcluj-ro\oop-a4-5-Reckless312\AdoptAPet\x64\Debug\AdoptAPet.exe is selected because it matches selected pattern: C:\Users\ionut\source\repos\cs-ubbcluj-ro\oop-a4-5-Reckless312\AdoptAPet\x64\Debug\AdoptAPet.exe
+[2024-04-09 17:24:39] [info] ----------------------------------------------------
+[2024-04-09 17:24:39] [info] Coverage binary generated in file: C:\Users\ionut\AppData\Local\Temp\hesn3evh.sdh
+[2024-04-09 17:24:39] [info] ----------------------------------------------------
