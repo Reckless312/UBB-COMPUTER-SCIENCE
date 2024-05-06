@@ -1,0 +1,3 @@
+Car with style: Sedan with a price: 11000 | Type: Electric Engine, with autonomy: 4 and a price of: 3000.040000
+Car with style: Sedan with a price: 11000.1 | Type: Electric Engine, with autonomy: 7 and a price of: 3000.070000
+Car with style: Sedan with a price: 11000.1 | Type: Electric Engine, with autonomy: 10 and a price of: 3000.100000
