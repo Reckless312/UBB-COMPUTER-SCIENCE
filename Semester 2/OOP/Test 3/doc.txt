@@ -1,0 +1,5 @@
+C++ | programming language | general-purpose programming language
+Quadratic equation | Square root | a*x^2 + b * x + c = 0
+Ava | programming language | well suited for use on the World wide Web
+Jack Sparrow | pirate | Protagonist in the Pirates of the Carribean
+University | higher education | Undergraduate and postgraduate education
