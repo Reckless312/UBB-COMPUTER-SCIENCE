@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+        </script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3 id="question1">Which flies a green, white, and orange (in that order) tricolor flag? </h3>
+                <button onclick="button(this)" type="button">
+                    Ireland
+                </button>
+                <button onclick="button(this)" type="button">
+                    Ivory Coast
+                </button>
+                <button onclick="button(this)" type="button">
+                    Italy
+                </button>
+                <script>
+                    let response = false;
+                    function button(object){
+                        if(response == true){
+                            return 0;
+                        }
+                        let objectText = object.innerHTML.trim();
+                        let header = document.getElementById("question1");
+                        if(objectText == "Ireland"){
+                            object.style.backgroundColor = "green";
+                            header.innerHTML += "<br>Correct!";
+                        }
+                        else {
+                            object.style.backgroundColor = "red";
+                            header.innerHTML += "<br>Incorrect";
+                        }
+                        response = true;
+                    }
+                </script>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3 id="que2">What game am I playing?</h3>
+                <input type="text" id="ans2">
+                <button onclick="answer(this)" type="button">Confirm</button>
+                <script>
+                    function answer(object){
+                        let input = document.getElementById("ans2");
+                        let header = document.getElementById("que2");
+                        let text = input.value.trim();
+                        if(text == "Baldurs Gate 3"){
+                            input.style.backgroundColor = "green";
+                            header.innerHTML += "<br>Correct!"
+                        }
+                        else {
+                            input.style.backgroundColor = "red";
+                            header.innerHTML += "<br>Incorrect"
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+
+</html>
