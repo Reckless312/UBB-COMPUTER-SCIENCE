@@ -15,3 +15,10 @@ Archive with all problems from university
 - Dynamical Systems
 - Graphs
 - Data Structures and Algorithms
+
+## Semester 3
+- Functional and Logic Programming
+- Databases
+- Computer Networks
+- Probabilty and Statistics
+- Advanced Methods of Programming
