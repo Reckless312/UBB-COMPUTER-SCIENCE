@@ -1,0 +1,30 @@
+-- Check data from Armor Enhancement
+SELECT * FROM ARMOR_ENHANCEMENT
+-- Delete data from Armor Enhancement
+DELETE FROM ARMOR_ENHANCEMENT WHERE name = 'Alpha Enchantment Stone' AND armor_id = 9
+-- 1 row is affected
+DELETE FROM ARMOR_ENHANCEMENT WHERE extra_defense >= 15
+-- 7 rows are affected
+-- Check data from Status Effect
+SELECT * FROM STATUS_EFFECT
+DELETE FROM STATUS_EFFECT WHERE extra_damage BETWEEN 10 AND 15
+-- 3 rows are affected
+DELETE FROM STATUS_EFFECT WHERE name LIKE '%n'
+-- 2 rows are affected
+DELETE FROM STATUS_EFFECT WHERE name IS NOT NULL
+-- Table is now empty
+
+-- Commands to delete all entries from all tables
+
+DELETE FROM ARMOR_ENHANCEMENT
+DELETE FROM STATUS_EFFECT
+DELETE FROM EQUIPMENT
+DELETE FROM KNOWN_SKILLS
+DELETE FROM OWNED_ITEM
+DELETE FROM PLAYER
+DELETE FROM COMPANION
+DELETE FROM ARMOR_SET
+DELETE FROM ITEM
+DELETE FROM SKILL
+DELETE FROM WEAPON
+DELETE FROM PLAYER_STATS
