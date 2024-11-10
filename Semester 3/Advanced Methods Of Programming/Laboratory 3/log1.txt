@@ -1,0 +1,150 @@
+Execution Stack:
+((Integer v), ((v = Integer: 2), (Print(v))))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer v)
+((v = Integer: 2), (Print(v)))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((v = Integer: 2), (Print(v)))
+Symbol table:
+v --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(v = Integer: 2)
+(Print(v))
+Symbol table:
+v --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(v))
+Symbol table:
+v --> Integer: 2
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+v --> Integer: 2
+Out:
+Integer: 2
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer v), ((v = Integer: 2), (Print(v))))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer v)
+((v = Integer: 2), (Print(v)))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((v = Integer: 2), (Print(v)))
+Symbol table:
+v --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(v = Integer: 2)
+(Print(v))
+Symbol table:
+v --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(v))
+Symbol table:
+v --> Integer: 2
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+v --> Integer: 2
+Out:
+Integer: 2
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer v), ((v = Integer: 2), (Print(v))))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer v)
+((v = Integer: 2), (Print(v)))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((v = Integer: 2), (Print(v)))
+Symbol table:
+v --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(v = Integer: 2)
+(Print(v))
+Symbol table:
+v --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(v))
+Symbol table:
+v --> Integer: 2
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+v --> Integer: 2
+Out:
+Integer: 2
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer v), ((v = Integer: 2), (Print(v))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer v)
+((v = Integer: 2), (Print(v)))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((v = Integer: 2), (Print(v)))
+Symbol table:
+v --> Integer: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(v = Integer: 2)
+(Print(v))
+Symbol table:
+v --> Integer: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(v))
+Symbol table:
+v --> Integer: 2
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+v --> Integer: 2
+Out:
+Integer: 2
+FileTable:
+-------------------------------------------------------------------------

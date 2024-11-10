@@ -1,0 +1,515 @@
+Execution Stack:
+((String varf), ((varf = String: ), ((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(String varf)
+((varf = String: ), ((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((varf = String: ), ((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))))
+Symbol table:
+varf --> String: 
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(varf = String: )
+((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf)))))
+Symbol table:
+varf --> String: 
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf)))))
+Symbol table:
+varf --> String: 
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Open filevarf)
+((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))
+Symbol table:
+varf --> String: 
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((String varf), ((varf = String: ), ((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(String varf)
+((varf = String: ), ((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((varf = String: ), ((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))))
+Symbol table:
+varf --> String: 
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(varf = String: )
+((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf)))))
+Symbol table:
+varf --> String: 
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf)))))
+Symbol table:
+varf --> String: 
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Open filevarf)
+((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))
+Symbol table:
+varf --> String: 
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((String varf), ((varf = String: NULL), ((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(String varf)
+((varf = String: NULL), ((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((varf = String: NULL), ((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))))
+Symbol table:
+varf --> String: 
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(varf = String: NULL)
+((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf)))))
+Symbol table:
+varf --> String: 
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf)))))
+Symbol table:
+varf --> String: NULL
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Open filevarf)
+((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))
+Symbol table:
+varf --> String: NULL
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((String varf), ((varf = String: test.in), ((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(String varf)
+((varf = String: test.in), ((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((varf = String: test.in), ((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))))
+Symbol table:
+varf --> String: NULL
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(varf = String: test.in)
+((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf)))))
+Symbol table:
+varf --> String: NULL
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf)))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Open filevarf)
+((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer varc)
+((Read from varf), ((Read from varf), (Close file varf)))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------
+Execution Stack:
+((Read from varf), ((Read from varf), (Close file varf)))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------
+Execution Stack:
+(Read from varf)
+((Read from varf), (Close file varf))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------
+Execution Stack:
+((Read from varf), (Close file varf))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 15
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------
+Execution Stack:
+(Read from varf)
+(Close file varf)
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 15
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------
+Execution Stack:
+(Close file varf)
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 50
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 50
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((String varf), ((varf = String: test.in), ((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(String varf)
+((varf = String: test.in), ((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((varf = String: test.in), ((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))))
+Symbol table:
+varf --> String: NULL
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(varf = String: test.in)
+((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf)))))
+Symbol table:
+varf --> String: NULL
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf)))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Open filevarf)
+((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer varc)
+((Read from varf), ((Read from varf), (Close file varf)))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------
+Execution Stack:
+((Read from varf), ((Read from varf), (Close file varf)))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------
+Execution Stack:
+(Read from varf)
+((Read from varf), (Close file varf))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------
+Execution Stack:
+((Read from varf), (Close file varf))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------
+Execution Stack:
+(Read from varf)
+(Close file varf)
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------
+Execution Stack:
+(Close file varf)
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((String varf), ((varf = String: test.in), ((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(String varf)
+((varf = String: test.in), ((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((varf = String: test.in), ((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))))
+Symbol table:
+varf --> String: NULL
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(varf = String: test.in)
+((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf)))))
+Symbol table:
+varf --> String: NULL
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf)))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Open filevarf)
+((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer varc)
+((Read from varf), ((Read from varf), (Close file varf)))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------
+Execution Stack:
+((Read from varf), ((Read from varf), (Close file varf)))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------
+Execution Stack:
+(Read from varf)
+((Read from varf), (Close file varf))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------
+Execution Stack:
+((String varf), ((varf = String: test.in), ((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(String varf)
+((varf = String: test.in), ((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((varf = String: test.in), ((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))))
+Symbol table:
+varf --> String: NULL
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(varf = String: test.in)
+((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf)))))
+Symbol table:
+varf --> String: NULL
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Open filevarf), ((Integer varc), ((Read from varf), ((Read from varf), (Close file varf)))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Open filevarf)
+((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer varc), ((Read from varf), ((Read from varf), (Close file varf))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer varc)
+((Read from varf), ((Read from varf), (Close file varf)))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------
+Execution Stack:
+((Read from varf), ((Read from varf), (Close file varf)))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------
+Execution Stack:
+(Read from varf)
+((Read from varf), (Close file varf))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@108c4c35
+-------------------------------------------------------------------------

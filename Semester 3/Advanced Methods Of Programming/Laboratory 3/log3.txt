@@ -1,0 +1,315 @@
+Execution Stack:
+((Boolean a), ((Integer v), ((a = Boolean: true), ((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v))))))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Boolean a)
+((Integer v), ((a = Boolean: true), ((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v)))))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer v), ((a = Boolean: true), ((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v)))))
+Symbol table:
+a --> Boolean: false
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer v)
+((a = Boolean: true), ((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v))))
+Symbol table:
+a --> Boolean: false
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((a = Boolean: true), ((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v))))
+Symbol table:
+a --> Boolean: false
+v --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(a = Boolean: true)
+((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v)))
+Symbol table:
+a --> Boolean: false
+v --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v)))
+Symbol table:
+a --> Boolean: true
+v --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(If a) Then (v = Integer: 2) Else ((v = Integer: 3))
+(Print(v))
+Symbol table:
+a --> Boolean: true
+v --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(v = Integer: 2)
+(Print(v))
+Symbol table:
+a --> Boolean: true
+v --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(v))
+Symbol table:
+a --> Boolean: true
+v --> Integer: 2
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+a --> Boolean: true
+v --> Integer: 2
+Out:
+Integer: 2
+-------------------------------------------------------------------------
+Execution Stack:
+((Boolean a), ((Integer v), ((a = Boolean: true), ((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v))))))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Boolean a)
+((Integer v), ((a = Boolean: true), ((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v)))))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer v), ((a = Boolean: true), ((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v)))))
+Symbol table:
+a --> Boolean: false
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer v)
+((a = Boolean: true), ((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v))))
+Symbol table:
+a --> Boolean: false
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((a = Boolean: true), ((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v))))
+Symbol table:
+a --> Boolean: false
+v --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(a = Boolean: true)
+((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v)))
+Symbol table:
+a --> Boolean: false
+v --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v)))
+Symbol table:
+a --> Boolean: true
+v --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(If a) Then (v = Integer: 2) Else ((v = Integer: 3))
+(Print(v))
+Symbol table:
+a --> Boolean: true
+v --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(v = Integer: 2)
+(Print(v))
+Symbol table:
+a --> Boolean: true
+v --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(v))
+Symbol table:
+a --> Boolean: true
+v --> Integer: 2
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+a --> Boolean: true
+v --> Integer: 2
+Out:
+Integer: 2
+-------------------------------------------------------------------------
+Execution Stack:
+((Boolean a), ((Integer v), ((a = Boolean: true), ((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v))))))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Boolean a)
+((Integer v), ((a = Boolean: true), ((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v)))))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer v), ((a = Boolean: true), ((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v)))))
+Symbol table:
+a --> Boolean: false
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer v)
+((a = Boolean: true), ((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v))))
+Symbol table:
+a --> Boolean: false
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((a = Boolean: true), ((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v))))
+Symbol table:
+a --> Boolean: false
+v --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(a = Boolean: true)
+((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v)))
+Symbol table:
+a --> Boolean: false
+v --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v)))
+Symbol table:
+a --> Boolean: true
+v --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(If a) Then (v = Integer: 2) Else ((v = Integer: 3))
+(Print(v))
+Symbol table:
+a --> Boolean: true
+v --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(v = Integer: 2)
+(Print(v))
+Symbol table:
+a --> Boolean: true
+v --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(v))
+Symbol table:
+a --> Boolean: true
+v --> Integer: 2
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+a --> Boolean: true
+v --> Integer: 2
+Out:
+Integer: 2
+-------------------------------------------------------------------------
+Execution Stack:
+((Boolean a), ((Integer v), ((a = Boolean: true), ((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Boolean a)
+((Integer v), ((a = Boolean: true), ((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v)))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer v), ((a = Boolean: true), ((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v)))))
+Symbol table:
+a --> Boolean: false
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer v)
+((a = Boolean: true), ((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v))))
+Symbol table:
+a --> Boolean: false
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((a = Boolean: true), ((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v))))
+Symbol table:
+a --> Boolean: false
+v --> Integer: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(a = Boolean: true)
+((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v)))
+Symbol table:
+a --> Boolean: false
+v --> Integer: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((If a) Then (v = Integer: 2) Else ((v = Integer: 3)), (Print(v)))
+Symbol table:
+a --> Boolean: true
+v --> Integer: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(If a) Then (v = Integer: 2) Else ((v = Integer: 3))
+(Print(v))
+Symbol table:
+a --> Boolean: true
+v --> Integer: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(v = Integer: 2)
+(Print(v))
+Symbol table:
+a --> Boolean: true
+v --> Integer: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(v))
+Symbol table:
+a --> Boolean: true
+v --> Integer: 2
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+a --> Boolean: true
+v --> Integer: 2
+Out:
+Integer: 2
+FileTable:
+-------------------------------------------------------------------------

@@ -1,0 +1,408 @@
+Execution Stack:
+((Integer a), ((Integer b), ((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b))))))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer a)
+((Integer b), ((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b)))))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer b), ((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b)))))
+Symbol table:
+a --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer b)
+((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b))))
+Symbol table:
+a --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b))))
+Symbol table:
+a --> Integer: 0
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) ))
+((b = ( a + Integer: 1 )), (Print(b)))
+Symbol table:
+a --> Integer: 0
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((b = ( a + Integer: 1 )), (Print(b)))
+Symbol table:
+a --> Integer: 17
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(b = ( a + Integer: 1 ))
+(Print(b))
+Symbol table:
+a --> Integer: 17
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(b))
+Symbol table:
+a --> Integer: 17
+b --> Integer: 18
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+a --> Integer: 17
+b --> Integer: 18
+Out:
+Integer: 18
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer a), ((Integer b), ((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b))))))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer a)
+((Integer b), ((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b)))))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer b), ((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b)))))
+Symbol table:
+a --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer b)
+((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b))))
+Symbol table:
+a --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b))))
+Symbol table:
+a --> Integer: 0
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) ))
+((b = ( a + Integer: 1 )), (Print(b)))
+Symbol table:
+a --> Integer: 0
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((b = ( a + Integer: 1 )), (Print(b)))
+Symbol table:
+a --> Integer: 17
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(b = ( a + Integer: 1 ))
+(Print(b))
+Symbol table:
+a --> Integer: 17
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(b))
+Symbol table:
+a --> Integer: 17
+b --> Integer: 18
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+a --> Integer: 17
+b --> Integer: 18
+Out:
+Integer: 18
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer a), ((Integer b), ((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b))))))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer a)
+((Integer b), ((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b)))))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer b), ((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b)))))
+Symbol table:
+a --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer b)
+((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b))))
+Symbol table:
+a --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b))))
+Symbol table:
+a --> Integer: 0
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) ))
+((b = ( a + Integer: 1 )), (Print(b)))
+Symbol table:
+a --> Integer: 0
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((b = ( a + Integer: 1 )), (Print(b)))
+Symbol table:
+a --> Integer: 17
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(b = ( a + Integer: 1 ))
+(Print(b))
+Symbol table:
+a --> Integer: 17
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(b))
+Symbol table:
+a --> Integer: 17
+b --> Integer: 18
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+a --> Integer: 17
+b --> Integer: 18
+Out:
+Integer: 18
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer a), ((Integer b), ((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b))))))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer a)
+((Integer b), ((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b)))))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer b), ((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b)))))
+Symbol table:
+a --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer b)
+((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b))))
+Symbol table:
+a --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b))))
+Symbol table:
+a --> Integer: 0
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) ))
+((b = ( a + Integer: 1 )), (Print(b)))
+Symbol table:
+a --> Integer: 0
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((b = ( a + Integer: 1 )), (Print(b)))
+Symbol table:
+a --> Integer: 17
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(b = ( a + Integer: 1 ))
+(Print(b))
+Symbol table:
+a --> Integer: 17
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(b))
+Symbol table:
+a --> Integer: 17
+b --> Integer: 18
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+a --> Integer: 17
+b --> Integer: 18
+Out:
+Integer: 18
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer a), ((Integer b), ((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b))))))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer a)
+((Integer b), ((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b)))))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer b), ((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b)))))
+Symbol table:
+a --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer b)
+((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b))))
+Symbol table:
+a --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b))))
+Symbol table:
+a --> Integer: 0
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) ))
+((b = ( a + Integer: 1 )), (Print(b)))
+Symbol table:
+a --> Integer: 0
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((b = ( a + Integer: 1 )), (Print(b)))
+Symbol table:
+a --> Integer: 17
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(b = ( a + Integer: 1 ))
+(Print(b))
+Symbol table:
+a --> Integer: 17
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(b))
+Symbol table:
+a --> Integer: 17
+b --> Integer: 18
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+a --> Integer: 17
+b --> Integer: 18
+Out:
+Integer: 18
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer a), ((Integer b), ((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b))))))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer a)
+((Integer b), ((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b)))))
+Symbol table:
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer b), ((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b)))))
+Symbol table:
+a --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer b)
+((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b))))
+Symbol table:
+a --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) )), ((b = ( a + Integer: 1 )), (Print(b))))
+Symbol table:
+a --> Integer: 0
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(a = ( Integer: 2 + ( Integer: 3 * Integer: 5 ) ))
+((b = ( a + Integer: 1 )), (Print(b)))
+Symbol table:
+a --> Integer: 0
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+((b = ( a + Integer: 1 )), (Print(b)))
+Symbol table:
+a --> Integer: 17
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(b = ( a + Integer: 1 ))
+(Print(b))
+Symbol table:
+a --> Integer: 17
+b --> Integer: 0
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(b))
+Symbol table:
+a --> Integer: 17
+b --> Integer: 18
+Out:
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+a --> Integer: 17
+b --> Integer: 18
+Out:
+Integer: 18
+-------------------------------------------------------------------------

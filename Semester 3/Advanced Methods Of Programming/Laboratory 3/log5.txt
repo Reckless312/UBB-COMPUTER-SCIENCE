@@ -1,0 +1,156 @@
+Execution Stack:
+((Integer number1), ((Integer number2), ((number1 = Integer: 2), ((number2 = Integer: 3), (Print((number1 < number2)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer number1)
+((Integer number2), ((number1 = Integer: 2), ((number2 = Integer: 3), (Print((number1 < number2))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer number2), ((number1 = Integer: 2), ((number2 = Integer: 3), (Print((number1 < number2))))))
+Symbol table:
+number1 --> Integer: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer number2)
+((number1 = Integer: 2), ((number2 = Integer: 3), (Print((number1 < number2)))))
+Symbol table:
+number1 --> Integer: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((number1 = Integer: 2), ((number2 = Integer: 3), (Print((number1 < number2)))))
+Symbol table:
+number1 --> Integer: 0
+number2 --> Integer: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(number1 = Integer: 2)
+((number2 = Integer: 3), (Print((number1 < number2))))
+Symbol table:
+number1 --> Integer: 0
+number2 --> Integer: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((number2 = Integer: 3), (Print((number1 < number2))))
+Symbol table:
+number1 --> Integer: 2
+number2 --> Integer: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(number2 = Integer: 3)
+(Print((number1 < number2)))
+Symbol table:
+number1 --> Integer: 2
+number2 --> Integer: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Print((number1 < number2)))
+Symbol table:
+number1 --> Integer: 2
+number2 --> Integer: 3
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+number1 --> Integer: 2
+number2 --> Integer: 3
+Out:
+Boolean: true
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer number1), ((Integer number2), ((number1 = Integer: 2), ((number2 = Integer: 3), (Print((number1 > number2)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer number1)
+((Integer number2), ((number1 = Integer: 2), ((number2 = Integer: 3), (Print((number1 > number2))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer number2), ((number1 = Integer: 2), ((number2 = Integer: 3), (Print((number1 > number2))))))
+Symbol table:
+number1 --> Integer: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer number2)
+((number1 = Integer: 2), ((number2 = Integer: 3), (Print((number1 > number2)))))
+Symbol table:
+number1 --> Integer: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((number1 = Integer: 2), ((number2 = Integer: 3), (Print((number1 > number2)))))
+Symbol table:
+number1 --> Integer: 0
+number2 --> Integer: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(number1 = Integer: 2)
+((number2 = Integer: 3), (Print((number1 > number2))))
+Symbol table:
+number1 --> Integer: 0
+number2 --> Integer: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((number2 = Integer: 3), (Print((number1 > number2))))
+Symbol table:
+number1 --> Integer: 2
+number2 --> Integer: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(number2 = Integer: 3)
+(Print((number1 > number2)))
+Symbol table:
+number1 --> Integer: 2
+number2 --> Integer: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Print((number1 > number2)))
+Symbol table:
+number1 --> Integer: 2
+number2 --> Integer: 3
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+number1 --> Integer: 2
+number2 --> Integer: 3
+Out:
+Boolean: false
+FileTable:
+-------------------------------------------------------------------------
