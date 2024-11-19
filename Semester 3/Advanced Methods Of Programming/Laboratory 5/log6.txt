@@ -1,0 +1,1639 @@
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integerat address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integerat address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integerat address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integerat address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Ref(Integer)) a)
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: a)
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Ref(Integer)) a)
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: a)
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Ref(Integer)) at address: 2
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Ref(Integer)) a)
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: a)
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Ref(Integer)) a)
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: a)
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Ref(Integer)) a)
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: a)
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Ref(Integer)) a)
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: a)
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Ref(Integer)) a)
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: a)
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Ref(Integer)) a)
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: a)
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Ref(Integer)) a)
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: a)
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Ref(Integer)) a)
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: a)
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Ref(Integer)) a)
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: a)
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Ref(Integer)) a)
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: a)
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Ref(Integer)) a)
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: a)
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Ref(Integer)) a)
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: a)
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Ref(Integer)) a)
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: a)
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Ref(Integer) at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Ref(Integer)) a)
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: a)
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 2
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(v))
+(Print(a))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 2
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(a))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 2
+v --> Reference to type: Integer at address: 1
+Out:
+Reference to type: Integer at address: 1
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 2
+v --> Reference to type: Integer at address: 1
+Out:
+Reference to type: Integer at address: 1
+Reference to type: Ref(Integer) at address: 2
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Ref(Integer)) a)
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: a)
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+-------------------------------------------------------------------------
+Execution Stack:
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 2
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+2 --> Reference to type: Integer at address: 1
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(v))
+(Print(a))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 2
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+2 --> Reference to type: Integer at address: 1
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(a))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 2
+v --> Reference to type: Integer at address: 1
+Out:
+Reference to type: Integer at address: 1
+FileTable:
+Heap:
+1 --> Integer: 20
+2 --> Reference to type: Integer at address: 1
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 2
+v --> Reference to type: Integer at address: 1
+Out:
+Reference to type: Integer at address: 1
+Reference to type: Ref(Integer) at address: 2
+FileTable:
+Heap:
+1 --> Integer: 20
+2 --> Reference to type: Integer at address: 1
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: v), ((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: v)
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Ref(Integer)) a), ((Allocation for: a), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Ref(Integer)) a)
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocation for: a), ((Print(v)), (Print(a))))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocation for: a)
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+-------------------------------------------------------------------------
+Execution Stack:
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 2
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+2 --> Reference to type: Integer at address: 1
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocate in heap: v -> Integer: 20), ((Ref(Ref(Integer)) a), ((Allocate in heap: a -> v), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocate in heap: v -> Integer: 20), ((Ref(Ref(Integer)) a), ((Allocate in heap: a -> v), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocate in heap: v -> Integer: 20), ((Ref(Ref(Integer)) a), ((Allocate in heap: a -> v), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocate in heap: v -> Integer: 20)
+((Ref(Ref(Integer)) a), ((Allocate in heap: a -> v), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Ref(Integer)) a), ((Allocate in heap: a -> v), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Ref(Integer)) a)
+((Allocate in heap: a -> v), ((Print(v)), (Print(a))))
+Symbol table:
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocate in heap: a -> v), ((Print(v)), (Print(a))))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocate in heap: a -> v)
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+-------------------------------------------------------------------------
+Execution Stack:
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 2
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+2 --> Reference to type: Integer at address: 1
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(v))
+(Print(a))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 2
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+2 --> Reference to type: Integer at address: 1
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(a))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 2
+v --> Reference to type: Integer at address: 1
+Out:
+Reference to type: Integer at address: 1
+FileTable:
+Heap:
+1 --> Integer: 20
+2 --> Reference to type: Integer at address: 1
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 2
+v --> Reference to type: Integer at address: 1
+Out:
+Reference to type: Integer at address: 1
+Reference to type: Ref(Integer) at address: 2
+FileTable:
+Heap:
+1 --> Integer: 20
+2 --> Reference to type: Integer at address: 1
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Integer) v), ((Allocate in heap: v -> Integer: 20), ((Ref(Ref(Integer)) a), ((Allocate in heap: a -> v), ((Print(v)), (Print(a)))))))
+Symbol table:
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Integer) v)
+((Allocate in heap: v -> Integer: 20), ((Ref(Ref(Integer)) a), ((Allocate in heap: a -> v), ((Print(v)), (Print(a))))))
+Symbol table:
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocate in heap: v -> Integer: 20), ((Ref(Ref(Integer)) a), ((Allocate in heap: a -> v), ((Print(v)), (Print(a))))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocate in heap: v -> Integer: 20)
+((Ref(Ref(Integer)) a), ((Allocate in heap: a -> v), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 0
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Ref(Ref(Integer)) a), ((Allocate in heap: a -> v), ((Print(v)), (Print(a)))))
+Symbol table:
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+-------------------------------------------------------------------------
+Execution Stack:
+(Ref(Ref(Integer)) a)
+((Allocate in heap: a -> v), ((Print(v)), (Print(a))))
+Symbol table:
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+-------------------------------------------------------------------------
+Execution Stack:
+((Allocate in heap: a -> v), ((Print(v)), (Print(a))))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+-------------------------------------------------------------------------
+Execution Stack:
+(Allocate in heap: a -> v)
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 0
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+-------------------------------------------------------------------------
+Execution Stack:
+((Print(v)), (Print(a)))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 2
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+2 --> Reference to type: Integer at address: 1
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(v))
+(Print(a))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 2
+v --> Reference to type: Integer at address: 1
+Out:
+FileTable:
+Heap:
+1 --> Integer: 20
+2 --> Reference to type: Integer at address: 1
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(a))
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 2
+v --> Reference to type: Integer at address: 1
+Out:
+Reference to type: Integer at address: 1
+FileTable:
+Heap:
+1 --> Integer: 20
+2 --> Reference to type: Integer at address: 1
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+a --> Reference to type: Ref(Integer) at address: 2
+v --> Reference to type: Integer at address: 1
+Out:
+Reference to type: Integer at address: 1
+Reference to type: Ref(Integer) at address: 2
+FileTable:
+Heap:
+1 --> Integer: 20
+2 --> Reference to type: Integer at address: 1
+-------------------------------------------------------------------------
