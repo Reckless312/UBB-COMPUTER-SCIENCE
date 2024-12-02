@@ -1,0 +1,1479 @@
+Execution Stack:
+((String varf), ((varf = String: test.in), ((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), (Close file: 'varf')))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(String varf)
+((varf = String: test.in), ((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), (Close file: 'varf'))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((varf = String: test.in), ((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), (Close file: 'varf'))))))
+Symbol table:
+varf --> String: NULL
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(varf = String: test.in)
+((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), (Close file: 'varf')))))
+Symbol table:
+varf --> String: NULL
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), (Close file: 'varf')))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Open file: 'varf')
+((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), (Close file: 'varf'))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), (Close file: 'varf'))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@5b80350b
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer varc)
+((Read from file: 'varf'), ((Read from file: 'varf'), (Close file: 'varf')))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@5b80350b
+-------------------------------------------------------------------------
+Execution Stack:
+((Read from file: 'varf'), ((Read from file: 'varf'), (Close file: 'varf')))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@5b80350b
+-------------------------------------------------------------------------
+Execution Stack:
+(Read from file: 'varf')
+((Read from file: 'varf'), (Close file: 'varf'))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@5b80350b
+-------------------------------------------------------------------------
+Execution Stack:
+((Read from file: 'varf'), (Close file: 'varf'))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 15
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@5b80350b
+-------------------------------------------------------------------------
+Execution Stack:
+(Read from file: 'varf')
+(Close file: 'varf')
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 15
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@5b80350b
+-------------------------------------------------------------------------
+Execution Stack:
+(Close file: 'varf')
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 50
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@5b80350b
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 50
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 50
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((String varf), ((varf = String: test.in), ((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), (Close file: 'varf')))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(String varf)
+((varf = String: test.in), ((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), (Close file: 'varf'))))))
+Symbol table:
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((varf = String: test.in), ((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), (Close file: 'varf'))))))
+Symbol table:
+varf --> String: NULL
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(varf = String: test.in)
+((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), (Close file: 'varf')))))
+Symbol table:
+varf --> String: NULL
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), (Close file: 'varf')))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+(Open file: 'varf')
+((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), (Close file: 'varf'))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), (Close file: 'varf'))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@32a1bec0
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer varc)
+((Read from file: 'varf'), ((Read from file: 'varf'), (Close file: 'varf')))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@32a1bec0
+-------------------------------------------------------------------------
+Execution Stack:
+((Read from file: 'varf'), ((Read from file: 'varf'), (Close file: 'varf')))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@32a1bec0
+-------------------------------------------------------------------------
+Execution Stack:
+(Read from file: 'varf')
+((Read from file: 'varf'), (Close file: 'varf'))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@32a1bec0
+-------------------------------------------------------------------------
+Execution Stack:
+((Read from file: 'varf'), (Close file: 'varf'))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 15
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@32a1bec0
+-------------------------------------------------------------------------
+Execution Stack:
+(Read from file: 'varf')
+(Close file: 'varf')
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 15
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@32a1bec0
+-------------------------------------------------------------------------
+Execution Stack:
+(Close file: 'varf')
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 50
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@32a1bec0
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 50
+Out:
+FileTable:
+-------------------------------------------------------------------------
+Execution Stack:
+((String varf), ((varf = String: test.in), ((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))))))
+Symbol table:
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(String varf)
+((varf = String: test.in), ((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))))))
+Symbol table:
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((varf = String: test.in), ((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))))))
+Symbol table:
+varf --> String: NULL
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(varf = String: test.in)
+((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))))
+Symbol table:
+varf --> String: NULL
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Open file: 'varf')
+((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@4d76f3f8
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer varc)
+((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@4d76f3f8
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@4d76f3f8
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Read from file: 'varf')
+((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@4d76f3f8
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 15
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@4d76f3f8
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Read from file: 'varf')
+((Print(varc)), (Close file: 'varf'))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 15
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@4d76f3f8
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Print(varc)), (Close file: 'varf'))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 50
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@4d76f3f8
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(varc))
+(Close file: 'varf')
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 50
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@4d76f3f8
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Close file: 'varf')
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 50
+Out:
+Integer: 50
+FileTable:
+String: test.in --> java.io.BufferedReader@4d76f3f8
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 50
+Out:
+Integer: 50
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((String varf), ((varf = String: test.in), ((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))))))
+Symbol table:
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(String varf)
+((varf = String: test.in), ((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))))))
+Symbol table:
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((varf = String: test.in), ((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))))))
+Symbol table:
+varf --> String: NULL
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(varf = String: test.in)
+((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))))
+Symbol table:
+varf --> String: NULL
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Open file: 'varf')
+((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@4d76f3f8
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer varc)
+((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@4d76f3f8
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@4d76f3f8
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Read from file: 'varf')
+((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@4d76f3f8
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 15
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@4d76f3f8
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Read from file: 'varf')
+((Print(varc)), (Close file: 'varf'))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 15
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@4d76f3f8
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Print(varc)), (Close file: 'varf'))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@4d76f3f8
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(varc))
+(Close file: 'varf')
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@4d76f3f8
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Close file: 'varf')
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+Integer: 0
+FileTable:
+String: test.in --> java.io.BufferedReader@4d76f3f8
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+Integer: 0
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((String varf), ((varf = String: test.in), ((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))))))
+Symbol table:
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(String varf)
+((varf = String: test.in), ((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))))))
+Symbol table:
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((varf = String: test.in), ((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))))))
+Symbol table:
+varf --> String: NULL
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(varf = String: test.in)
+((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))))
+Symbol table:
+varf --> String: NULL
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Open file: 'varf')
+((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@50134894
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Integer varc)
+((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))
+Symbol table:
+varf --> String: test.in
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@50134894
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@50134894
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Read from file: 'varf')
+((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@50134894
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 15
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@50134894
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Read from file: 'varf')
+((Print(varc)), (Close file: 'varf'))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 15
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@50134894
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+((Print(varc)), (Close file: 'varf'))
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@50134894
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Print(varc))
+(Close file: 'varf')
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+FileTable:
+String: test.in --> java.io.BufferedReader@50134894
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+(Close file: 'varf')
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+Integer: 0
+FileTable:
+String: test.in --> java.io.BufferedReader@50134894
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+Symbol table:
+varf --> String: test.in
+varc --> Integer: 0
+Out:
+Integer: 0
+FileTable:
+Heap:
+-------------------------------------------------------------------------
+Execution Stack:
+String varf
+varf = String: test.in
+Open file: 'varf
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Execution Stack:
+String varf
+varf = String: test.in
+Open file: 'varf
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Execution Stack:
+varf = String: test.in
+Open file: 'varf
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: NULL }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Execution Stack:
+varf = String: test.in
+Open file: 'varf
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: NULL }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Execution Stack:
+Open file: 'varf
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Execution Stack:
+Open file: 'varf
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Execution Stack:
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@73c6c3b2 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Execution Stack:
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@73c6c3b2 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Execution Stack:
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@73c6c3b2 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Execution Stack:
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@73c6c3b2 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Execution Stack:
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 15 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@73c6c3b2 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Execution Stack:
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 15 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@73c6c3b2 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Execution Stack:
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@73c6c3b2 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Execution Stack:
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@73c6c3b2 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Execution Stack:
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 0 }
+------------------------------------------------------------------------
+Out:
+Printed: Integer: 0
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@73c6c3b2 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Execution Stack:
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 0 }
+------------------------------------------------------------------------
+Out:
+Printed: Integer: 0
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+String varf
+varf = String: test.in
+Open file: 'varf
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+String varf
+varf = String: test.in
+Open file: 'varf
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+String varf
+varf = String: test.in
+Open file: 'varf
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+varf = String: test.in
+Open file: 'varf
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: NULL }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+varf = String: test.in
+Open file: 'varf
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: NULL }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+varf = String: test.in
+Open file: 'varf
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: NULL }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+varf = String: test.in
+Open file: 'varf
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: NULL }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Open file: 'varf
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Open file: 'varf
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Open file: 'varf
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Open file: 'varf
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@3b192d32 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@3b192d32 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@3b192d32 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Integer varc
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@3b192d32 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@3b192d32 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@3b192d32 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@3b192d32 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Read from file: 'varf
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@3b192d32 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 15 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@3b192d32 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 15 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@3b192d32 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 15 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@3b192d32 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Read from file: 'varf
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 15 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@3b192d32 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@3b192d32 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@3b192d32 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@3b192d32 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Print(varc)
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@3b192d32 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 0 }
+------------------------------------------------------------------------
+Out:
+Printed: Integer: 0
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@3b192d32 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+Close file: 'varf
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 0 }
+------------------------------------------------------------------------
+Out:
+Printed: Integer: 0
+------------------------------------------------------------------------
+FileTable:
+{ String: test.in --> java.io.BufferedReader@3b192d32 }
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 3
+Execution Stack:
+------------------------------------------------------------------------
+Symbol table:
+{ varf --> String: test.in }
+{ varc --> Integer: 0 }
+------------------------------------------------------------------------
+Out:
+Printed: Integer: 0
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
