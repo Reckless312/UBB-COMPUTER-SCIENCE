@@ -51,7 +51,8 @@ public class WhileStatement implements IStatement {
     public MyIDictionary<String, IType> typeCheck(MyIDictionary<String, IType> typeEnv) throws StatementException, DataStructureExceptions {
         IType expressionType = this.condition.typeCheck(typeEnv);
         if(expressionType instanceof BoolType){
-            return this.body.typeCheck(typeEnv.deepCopy());
+            this.body.typeCheck(typeEnv.deepCopy());
+            return typeEnv;
         }
         else {
             throw new StatementException("While Statement Error: Conditional expression is not a boolean!");
