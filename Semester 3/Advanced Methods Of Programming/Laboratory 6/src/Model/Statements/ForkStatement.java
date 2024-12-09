@@ -30,6 +30,7 @@ public class ForkStatement implements IStatement {
     }
 
     public MyIDictionary<String, IType> typeCheck(MyIDictionary<String, IType> typeEnv) throws StatementException, DataStructureExceptions {
-        return this.statement.typeCheck(typeEnv.deepCopy());
+        this.statement.typeCheck(typeEnv.deepCopy());
+        return typeEnv;
     }
 }
