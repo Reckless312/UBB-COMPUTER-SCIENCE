@@ -54,7 +54,7 @@
 ; (maxoflist '(1 2 -1 a () ((a (b 5))) 3 ((-2) 1)))
 
 ; l1 - list that contains operators and numbers
-
+; preorderArithmetic - Computes arithmetic expressions in pre-order
 (defun preorderArithmetic (l1)
     (cond
         ((numberp (car l1)) (list (car l1) (cdr l1)))
@@ -70,7 +70,7 @@
 )
 
 ; l1 - list that contains operators and numbers
-
+; mainpreorderArithmetic - wrapper for preorderArithmetic
 (defun mainpreorderArithmetic (l1)
     (cond
         ((null (cadr (preorderArithmetic l1))) (car (preorderArithmetic l1)))
@@ -84,24 +84,16 @@
 ;(mainpreorderArithmetic '(+ 1 3))
 ;(mainpreorderArithmetic '(+ * 2 4 3))
 
-(defun weirdsum (l1)
+; l1 - list 
+; Skip_two - traverses the list two elements at a time to figure out if it has an even amount of element
+
+(defun skip_two (l1)
     (cond
-        ((null l1 ) 0)
-        ((numberp (car l1))
-             (if (= (mod (car l1) 2) 0) 
-                (+ (weirdsum (cdr l1)) (- (car l1) 1)) 
-                (+ (weirdsum (cdr l1)) (car l1))))
-        (t (weirdsum (cdr l1)))
+        ((null l1) t)
+        ((null (cdr l1)) nil)
+        (t (skip_two (cddr l1)))
     )
 )
 
-(defun even (l1)
-    (cond
-        ((null l1) nil)
-        ((= (mod (weirdsum l1) 2) 0) T) 
-        ((= (mod (weirdsum l1) 2) 1) nil)
-    )
-)
-
-;(even '(1 2 3 4 (a b (1 2 3) a ) 2))
-;(even '(1 2 3 4 (a b (1 2 3) a ) 2 2))
+;(skip_two '(1 2 3 4 (a b (1 2 3) a ) 2))
+;(skip_two '(1 2 3 4 (a b (1 2 3) a ) 2 2))
