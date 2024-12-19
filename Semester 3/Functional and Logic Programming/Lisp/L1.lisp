@@ -58,7 +58,7 @@
 (defun preorderArithmetic (l1)
     (cond
         ((numberp (car l1)) (list (car l1) (cdr l1)))
-        ((member (car l1) '(+ - * /))
+        ((and (member (car l1) '(+ - * /)) (numberp (car (preorderArithmetic (cdr l1)))) (numberp (car (preorderArithmetic (cadr (preorderArithmetic (cdr l1)))))))
             (list (funcall (car l1)
                 (car (preorderArithmetic (cdr l1))) 
                 (car (preorderArithmetic (cadr (preorderArithmetic (cdr l1)))))
@@ -79,6 +79,7 @@
 )
 
 ;(mainpreorderArithmetic '(+ * 2 4 - 5 * 2 2))
+;(mainpreorderArithmetic '(+ * 2 4 - 5 * b 2))
 ;(mainpreorderArithmetic '(+ * 2 4 - 2 5 * 2 2))
 ;(mainpreorderArithmetic '(+ * 2 4 - 5 * 2 2))
 ;(mainpreorderArithmetic '(+ 1 3))
@@ -94,6 +95,22 @@
         (t (skip_two (cddr l1)))
     )
 )
+
+(defun nr_of_occ (l1)
+    (cond 
+        ((null l1) 0)
+        ((listp (car l1)) (+ (nr_of_occ (car l1)) (nr_of_occ (cdr l1))))
+        (t (+ 1 (nr_of_occ (cdr l1))))
+    )
+)
+
+(defun even_elem (l1)
+    (cond
+        ((eql (mod (nr_of_occ l1) 2) 0) t)
+        (t nil)
+    )
+)
+;(even_elem '(1 2 3 4 (a b (1 2 3) a ) 2))
 
 ;(skip_two '(1 2 3 4 (a b (1 2 3) a ) 2))
 ;(skip_two '(1 2 3 4 (a b (1 2 3) a ) 2 2))
