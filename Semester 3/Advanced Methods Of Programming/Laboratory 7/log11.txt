@@ -1,0 +1,1980 @@
+Program id: 9
+Execution Stack:
+Ref(Integer) v
+Allocate in heap: v -> Integer: 20
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Integer) v
+Allocate in heap: v -> Integer: 20
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Integer) v
+Allocate in heap: v -> Integer: 20
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 20
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 20
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 20
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 20
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 0 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 0 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 0 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 0 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+{ 3 --> Integer: 30 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+{ 3 --> Integer: 30 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+{ 3 --> Integer: 30 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+{ 3 --> Integer: 30 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ b --> Reference to type: Integer at address: 0 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ b --> Reference to type: Integer at address: 0 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ b --> Reference to type: Integer at address: 0 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ b --> Reference to type: Integer at address: 0 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ b --> Reference to type: Integer at address: 5 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+{ 5 --> Integer: 1 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ b --> Reference to type: Integer at address: 5 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+{ 5 --> Integer: 1 }
+#########################################################################
+Program id: 9
+Execution Stack:
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 6 }
+{ b --> Reference to type: Integer at address: 5 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+{ 5 --> Integer: 1 }
+{ 6 --> Reference to type: Integer at address: 5 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Integer) v
+Allocate in heap: v -> Integer: 20
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Integer) v
+Allocate in heap: v -> Integer: 20
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Integer) v
+Allocate in heap: v -> Integer: 20
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 20
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 20
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 20
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 20
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 0 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 0 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 0 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 0 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+{ 3 --> Integer: 30 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+{ 3 --> Integer: 30 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+{ 3 --> Integer: 30 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+{ 3 --> Integer: 30 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ b --> Reference to type: Integer at address: 0 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ b --> Reference to type: Integer at address: 0 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ b --> Reference to type: Integer at address: 0 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ b --> Reference to type: Integer at address: 0 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ b --> Reference to type: Integer at address: 5 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+{ 5 --> Integer: 1 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ b --> Reference to type: Integer at address: 5 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+{ 5 --> Integer: 1 }
+#########################################################################
+Program id: 9
+Execution Stack:
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 6 }
+{ b --> Reference to type: Integer at address: 5 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+{ 5 --> Integer: 1 }
+{ 6 --> Reference to type: Integer at address: 5 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Integer) v
+Allocate in heap: v -> Integer: 20
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Integer) v
+Allocate in heap: v -> Integer: 20
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Integer) v
+Allocate in heap: v -> Integer: 20
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 20
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 20
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 20
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 20
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 0 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Ref(Integer)) a
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 0 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 0 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 0 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 0 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: v -> Integer: 30
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 1 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+{ 3 --> Integer: 30 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+{ 3 --> Integer: 30 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+{ 3 --> Integer: 30 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> v
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 2 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+{ 3 --> Integer: 30 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 1 --> Integer: 20 }
+{ 2 --> Reference to type: Integer at address: 1 }
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Ref(Integer) b
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ b --> Reference to type: Integer at address: 0 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ b --> Reference to type: Integer at address: 0 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ b --> Reference to type: Integer at address: 0 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: b -> Integer: 1
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ b --> Reference to type: Integer at address: 0 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ b --> Reference to type: Integer at address: 5 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+{ 5 --> Integer: 1 }
+#########################################################################
+Program id: 9
+Execution Stack:
+Allocate in heap: a -> b
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 4 }
+{ b --> Reference to type: Integer at address: 5 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+{ 5 --> Integer: 1 }
+#########################################################################
+Program id: 9
+Execution Stack:
+------------------------------------------------------------------------
+Symbol table:
+{ a --> Reference to type: Ref(Integer) at address: 6 }
+{ b --> Reference to type: Integer at address: 5 }
+{ v --> Reference to type: Integer at address: 3 }
+------------------------------------------------------------------------
+Out:
+------------------------------------------------------------------------
+FileTable:
+------------------------------------------------------------------------
+Heap:
+{ 3 --> Integer: 30 }
+{ 4 --> Reference to type: Integer at address: 3 }
+{ 5 --> Integer: 1 }
+{ 6 --> Reference to type: Integer at address: 5 }
+#########################################################################
