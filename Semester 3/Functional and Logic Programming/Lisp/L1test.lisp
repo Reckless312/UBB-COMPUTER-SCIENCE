@@ -275,3 +275,185 @@
         (t (maxLinear l1 -1000)) ; could be changed to first appearance of a number
     )
 )
+
+;5.
+;a) Write twice the n-th element of a linear list. Example: for (10 20 30 40 50) and n=3 will produce (10 
+;20 30 30 40 50).
+;b) Write a function to return an association list with the two lists given as parameters. 
+; Example: (A B C) (X Y Z) --> ((A.X) (B.Y) (C.Z)).
+;c) Write a function to determine the number of all sublists of a given list, on any level. 
+; A sublist is either the list itself, or any element that is a list, at any level. Example: 
+ ;(1 2 (3 (4 5) (6 7)) 8 (9 10)) => 5 lists:
+;(list itself, (3 ...), (4 5), (6 7), (9 10)).
+;d) Write a function to return the number of all numerical atoms in a list at superficial level.
+
+
+(defun duplicateNthelement (l1 e)
+    (cond
+        ((null l1) nil)
+        ((eql e 1) (cons (car l1) (cons (car l1) (duplicateNthelement (cdr l1) (- e 1)))))
+        (t (cons (car l1) (duplicateNthelement (cdr l1) (- e 1))))
+    )
+)
+
+; b --> linear list solution, also assumed same length "could use created function to check in a wrapper but skipped"
+
+(defun associationList (l1 l2)
+    (cond
+        ((null l1) nil)
+        (t (cons (append (list (car l1)) (car l2)) (associationList (cdr l1) (cdr l2))))
+    )
+)
+
+(defun lengthOfSublists (l1)
+    (cond
+        ((null l1) 0)
+        (t (lengthoflist (listsublistsmain l1)))
+    )
+)
+
+(defun numbersAtSuperficialLevel (l1)
+    (cond
+        ((null l1) 0)
+        ((numberp (car l1)) (+ 1 (numbersAtSuperficialLevel (cdr l1))))
+        (t (numbersAtSuperficialLevel (cdr l1)))
+    )
+)
+
+;6.
+;a) Write a function to test whether a list is linear.
+;b) Write a function to replace the first occurence of an element E in a given list with an other element 
+;O.
+;c) Write a function to replace each sublist of a list with its last element.
+; A sublist is an element from the first level, which is a list.
+; Example: (a (b c) (d (e (f)))) ==> (a c (e (f))) ==> (a c (f)) ==> (a c f)
+; (a (b c) (d ((e) f))) ==> (a c ((e) f)) ==> (a c f)
+;d) Write a function to merge two sorted lists without keeping double values.
+
+(defun isLinear (l1)
+    (cond
+        ((null l1) t)
+        ((listp (car l1)) nil)
+        (t (isLinear (cdr l1)))
+    )
+)
+
+(defun replaceFirstOccurence (l1 e o)
+    (cond
+        ((null l1) nil)
+        ((listp (car l1)) 
+            (cond
+                ((null (replaceFirstOccurence (car l1) e o)) (cons (car l1) (replaceFirstOccurence (cdr l1) e o)))
+                (t (cons (replaceFirstOccurence (car l1) e o) (replaceFirstOccurence (cdr l1) e o)))
+            ))
+        ((eql e (car l1)) (cons o (cdr l1)))
+        (t (cons (car l1) (replaceFirstOccurence (cdr l1) e o)))
+    )
+)
+
+(defun returnNthelementLinear (l1 e)
+    (cond
+        ((null l1) nil)
+        ((eql e 1) (car l1))
+        (t (returnNthelementLinear (cdr l1) (- e 1)))
+    )
+)
+
+(defun replaceSublistLastElement (l1)
+    (cond
+        ((null l1) nil)
+        ((listp (car l1)) (cons (returnNthelementLinear (car l1) (lengthoflist (car l1))) (replaceSublistLastElement (cdr l1))))
+        (t (cons (car l1) (replaceSublistLastElement (cdr l1))))
+    )
+)
+
+(defun repeatUntilLinearForReplaceSublistLastElement (l1)
+    (cond
+        ((not (null (isLinear l1))) l1)
+        (t (repeatUntilLinearForReplaceSublistLastElement (replaceSublistLastElement l1)))
+    )
+)
+
+;d) Write a function to merge two sorted lists without keeping double values.
+
+(defun removeDuplicatesInASortedList (l1)
+    (cond
+        ((null l1) nil)
+        ((eql (car l1) (cadr l1)) (removeDuplicates (cdr l1)))
+        (t (cons (car l1) (removeDuplicates (cdr l1))))
+    )
+)
+
+(defun mergeSort (l1 l2)
+    (cond
+        ((null l1) l2)
+        ((null l2) l1)
+        ((eql (car l1) (car l2)) (mergeSort (cdr l1) l2))
+        ((< (car l1) (car l2)) (cons (car l1) (mergeSort (cdr l1) l2)))
+        (t (cons (car l2) (mergeSort l1 (cdr l2))))
+    )
+)
+
+(defun mergeSortNoDuplicates (l1 l2)
+    (cond
+        (t (mergeSort (removeDuplicatesInASortedList l1) (removeDuplicatesInASortedList l2)))
+    )
+)
+
+;7.
+;a) Write a function to eliminate the n-th element of a linear list.
+;b) Write a function to determine the successor of a number represented digit by digit as a list, without 
+;transforming the representation of the number from list to number. Example: (1 9 3 5 9 9) --> (1 9 3 6 0 
+;0)
+
+
+(defun eliminateNthelementLinear (l1 e)
+    (cond
+        ((null l1) nil)
+        ((eql e 1) (eliminateNthelementLinear (cdr l1) (- e 1)))
+        (t (cons (car l1) (eliminateNthelementLinear (cdr l1) (- e 1))))
+    )
+)
+
+(defun successorNumber (l1)
+    (cond
+        ((null l1) nil)
+        ((null (cdr l1)) (list (+ (car l1) 1)))
+        ((= (car (successorNumber (cdr l1))) 10) (cons (+ (car l1) 1) (cons 0 (eliminateNthelementLinear (successorNumber (cdr l1)) 1))))
+        (t (cons (car l1) (successorNumber (cdr l1))))
+    )
+)
+
+(defun successorNumberMain (l1)
+    (cond
+        ((null l1) nil)
+        ((= (car (successorNumber l1)) 10) (cons 1 (cons 0 (eliminateNthelementLinear (successorNumber l1) 1))))
+        (t (successorNumber l1))
+    )
+)
+
+;c) Write a function to return the set of all the atoms of a list.
+; Exemplu: (1 (2 (1 3 (2 4) 3) 1) (1 4)) ==> (1 2 3 4)
+;d) Write a function to test whether a linear list is a set.
+
+(defun makeSetLinear (l1)
+    (cond
+        ((null l1) nil)
+        ((null (memberfun (makeSetLinear (cdr l1)) (car l1))) (cons (car l1) (makeSetLinear (cdr l1))))
+        (t (makeSetLinear (cdr l1)))
+    )
+)
+
+(defun makeSetSublists (l1)
+    (cond
+        (t (sortList (makeSetLinear (getAtoms l1)) nil))
+    )
+)
+
+(defun checkLinearListIsSet (l1)
+    (cond
+        ((null l1) t)
+        ((> (nrOfOccurencesLinearList (cdr l1) (car l1) 0) 0) nil)
+        ((checkLinearListIsSet (cdr l1)))
+    )
+)
