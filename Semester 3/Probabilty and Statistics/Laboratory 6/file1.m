@@ -42,6 +42,26 @@ endif
 printf("The rejection region is: (%4.3f, %4.3f).\n", RR);
 printf("The observed value of the test statistic is %4.3f.\n", z);
 printf("The p-value of the test is %4.3f.\n", p);
+%b)
+%H0: m = 5.5 ( the case < 5.5 is absorbed here) - it doesn't exceed the mean
+%H1: m < 5.5 - it's exceeding the mean
+m0_b = 5.5;
+
+zalpha_2 = tinv(alpha, n-1);
+RR_2 = [zalpha_2 +inf];
+[h_2, p_2, ci_2, stats] = ttest(x, m0_b, 'alpha', alpha, 'tail', 'right');
+
+if h == 1
+  printf("The value for h is %d, This means that we reject H0. \n", h);
+  printf("The data suggests that it does exceed the mean. \n");
+else %h = 0
+  printf("The value for h is %d, This means that do not reject H0. \n", h);
+  printf("The data suggests that it doesn't exceed the mean. \n");
+endif
+printf("The rejection region is: (%4.3f, %4.3f).\n", RR_2);
+printf("The observed value of the test statistic is %4.3f.\n", stats.tstat);
+printf("The p-value of the test is %4.3f.\n", p_2);
+
 
 % 1)b)ttest -> to get the observed value of the test statistic: stats.tstat
 % 2)a) vartest2 -> at the end, you get that the vars are equal or are different
