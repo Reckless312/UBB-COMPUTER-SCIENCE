@@ -44,7 +44,7 @@ printf("The observed value of the test statistic is %4.3f.\n", z);
 printf("The p-value of the test is %4.3f.\n", p);
 %b)
 %H0: m = 5.5 ( the case < 5.5 is absorbed here) - it doesn't exceed the mean
-%H1: m < 5.5 - it's exceeding the mean
+%H1: m > 5.5 - it's exceeding the mean
 m0_b = 5.5;
 
 zalpha_2 = tinv(alpha, n-1);
