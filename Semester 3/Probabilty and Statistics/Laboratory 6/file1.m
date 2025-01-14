@@ -51,7 +51,7 @@ zalpha_2 = tinv(alpha, n-1);
 RR_2 = [zalpha_2 +inf];
 [h_2, p_2, ci_2, stats] = ttest(x, m0_b, 'alpha', alpha, 'tail', 'right');
 
-if h == 1
+if h_2 == 1
   printf("The value for h is %d, This means that we reject H0. \n", h);
   printf("The data suggests that it does exceed the mean. \n");
 else %h = 0
