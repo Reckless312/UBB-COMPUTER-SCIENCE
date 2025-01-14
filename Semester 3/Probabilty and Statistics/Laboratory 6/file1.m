@@ -54,7 +54,7 @@ RR_2 = [zalpha_2 +inf];
 if h_2 == 1
   printf("The value for h is %d, This means that we reject H0. \n", h);
   printf("The data suggests that it does exceed the mean. \n");
-else %h = 0
+else %h_2 = 0
   printf("The value for h is %d, This means that do not reject H0. \n", h);
   printf("The data suggests that it doesn't exceed the mean. \n");
 endif
