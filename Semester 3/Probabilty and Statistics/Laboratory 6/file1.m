@@ -47,7 +47,7 @@ printf("The p-value of the test is %4.3f.\n", p);
 %H1: m > 5.5 - it's exceeding the mean
 m0_b = 5.5;
 
-zalpha_2 = tinv(alpha, n-1);
+zalpha_2 = tinv(1-alpha, n-1);
 RR_2 = [zalpha_2 +inf];
 [h_2, p_2, ci_2, stats] = ttest(x, m0_b, 'alpha', alpha, 'tail', 'right');
 
