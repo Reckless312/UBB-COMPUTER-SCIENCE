@@ -22,3 +22,10 @@ Archive with all problems from university
 - Computer Networks
 - Probabilty and Statistics
 - Advanced Methods of Programming
+
+## Semester 4
+- Database Management Systems
+- Web Programming
+- Systems for Design and Implementation 
+- Artificial Intelligence 
+- Software Engineering 
