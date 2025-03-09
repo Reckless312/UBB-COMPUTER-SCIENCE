@@ -1,16 +1,9 @@
 import React from 'react'
-import Link from "next/link";
 import Image from "next/image";
-import {auth, signIn, signOut} from "@/auth";
-
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuSeparator,
-    DropdownMenuTrigger,
-} from "@/app/components/dropdown-menu"
+import {auth, signIn} from "@/auth";
+import OthersMenu from "@/app/components/OthersMenu";
+import LogOutMenu from "@/app/components/LogOutMenu";
+import Link from "next/link";
 
 const Navbar = async () => {
     const session = await auth();
@@ -25,38 +18,9 @@ const Navbar = async () => {
                     {session && session.user ? (
                         <>
                             <div className="flex items-center justify-between px-2">
-                                <DropdownMenu>
-                                    <DropdownMenuTrigger>
-                                        <Image src="/menu.png" alt="main menu" width={30} height={30}></Image>
-                                        </DropdownMenuTrigger>
-                                    <DropdownMenuContent>
-                                        <DropdownMenuLabel>Others</DropdownMenuLabel>
-                                        <DropdownMenuSeparator />
-                                        <DropdownMenuItem>
-                                            My List
-                                        </DropdownMenuItem>
-                                    </DropdownMenuContent>
-                                </DropdownMenu>
+                                <OthersMenu/>
                                 <span>{session?.user?.name}</span>
-                                <DropdownMenu>
-                                    <DropdownMenuTrigger>
-                                        <Image src="/arrow_drop_down.png" alt="menu drop down" width={30} height={30}></Image>
-                                    </DropdownMenuTrigger>
-                                    <DropdownMenuContent>
-                                        <DropdownMenuLabel>My Account</DropdownMenuLabel>
-                                        <DropdownMenuSeparator />
-                                        <DropdownMenuItem>
-                                            <form action={async () => {
-                                                "use server";
-
-                                                await signOut({redirectTo: "/"});
-                                            }}>
-                                                <button type="submit">
-                                                    Logout
-                                                </button>
-                                            </form></DropdownMenuItem>
-                                    </DropdownMenuContent>
-                                </DropdownMenu>
+                                <LogOutMenu/>
                                 <Image src={session?.user?.image || "/logo.png"} alt="profile picture" width={30} height={30}></Image>
                             </div>
                         </>
