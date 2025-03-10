@@ -1,0 +1,20 @@
+.first{
+    background-color: red;
+}
+
+.second{
+    background-color: blue;
+}
+
+.third{
+    background-color: green;
+}
+
+.fourth{
+    background-color: yellow;
+}
+
+.first:has(.fourth:hover){
+    background-color: yellow;
+   * { background-color: yellow;}
+}
