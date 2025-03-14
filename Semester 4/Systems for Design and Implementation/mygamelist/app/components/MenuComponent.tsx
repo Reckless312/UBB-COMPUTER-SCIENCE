@@ -5,22 +5,19 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger
 } from "@/app/components/dropdown-menu";
-import Image from "next/image";
 import React from "react";
 
-const OthersMenu = () => {
+const MenuComponent = (props: {image: React.ReactNode, label: string; option: React.ReactNode}) => {
      return   <DropdownMenu>
             <DropdownMenuTrigger>
-                <Image src="/menu.png" alt="main menu" width={30} height={30}></Image>
+                {props.image}
             </DropdownMenuTrigger>
             <DropdownMenuContent>
-                <DropdownMenuLabel>Others</DropdownMenuLabel>
+                <DropdownMenuLabel>{props.label}</DropdownMenuLabel>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem>
-                    My List
-                </DropdownMenuItem>
+                <DropdownMenuItem>{props.option}</DropdownMenuItem>
             </DropdownMenuContent>
         </DropdownMenu>
 }
 
-export default OthersMenu;
+export default MenuComponent;

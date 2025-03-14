@@ -1,14 +1,17 @@
-const videoGames = [
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const Games = [
     {
-        id: games[0].id,
-        name: games[0].name,
-        status: "playing",
-        date: '2024-12-06'
+        id: 0,
+        name: "Doom: The Dark Ages",
+        status: "plan-to-play",
+        startedDate: new Date(""),
+        finishedDate: new Date("")
     },
     {
-        id: games[1].id,
-        name: games[1].name,
-        status: "completed",
-        date: '2025-03-08'
+        id: 1,
+        name: "Assassins Creed: Shadows",
+        status: "plan-to-play",
+        startedDate: new Date(""),
+        finishedDate: new Date("")
     }
 ]

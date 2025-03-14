@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3ded02b-bf15-4287-9e61-76ea60458b27" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(root)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/LogOutMenu.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/PageHead.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/OthersMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/MenuComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/definitions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/definitions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/placeholder-data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/placeholder-data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Programming/Laboratory 2/index_2.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Web Programming/Laboratory 2/index_2.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,9 +71,10 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/(root)" />
+      <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/components" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/app/(root)" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -94,6 +105,8 @@
       <workItem from="1741603020108" duration="2191000" />
       <workItem from="1741620124543" duration="15000" />
       <workItem from="1741628509929" duration="1070000" />
+      <workItem from="1741971967331" duration="3550000" />
+      <workItem from="1741977559248" duration="4553000" />
     </task>
     <servers />
   </component>

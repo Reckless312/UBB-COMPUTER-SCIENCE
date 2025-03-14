@@ -1,17 +1,24 @@
 .first{
     background-color: red;
+    height: 100vh;
 }
 
 .second{
     background-color: blue;
+    height: 70%;
+    width: 70%
 }
 
 .third{
     background-color: green;
+    height: 70%;
+    width: 70%
 }
 
 .fourth{
     background-color: yellow;
+    height: 70%;
+    width: 70%
 }
 
 .first:has(.fourth:hover){
