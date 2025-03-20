@@ -1,7 +1,6 @@
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
     background-color: black;
 }
@@ -54,7 +53,7 @@ body{
 }
 
 @keyframes rotate{
-    100%{
-        transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg);
+    50%{
+        transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg) translateY(600px);
     }
 }
