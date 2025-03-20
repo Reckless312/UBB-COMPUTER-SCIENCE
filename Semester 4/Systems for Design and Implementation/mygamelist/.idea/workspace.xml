@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3ded02b-bf15-4287-9e61-76ea60458b27" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="b3ded02b-bf15-4287-9e61-76ea60458b27" name="Changes" comment="Fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/LogOutMenu.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/PageHead.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/OthersMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/MenuComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/definitions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/definitions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/placeholder-data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/placeholder-data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Web Programming/Laboratory 2/index_2.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Web Programming/Laboratory 2/index_2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Web Programming/Laboratory 1/extra.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Web Programming/Laboratory 1/extra.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,8 +96,22 @@
       <workItem from="1741620124543" duration="15000" />
       <workItem from="1741628509929" duration="1070000" />
       <workItem from="1741971967331" duration="3550000" />
-      <workItem from="1741977559248" duration="4553000" />
+      <workItem from="1741977559248" duration="6841000" />
+      <workItem from="1741984466629" duration="24000" />
+      <workItem from="1741985017348" duration="1000" />
+      <workItem from="1741985022527" duration="5000" />
+      <workItem from="1741985130780" duration="13000" />
+      <workItem from="1741985162869" duration="4000" />
     </task>
+    <task id="LOCAL-00001" summary="Fixes">
+      <option name="closed" value="true" />
+      <created>1741982208510</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741982208510</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,5 +121,9 @@
         <option value="$PROJECT_DIR$/tailwind.config.js" />
       </list>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
   </component>
 </project>
