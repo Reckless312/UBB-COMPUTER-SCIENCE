@@ -9,3 +9,38 @@
 .coding-exercises{
     display: flex;
 }
+
+.content-list-item{
+    display: inline;
+}
+
+.description-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-container{
+    display: flex;
+}
+
+.course-card{
+    display: flex;
+}
+
+.rating-score{
+    display: flex;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-container-column{
+    display: flex;
+    flex-direction: column;
+}
