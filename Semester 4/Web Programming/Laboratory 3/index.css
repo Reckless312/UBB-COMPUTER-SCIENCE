@@ -81,7 +81,7 @@ body{
     height: 100%;
 }
 
-#log-in-button{
+.white-button-with-purple-text{
     border: 1px solid #6D28D2;
     border-radius: 5px;
     background-color: transparent;
@@ -90,7 +90,7 @@ body{
     font-weight: bold;
 }
 
-#sign-up-button{
+.purple-filled-button{
     border: none;
     border-radius: 5px;
     background-color: #6D28D2;
@@ -102,6 +102,7 @@ body{
 #earth-grid-image{
     border: 1px solid #6D28D2;
     padding: 12px;
+    border-radius: 5px;
 }
 
 .shopping-cart-image{
@@ -129,8 +130,23 @@ body{
     margin: 0 auto;
     color: white;
     display: flex;
+}
+
+.main-banner-info{
+    display: flex;
     flex-direction: column;
     row-gap: 20px;
+    width: 700px;
+}
+
+.main-banner-advertisement{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    position: absolute;
+    width: 360px;
+    box-shadow: 1px 1px 4px lightgray, -1px -1px 4px lightgray;
 }
 
 .banner-links a{
@@ -158,6 +174,91 @@ body{
 
 .main-banner-author a{
     color: #C0C4FC;
+}
+
+.subscription-buttons-container{
+    display: flex;
+    height: 50px;
+}
+
+.subscription-buttons {
+    width: 50%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.selected{
+    border-bottom: 2px solid black;
+}
+
+.advertisement-checkout-container{
+    margin: 25px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.advertisement-checkout-container h3{
+    margin: 0;
+}
+
+.advertisement-price-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    row-gap: 16px;
+    color: gray;
+}
+
+.advertisement-extra-buttons{
+    width: auto;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid #6D28D2;
+}
+
+.divider{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.divider::before, .divider::after{
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid gray;
+}
+
+#used-coupon-box{
+    display: flex;
+    justify-content: space-between;
+    border: 1px gray dashed;
+    padding: 10px;
+}
+
+#X-button{
+    border: none;
+    color: #6D28D2;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+#coupon-search{
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 10px;
+    display: flex;
+    flex-grow: 1;
 }
 
 @media(max-width:1070px){
