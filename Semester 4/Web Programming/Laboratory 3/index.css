@@ -104,7 +104,7 @@ body{
     padding: 12px;
 }
 
-#shopping-cart-image{
+.shopping-cart-image{
     padding: 12px;
 }
 
@@ -117,6 +117,47 @@ body{
     align-items: center;
     justify-content: center;
     column-gap: 10px;
+}
+
+.main-banner-container{
+    background-color: #1D1E27;
+    padding: 40px;
+}
+
+.main-banner-items{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.banner-links a{
+    text-decoration: none;
+    color: #C0C4FC;
+}
+
+.banner-links span{
+    color: white;
+}
+
+.main-banner-items h1{
+    color: white;
+    margin: 0;
+}
+
+.main-banner-items p{
+    color: white;
+    margin: 0;
+}
+
+#rating-span{
+    color: yellow;
+}
+
+.main-banner-author a{
+    color: #C0C4FC;
 }
 
 @media(max-width:1070px){
@@ -140,6 +181,7 @@ body{
         align-items: center;
         justify-content: space-between;
         padding: 10px;
+        height: 30px;
     }
 
     .nav-wrapper{
