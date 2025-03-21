@@ -6,19 +6,35 @@
     </head>
 
     <body>
-        <nav class="navbar">
-            <img alt="logo" src="img/logo.png">
-            <a href="/">Explore</a>
-            <form class="search">
-                <input type="search" name="search" id="search">
-            </form>
-            <a href="/">Udemy Business</a>
-            <a href="/">Teach on Udemy</a>
-            <img alt="shopping cart" src="img/shopping-cart.png">
-            <button>Log in</button>
-            <button>Sign up</button>
-            <img alt="change language" src="img/change-language.png">
-        </nav>
+        <div class="nav-wrapper">
+            <nav class="navbar">
+                <a href="/">
+                    <img alt="logo" src="img/logo-udemy.svg" width="91" height="34" loading="lazy">
+                </a>
+                <button id="explore-button" class="transparent-button">Explore</button>
+                <form class="search">
+                    <button type="submit" class="transparent-button">
+                        <img alt="search" src="img/search-icon.png" height="13" width="13" loading="lazy">
+                    </button>
+                    <input type="search" name="search" id="nav-search" placeholder="Search for anything">
+                </form>
+                <button id="udemy-business-button" class="transparent-button">Udemy Business</button>
+                <button id="teach-on-udemy-button" class="transparent-button">Teach on Udemy</button>
+                <img id="shopping-cart-image" alt="shopping cart" src="img/shopping-cart.png" height="15" width="15" loading="lazy">
+                <button id="log-in-button">Log in</button>
+                <button id="sign-up-button">Sign up</button>
+                <img id="earth-grid-image" alt="earth-grid" src="img/earth-globe.png" height="15" width="15" loading="lazy">
+            </nav>
+
+            <nav class="resized-navbar">
+                <img alt="menu" src="img/menu.png" width="17" height="17" loading="lazy">
+                <img alt="logo" src="img/logo-udemy.svg" width="70" height="27" loading="lazy">
+                <div id="search-shop-icons">
+                    <img alt="search" src="img/search-icon.png" height="15" width="15" loading="lazy">
+                    <img alt="shopping cart" src="img/shopping-cart.png" height="15" width="15" loading="lazy">
+                </div>
+            </nav>
+        </div>
 
         <div>
             <a href="/">Development</a>

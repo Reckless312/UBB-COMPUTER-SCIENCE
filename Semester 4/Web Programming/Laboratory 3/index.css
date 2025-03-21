@@ -44,3 +44,105 @@
     display: flex;
     flex-direction: column;
 }
+
+body{
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    column-gap: 10px;
+}
+
+.transparent-button{
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+    padding: 12px;
+}
+
+.search{
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 20px;
+    flex-grow: 1;
+    height: 40px;
+    align-items: center;
+}
+
+#nav-search{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+#log-in-button{
+    border: 1px solid #6D28D2;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #6D28D2;
+    padding: 10px 15px 10px 15px;
+    font-weight: bold;
+}
+
+#sign-up-button{
+    border: none;
+    border-radius: 5px;
+    background-color: #6D28D2;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    font-weight: bold;
+}
+
+#earth-grid-image{
+    border: 1px solid #6D28D2;
+    padding: 12px;
+}
+
+#shopping-cart-image{
+    padding: 12px;
+}
+
+.resized-navbar{
+    display: none;
+}
+
+#search-shop-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+@media(max-width:1070px){
+    #udemy-business-button{
+        display: none;
+    }
+}
+
+@media(max-width:920px){
+    #teach-on-udemy-button{
+        display: none;
+    }
+}
+
+@media(max-width:800px){
+    .navbar{
+        display: none;
+    }
+    .resized-navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .nav-wrapper{
+        box-shadow: 0 1px 10px black;
+    }
+}
