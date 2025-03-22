@@ -389,11 +389,77 @@ body{
     top: 0;
 }
 
+#tv-icon:before{
+    content: '📹';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#\<\>-icon:before{
+    content: '<>';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#file-icon:before{
+    content: '📁';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#file-download-icon:before{
+    content: '📂';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#phone-icon:before{
+    content: '📱';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#trophy-icon:before{
+    content: '🏆';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 .learning-section ul li:nth-child(4){
     opacity: 0.6;
 }
 
 #wyl-resized{
+    display: none;
+}
+
+.course-information-section-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    width: 650px;
+}
+
+#course-include-resize{
+    display: none;
+}
+
+.coding-exercises-description{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.coding-exercises-container{
+    background-color: #F6F7F9;
+    display: flex;
+    width: 650px;
+    padding: 20px;
+}
+
+#coding-container-resized{
     display: none;
 }
 
@@ -460,6 +526,14 @@ body{
         padding-right: 6px;
         font-size: 12px;
     }
+
+    .basic-items{
+        max-width: 600px;
+    }
+
+    .coding-exercises-container{
+        width: 600px;
+    }
 }
 
 @media(max-width:920px){
@@ -500,5 +574,21 @@ body{
 
     #wyl-resized{
         display: flex;
+    }
+
+    #course-include-resize{
+        display: flex;
+    }
+
+    #course-include{
+        display: none;
+    }
+
+    #coding-container-resized{
+        display: flex;
+    }
+
+    #coding-container{
+        display: none;
     }
 }
