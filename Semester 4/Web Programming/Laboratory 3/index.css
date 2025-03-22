@@ -2,10 +2,6 @@
     display: inline;
 }
 
-.list{
-    display: flex
-}
-
 .coding-exercises{
     display: flex;
 }
@@ -306,9 +302,82 @@ body{
     width: 100%;
 }
 
+.bottom-simpler-advertisement{
+    display: none;
+    box-shadow: 1px -1px 10px lightgray;
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+}
+
+.bottom-simpler-advertisement-items{
+    width: 100%;
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
 .checkout-advertisement-section span{
     color: gray;
     font-size: 10px;
+}
+
+.basic-container{
+    padding: 40px;
+    background-color: white;
+}
+
+.basic-items{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.learning-section-container{
+    border: 1px solid gray;
+    width: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.half-screen-list{
+    width: 50%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.learning-section{
+    display: flex;
+}
+
+.learning-section ul{
+    list-style: none;
+    margin: 0;
+}
+
+.learning-section ul li{
+    position: relative;
+    padding-left: 20px;
+    padding-right: 8px;
+    font-size: 14px;
+}
+
+.learning-section ul li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.learning-section ul li:nth-child(4){
+    opacity: 0.6;
 }
 
 @media(max-width:1070px){
@@ -383,5 +452,15 @@ body{
 
     .nav-wrapper{
         box-shadow: 0 1px 10px black;
+    }
+}
+
+@media(max-width:650px){
+    .bottom-advertisement{
+        display: none;
+    }
+
+    .bottom-simpler-advertisement{
+        display: flex;
     }
 }
