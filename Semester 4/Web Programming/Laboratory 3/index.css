@@ -271,6 +271,46 @@ body{
     flex-grow: 1;
 }
 
+.bottom-advertisement{
+    display: none;
+    justify-content: space-between;
+    background-color: #1D1E27;
+    color: white;
+    height: 80px;
+    align-items: center;
+}
+
+.information-advertisement-bottom{
+    margin: 15px;
+    row-gap: 6px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 50%;
+}
+
+.checkout-advertisement-section{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    align-items: center;
+    width: 50%;
+}
+
+.simple-white-button{
+    border: none;
+    border-radius: 5px;
+    color: black;
+    padding: 10px 15px 10px 15px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.checkout-advertisement-section span{
+    color: gray;
+    font-size: 10px;
+}
+
 @media(max-width:1070px){
     #udemy-business-button{
         display: none;
@@ -314,6 +354,12 @@ body{
 
     .main-banner-items{
         display: none;
+    }
+
+    .bottom-advertisement{
+        display: flex;
+        position: sticky;
+        bottom: 0;
     }
 }
 
