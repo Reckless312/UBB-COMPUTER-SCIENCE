@@ -113,6 +113,10 @@ body{
     display: none;
 }
 
+.resized-banner-items{
+    display: none;
+}
+
 #search-shop-icons{
     display: flex;
     align-items: center;
@@ -152,6 +156,7 @@ body{
 .banner-links a{
     text-decoration: none;
     color: #C0C4FC;
+    font-weight: bold;
 }
 
 .banner-links span{
@@ -192,6 +197,11 @@ body{
 
 .selected{
     border-bottom: 2px solid black;
+}
+
+.not-selected{
+    color: gray;
+    border-bottom: 1px solid gray;
 }
 
 .advertisement-checkout-container{
@@ -238,21 +248,21 @@ body{
     border-bottom: 1px solid gray;
 }
 
-#used-coupon-box{
+.used-coupon-box{
     display: flex;
     justify-content: space-between;
     border: 1px gray dashed;
     padding: 10px;
 }
 
-#X-button{
+.X-button{
     border: none;
     color: #6D28D2;
     background-color: transparent;
     font-size: 16px;
 }
 
-#coupon-search{
+.coupon-search{
     height: 100%;
     border-radius: 5px;
     border: 1px solid gray;
@@ -263,6 +273,46 @@ body{
 
 @media(max-width:1070px){
     #udemy-business-button{
+        display: none;
+    }
+
+    .resized-banner-items{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .resized-banner-items h2{
+        margin: 0;
+    }
+
+    .advertisement-checkout-container{
+        margin: 0;
+    }
+
+    .resized-banner-items p{
+        margin: 0;
+    }
+
+    .main-banner-author a{
+        color: #6D28D2;
+    }
+
+    .main-banner-container{
+        background-color: white;
+    }
+
+    .banner-links a{
+        color: #6D28D2;
+    }
+
+    .banner-links span{
+        color: black;
+    }
+
+    .main-banner-items{
         display: none;
     }
 }
