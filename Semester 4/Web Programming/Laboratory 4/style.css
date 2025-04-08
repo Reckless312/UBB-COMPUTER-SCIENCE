@@ -1,0 +1,22 @@
+.dropdown-content{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+}
+
+.dropdown-content-container{
+    position: relative;
+}
+
+.dropdown-content-inner {
+    display: none;
+}
+
+.inner-content-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.show{
+    display: flex;
+}
