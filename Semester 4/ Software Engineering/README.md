@@ -3,7 +3,7 @@ This readme has the objective of providing a non-changing link to the components
 
 
 ## Implementation of my own requirements for "steam community"
-I worked mainly on "DirectMessage" and with a collegue on "Search"
+I worked mainly on "DirectMessage" and with a collegue on "Search" <br/>
 https://github.com/Reckless312/UBB-SE-2025-Team_Pepeja/tree/main/Steam_Community
 
 ## Further involvement in "DrinkDb"
