@@ -1,0 +1,9 @@
+body{
+    margin: 0;
+}
+
+#gradient{
+    height: 100vh;
+    width: 100vw;
+    background-image: radial-gradient(red, yellow, green);
+}
