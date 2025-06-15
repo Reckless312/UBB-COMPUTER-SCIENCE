@@ -1,0 +1,11 @@
+<div class="pagination-container">
+  <div id="pagination">
+    @if (!isFirstPage()) {
+      <button (click)="onPrev()" style="background-color: #568FDA">&lt;</button>
+    }
+    <button>{{currentPage()}}</button>
+    @if (!isLastPage()) {
+      <button (click)="onNext()" style="background-color: #568FDA">&gt;</button>
+    }
+  </div>
+</div>
