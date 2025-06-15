@@ -1,22 +1,13 @@
 import { Component } from '@angular/core';
-import {Router} from '@angular/router';
+import {RouterLink} from '@angular/router';
+import {HomeComponent} from '../components/home/home.component';
+import {ShoppingCartComponent} from '../components/shopping-cart/shopping-cart.component';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [HomeComponent, ShoppingCartComponent, RouterLink],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-    constructor(private router: Router)
-    {
-    }
-
-    async shopClick() {
-      await this.router.navigate(["/shopping-cart"]);
-    }
-
-    async homeClick() {
-      await this.router.navigate(["/"]);
-    }
 }

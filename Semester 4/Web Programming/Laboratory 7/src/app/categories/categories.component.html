@@ -1,8 +1,19 @@
-<div id="categories-container">
-</div>
+@for (category of categories(); track category.id){
+  <div class="card">
+    <span routerLink="/products/{{category.id}}">{{category.name}}</span>
+    <p>{{category.description}}</p>
+  </div>
+}
 
 <div class="pagination-container">
   <p style="margin-left: 6px">E-Commerce Store</p>
   <div id="pagination">
+    @if (!isFirstPage()) {
+      <button (click)="prevPage()" style="background-color: #568FDA">&lt;</button>
+    }
+    <button>{{currentPage()}}</button>
+    @if (!isLastPage()) {
+      <button (click)="nextPage()" style="background-color: #568FDA">&gt;</button>
+    }
   </div>
 </div>
