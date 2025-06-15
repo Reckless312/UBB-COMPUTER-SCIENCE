@@ -40,9 +40,11 @@ export class ProductsComponent implements OnInit {
   }
 
   deleteProduct(id: number) {
-    this.productService.deleteProduct(id).subscribe(response => {})
-    this.productService.getProducts(this.categoryId()).subscribe(products => {
-      this.allProducts.set(products);
+    this.productService.deleteProduct(id).subscribe(response => {
+      this.productService.getProducts(this.categoryId()).subscribe(products => {
+        this.allProducts.set(products);
+        this.displayProducts();
+      })
     })
   }
 

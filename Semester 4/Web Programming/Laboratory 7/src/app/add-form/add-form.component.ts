@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, inject, OnInit, signal} from '@angular/core';
 import {FormControl, ReactiveFormsModule} from '@angular/forms';
 import {ActivatedRoute, Router} from '@angular/router';
+import {ProductsService} from '../services/products.service';
 
 @Component({
   selector: 'app-add-form',
@@ -10,40 +11,33 @@ import {ActivatedRoute, Router} from '@angular/router';
   templateUrl: './add-form.component.html',
   styleUrl: './add-form.component.css'
 })
-export class AddFormComponent {
-    name = new FormControl('');
-    description = new FormControl('');
-    price = new FormControl('');
+export class AddFormComponent implements OnInit{
+  name = new FormControl('');
+  description = new FormControl('');
+  price = new FormControl('');
 
-   categoryId: number;
+  productService = inject(ProductsService);
+  activatedRoute = inject(ActivatedRoute);
+  router = inject(Router);
 
-    addProduct()
-    {
-      const data = {
-        name: this.name.value,
-        description: this.description.value,
-        price: this.price.value,
-        category_id: this.categoryId
-    };
+  categoryId = signal(0);
 
-      fetch("http://localhost/Laboratory%206/api/products.php", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
+  ngOnInit(): void {
+    this.categoryId.set(Number(this.activatedRoute.snapshot.paramMap.get("id")));
+  }
+
+  onSubmit(){
+      if (this.name.value === "" || this.description.value === "" || this.price.value === "") {
+        alert("Please fill all fields.");
+        return;
+      }
+
+      this.productService.addProduct(this.name.value, this.description.value, this.price.value, this.categoryId()).subscribe(response => {
+        this.router.navigate(["/products/" + this.categoryId()]).then();
       })
-        .then(response => {
-          if (response.ok) {
-            this.router.navigate(["/products/" + this.categoryId]).then();
-          } else {
-            alert("Failed to add product.");
-          }
-        })
-    }
+  }
 
-    constructor(private router: Router, private activateRoute: ActivatedRoute)
-    {
-      this.categoryId = Number(this.activateRoute.snapshot.paramMap.get("id"));
-    }
+  constructor()
+  {
+  }
 }

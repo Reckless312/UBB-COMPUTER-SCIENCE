@@ -1,5 +1,5 @@
 import {inject, Injectable} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Product} from '../model/product.type';
 
 @Injectable({
@@ -20,6 +20,20 @@ export class ProductsService {
       body: JSON.stringify({id: id})
     })
   }
+
+  addProduct(name: string | null, description: string | null, price: string | null, category_id: number) {
+    const url = "http://localhost/Laboratory%206/api/products.php";
+    const headers = new HttpHeaders().set('Content-Type', 'application/json');
+    const body = {
+      name: name,
+      description: description,
+      price: price,
+      category_id: category_id
+    };
+
+    return this.http.post(url, body, { headers: headers });
+  }
+
 
   constructor() { }
 }

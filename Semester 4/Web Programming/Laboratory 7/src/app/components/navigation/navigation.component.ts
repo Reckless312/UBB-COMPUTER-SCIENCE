@@ -18,6 +18,7 @@ export class NavigationComponent {
   isFirstPage = computed(() => this.currentPage() === 1)
   isLastPage = computed(() => this.currentPage() === this.lastPage())
 
+
   onNext() {
     if (!this.isLastPage()) {
       this.pageChange.emit(this.currentPage() + 1)
