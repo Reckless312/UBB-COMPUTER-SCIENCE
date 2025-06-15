@@ -1,0 +1,117 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+.header a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column p {
+    margin: 0;
+    padding-left: 10px;
+}
+
+body {
+    font-family: 'Irish Grover', cursive;
+    margin: 0;
+}
+
+.card {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin: 40px 10px 10px 40px;
+    padding: 10px;
+    max-width: 600px;
+    font-family: 'SansSerif', sans-serif;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.pagination-container {
+    display: flex;
+    background-color: #568FDA;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+}
+
+#pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+#pagination button {
+    border: none;
+    background-color: #2C2C2C;
+    color: white;
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+}
+
+.product-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-buttons button {
+    border: none;
+    color: black;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 6px;
+    margin-right: 10px;
+}
+
+.add-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, 50%);
+}
+
+.add-product form {
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    width: fit-content;
+    font-family: sans-serif;
+}
+
+.add-product form label, .add-product form input {
+    display: block;
+    margin: 10px;
+}
+
+.add-product form input{
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    height: 30px;
+    width: 400px;
+}

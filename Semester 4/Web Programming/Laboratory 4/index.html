@@ -7,50 +7,14 @@
     </head>
 
     <body>
-        <div class="dropdown-content-container">
-            <button class="dropdown-content-button" onclick="DropDownContentShow('drop-major')">DropDownMenu</button>
-            <div id="drop-major" class="dropdown-content">
-                <div class="inner-content-container">
-                    <button class="dropdown-content-button" onclick="DropDownContentShow('drop-inner-1')">Option 1</button>
-                    <div id="drop-inner-1" class="dropdown-content-inner">
-                        <button class="option-button">Inner option 1</button>
-                        <button class="option-button">Inner option 2</button>
-                        <button class="option-button">Inner option 3</button>
-                    </div>
-                </div>
-                <div class="inner-content-container">
-                    <button class="dropdown-content-button" onclick="DropDownContentShow('drop-inner-2')">Option 2</button>
-                    <div id="drop-inner-2" class="dropdown-content-inner">
-                        <button class="option-button">Inner option 1</button>
-                        <button class="option-button">Inner option 2</button>
-                        <button class="option-button">Inner option 3</button>
-                    </div>
-                </div>
-                <div class="inner-content-container">
-                    <button class="dropdown-content-button" onclick="DropDownContentShow('drop-inner-3')">Option 3</button>
-                    <div id="drop-inner-3" class="dropdown-content-inner">
-                        <button class="option-button">Inner option 1</button>
-                        <button class="option-button">Inner option 2</button>
-                        <button class="option-button">Inner option 3</button>
-                    </div>
-                </div>
-                <div class="inner-content-container">
-                    <button class="dropdown-content-button" onclick="DropDownContentShow('drop-inner-4')">Option 4</button>
-                    <div id="drop-inner-4" class="dropdown-content-inner">
-                        <button class="option-button">Inner option 1</button>
-                        <button class="option-button">Inner option 2</button>
-                        <button class="option-button">Inner option 3</button>
-                    </div>
-                </div>
-                <div class="inner-content-container">
-                    <button class="dropdown-content-button" onclick="DropDownContentShow('drop-inner-5')">Option 5</button>
-                    <div id="drop-inner-5" class="dropdown-content-inner">
-                        <button class="option-button">Inner option 1</button>
-                        <button class="option-button">Inner option 2</button>
-                        <button class="option-button">Inner option 3</button>
-                    </div>
-                </div>
-            </div>
+        <div>
+            <label>
+                <input id="input-option" type="text">
+            </label>
+            <label>
+                <textarea id="textarea-inner-option"></textarea>
+            </label>
+            <button onclick="buttonSubmitClick()">Submit</button>
         </div>
         <script src="index.js"></script>
     </body>

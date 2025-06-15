@@ -1,0 +1,11 @@
+<div class="update-product">
+  <div class="form">
+    <label for="name">Name: </label>
+    <input id="name" type="text" [formControl]="name">
+    <label for="description">Description: </label>
+    <input id="description" type="text" [formControl]="description">
+    <label for="price">Price: </label>
+    <input id="price" type="text" [formControl]="price">
+    <button type="button" (click)="updateProduct()">Update Product</button>
+  </div>
+</div>
