@@ -13,7 +13,7 @@
     <div class="product-buttons">
       <div>
         <button style="background-color: #FF7070" (click)="deleteProduct(product.id)">Delete</button>
-        <button style="background-color: #568FDA" routerLink="/update">Update</button>
+        <button style="background-color: #568FDA" routerLink="/update/{{product.id}}/{{product.name}}/{{product.description}}/{{product.price}}/{{product.category_id}}">Update</button>
       </div>
       @if (!isInCart(product.id)){
         <button style="background-color: #56DA70" (click)="addToCart(product.id, product.name, product.description, product.price)">Add To Cart</button>
