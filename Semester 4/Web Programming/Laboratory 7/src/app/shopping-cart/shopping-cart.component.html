@@ -1,8 +1,17 @@
-<div id="products-container">
-</div>
-
-<div class="pagination-container">
-  <p style="margin-left: 6px">E-Commerce Store</p>
-  <div id="pagination">
+@for (product of products(); track product.id){
+  <div class="card">
+    <h2>{{product.name}}</h2>
+    <p>{{product.description}}</p>
+    <div class="product-buttons">
+        <button style="background-color: #FF7070" (click)="removeFromCart(product.id)">Buy</button>
+        <button style="background-color: #FFB25A" (click)="removeFromCart(product.id)">Remove from cart</button>
+    </div>
   </div>
-</div>
+}
+
+<app-navigation
+  [currentPage]="currentPage()"
+  [totalItems]="allProducts().length"
+  [itemsPerPage]="productsOnPage()"
+  (pageChange)="onPageChange($event)"
+></app-navigation>
