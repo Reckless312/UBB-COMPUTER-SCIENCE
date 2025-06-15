@@ -1,4 +1,4 @@
-import {Component, computed, inject, OnInit, signal} from '@angular/core';
+import {Component, inject, OnInit, signal} from '@angular/core';
 import {RouterLink} from '@angular/router';
 import {CategoriesService} from '../services/categories.service';
 import {Category} from '../model/category.type';
@@ -20,7 +20,7 @@ export class CategoriesComponent implements OnInit {
   currentPage = signal<number>(1)
 
   allCategories = signal<Array<Category>>([]);
-  categoriesOnPage = 3;
+  categoriesOnPage = signal(3);
 
   ngOnInit(): void {
       this.categoryService.getCategories().subscribe(categories => {
@@ -30,8 +30,8 @@ export class CategoriesComponent implements OnInit {
   }
 
   displayCategories() {
-    const start = (this.currentPage() - 1) * this.categoriesOnPage;
-    const end = this.currentPage() * this.categoriesOnPage;
+    const start = (this.currentPage() - 1) * this.categoriesOnPage();
+    const end = this.currentPage() * this.categoriesOnPage();
     this.categories.set(this.allCategories().slice(start, end))
   }
 

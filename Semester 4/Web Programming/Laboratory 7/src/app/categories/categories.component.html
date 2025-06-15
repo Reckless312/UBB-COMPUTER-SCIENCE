@@ -8,6 +8,6 @@
 <app-navigation
   [currentPage]="currentPage()"
   [totalItems]="allCategories().length"
-  [itemsPerPage]="3"
+  [itemsPerPage]="categoriesOnPage()"
   (pageChange)="onPageChange($event)"
 ></app-navigation>
