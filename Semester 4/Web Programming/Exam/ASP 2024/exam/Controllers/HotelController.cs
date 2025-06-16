@@ -164,9 +164,20 @@ namespace exam.Controllers
                 reservations.IdReservedResource = id;
                 
                 this._context.Reservations.Add(reservations);
+                
+                List<Reservations>? reservationsList = GetReservations();
+                if (reservationsList == null)
+                {
+                    reservationsList = new List<Reservations>();
+                }
+                
+                await _context.SaveChangesAsync();
+                
+                reservationsList.Add(reservations);
+                
+                string reservationsJson = JsonConvert.SerializeObject(reservationsList);
+                HttpContext.Session.SetString("Reservations", reservationsJson);
             }
-
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
@@ -192,6 +203,25 @@ namespace exam.Controllers
             }
 
             return currentRegistration;
+        }
+        
+        public List<Reservations>? GetReservations()
+        {
+            string? reservationsInStringFormat = HttpContext.Session.GetString("Reservations");
+
+            if (reservationsInStringFormat == null)
+            {
+                return null;
+            }
+            
+            List<Reservations>? reservations = JsonConvert.DeserializeObject<List<Reservations>>(reservationsInStringFormat);
+
+            if (reservations == null)
+            {
+                return null;
+            }
+            
+            return reservations;
         }
     }
 }
