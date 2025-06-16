@@ -24,7 +24,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Data\Migrations\" />
+      <_ContentIncludedByDefault Remove="Views\Reservations\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reservations\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reservations\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reservations\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Reservations\Index.cshtml" />
     </ItemGroup>
 
 </Project>

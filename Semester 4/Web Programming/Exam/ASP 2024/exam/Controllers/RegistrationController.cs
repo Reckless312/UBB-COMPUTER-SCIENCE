@@ -8,11 +8,11 @@ namespace exam.Controllers;
 
 public class RegistrationController : Controller
 {
-    private readonly ApplicationDbContext _context;
+    private readonly ApplicationDbContext databaseContext;
 
-    public RegistrationController(ApplicationDbContext context)
+    public RegistrationController(ApplicationDbContext databaseContext)
     {
-        this._context = context;
+        this.databaseContext = databaseContext;
     }
     
     public IActionResult Index()
@@ -41,11 +41,11 @@ public class RegistrationController : Controller
 
         foreach (Reservations reservation in reservations)
         {
-            _context.Reservations.Remove(reservation);
+            databaseContext.Reservations.Remove(reservation);
 
             if (reservation.Type == ReservationType.Flight)
             {
-                Flights? flight = this._context.Flights.Find(reservation.IdReservedResource);
+                Flights? flight = this.databaseContext.Flights.Find(reservation.IdReservedResource);
 
                 if (flight == null)
                 {
@@ -54,11 +54,11 @@ public class RegistrationController : Controller
 
                 flight.AvailableSeats++;
 
-                this._context.Flights.Update(flight);
+                this.databaseContext.Flights.Update(flight);
             }
             else
             {
-                Hotel? hotel = this._context.Hotel.Find(reservation.IdReservedResource);
+                Hotel? hotel = this.databaseContext.Hotel.Find(reservation.IdReservedResource);
 
                 if (hotel == null)
                 {
@@ -67,11 +67,11 @@ public class RegistrationController : Controller
 
                 hotel.AvailableRooms++;
                 
-                this._context.Hotel.Update(hotel);
+                this.databaseContext.Hotel.Update(hotel);
             }
         }
         
-        this._context.SaveChanges();
+        this.databaseContext.SaveChanges();
         
         HttpContext.Session.Remove("Reservations");
         HttpContext.Session.Remove("Registration");

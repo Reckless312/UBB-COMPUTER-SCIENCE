@@ -14,121 +14,28 @@ namespace exam.Controllers
 {
     public class HotelController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ApplicationDbContext databaseContext;
 
-        public HotelController(ApplicationDbContext context)
+        public HotelController(ApplicationDbContext databaseContext)
         {
-            _context = context;
+            this.databaseContext = databaseContext;
         }
-
-        // GET: Hotel
+        
         public async Task<IActionResult> Index()
         {
-            Registration? currentRegistration = GetCurrentRegistration();
+            Registration? currentRegistration = this.GetCurrentRegistration();
 
             if (currentRegistration == null)
             {
                 return View();
             }
             
-            return View(await _context.Hotel.Where(hotel => hotel.Date.Equals(currentRegistration.DesiredDate) &&
-                                                               hotel.City.Equals(currentRegistration.CityDestination) &&
-                                                               hotel.AvailableRooms > 0)
+            return View(await this.databaseContext.Hotel.Where(hotel => hotel.Date.Equals(currentRegistration.DesiredDate) &&
+                                                                        hotel.City.Equals(currentRegistration.CityDestination) &&
+                                                                        hotel.AvailableRooms > 0)
                 .ToListAsync());
         }
-
-        // GET: Hotel/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var hotel = await _context.Hotel
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (hotel == null)
-            {
-                return NotFound();
-            }
-
-            return View(hotel);
-        }
-
-        // GET: Hotel/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Hotel/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Date,City,AvailableRooms")] Hotel hotel)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(hotel);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(hotel);
-        }
-
-        // GET: Hotel/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var hotel = await _context.Hotel.FindAsync(id);
-            if (hotel == null)
-            {
-                return NotFound();
-            }
-            return View(hotel);
-        }
-
-        // POST: Hotel/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Date,City,AvailableRooms")] Hotel hotel)
-        {
-            if (id != hotel.Id)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(hotel);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!HotelExists(hotel.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(hotel);
-        }
-
-        // GET: Hotel/Delete/5
+        
         public async Task<IActionResult> Reserve(int? id)
         {
             if (id == null)
@@ -136,8 +43,7 @@ namespace exam.Controllers
                 return NotFound();
             }
 
-            var hotel = await _context.Hotel
-                .FirstOrDefaultAsync(m => m.Id == id);
+            Hotel? hotel = await this.databaseContext.Hotel.FirstOrDefaultAsync(m => m.Id == id);
             if (hotel == null)
             {
                 return NotFound();
@@ -145,33 +51,32 @@ namespace exam.Controllers
 
             return View(hotel);
         }
-
-        // POST: Hotel/Delete/5
+        
         [HttpPost, ActionName("Reserve")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ReserveConfirmed(int id)
         {
-            var hotel = await _context.Hotel.FindAsync(id);
-            Registration? currentRegistration = GetCurrentRegistration();
+            Hotel? hotel = await this.databaseContext.Hotel.FindAsync(id);
+            Registration? currentRegistration = this.GetCurrentRegistration();
             if (hotel != null && currentRegistration != null)
             {
                 hotel.AvailableRooms--;
-                this._context.Hotel.Update(hotel);
+                this.databaseContext.Hotel.Update(hotel);
                 Reservations reservations = new Reservations();
                 
                 reservations.Person = currentRegistration.Name;
                 reservations.Type = ReservationType.Hotel;
                 reservations.IdReservedResource = id;
                 
-                this._context.Reservations.Add(reservations);
+                this.databaseContext.Reservations.Add(reservations);
                 
-                List<Reservations>? reservationsList = GetReservations();
+                List<Reservations>? reservationsList = this.GetReservations();
                 if (reservationsList == null)
                 {
                     reservationsList = new List<Reservations>();
                 }
                 
-                await _context.SaveChangesAsync();
+                await databaseContext.SaveChangesAsync();
                 
                 reservationsList.Add(reservations);
                 
@@ -179,11 +84,6 @@ namespace exam.Controllers
                 HttpContext.Session.SetString("Reservations", reservationsJson);
             }
             return RedirectToAction(nameof(Index));
-        }
-
-        private bool HotelExists(int id)
-        {
-            return _context.Hotel.Any(e => e.Id == id);
         }
         
         public Registration? GetCurrentRegistration()
