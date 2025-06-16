@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "/home/Cora/Documents/GitHub/UBB-COMPUTER-SCIENCE/Semester 4/Web Programming/Exam/ASP 2024/exam/obj/Debug/net8.0/scopedcss/projectbundle/exam.bundle.scp.css",
-      "PackagePath": "staticwebassets/exam.bundle.scp.css"
+      "PackagePath": "staticwebassets/exam.vmzx2mb7vx.bundle.scp.css"
     },
     {
       "Id": "/home/Cora/Documents/GitHub/UBB-COMPUTER-SCIENCE/Semester 4/Web Programming/Exam/ASP 2024/exam/wwwroot/css/site.css",
@@ -255,6 +255,10 @@
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.exam.props",
       "PackagePath": "buildTransitive\\exam.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.exam.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.exam.Microsoft.AspNetCore.StaticWebAssets.props",

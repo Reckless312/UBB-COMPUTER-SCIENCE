@@ -12,4 +12,8 @@ public class ApplicationDbContext : IdentityDbContext
     }
 
 public DbSet<exam.Models.Flights> Flights { get; set; } = default!;
+
+public DbSet<exam.Models.Hotel> Hotel { get; set; } = default!;
+
+public DbSet<exam.Models.Reservations> Reservations { get; set; } = default!;
 }
