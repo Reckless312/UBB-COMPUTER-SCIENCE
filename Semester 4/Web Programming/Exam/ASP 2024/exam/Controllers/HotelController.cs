@@ -6,7 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using exam.Data;
+using exam.Enum;
 using exam.Models;
+using Newtonsoft.Json;
 
 namespace exam.Controllers
 {
@@ -22,7 +24,17 @@ namespace exam.Controllers
         // GET: Hotel
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Hotel.ToListAsync());
+            Registration? currentRegistration = GetCurrentRegistration();
+
+            if (currentRegistration == null)
+            {
+                return View();
+            }
+            
+            return View(await _context.Hotel.Where(hotel => hotel.Date.Equals(currentRegistration.DesiredDate) &&
+                                                               hotel.City.Equals(currentRegistration.CityDestination) &&
+                                                               hotel.AvailableRooms > 0)
+                .ToListAsync());
         }
 
         // GET: Hotel/Details/5
@@ -117,7 +129,7 @@ namespace exam.Controllers
         }
 
         // GET: Hotel/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Reserve(int? id)
         {
             if (id == null)
             {
@@ -135,14 +147,23 @@ namespace exam.Controllers
         }
 
         // POST: Hotel/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("Reserve")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> ReserveConfirmed(int id)
         {
             var hotel = await _context.Hotel.FindAsync(id);
-            if (hotel != null)
+            Registration? currentRegistration = GetCurrentRegistration();
+            if (hotel != null && currentRegistration != null)
             {
-                _context.Hotel.Remove(hotel);
+                hotel.AvailableRooms--;
+                this._context.Hotel.Update(hotel);
+                Reservations reservations = new Reservations();
+                
+                reservations.Person = currentRegistration.Name;
+                reservations.Type = ReservationType.Hotel;
+                reservations.IdReservedResource = id;
+                
+                this._context.Reservations.Add(reservations);
             }
 
             await _context.SaveChangesAsync();
@@ -152,6 +173,25 @@ namespace exam.Controllers
         private bool HotelExists(int id)
         {
             return _context.Hotel.Any(e => e.Id == id);
+        }
+        
+        public Registration? GetCurrentRegistration()
+        {
+            string? registrationInStringFormat = HttpContext.Session.GetString("Registration");
+
+            if (registrationInStringFormat == null)
+            {
+                return null;
+            }
+
+            Registration? currentRegistration = JsonConvert.DeserializeObject<Registration>(registrationInStringFormat);
+
+            if (currentRegistration == null)
+            {
+                return null;
+            }
+
+            return currentRegistration;
         }
     }
 }

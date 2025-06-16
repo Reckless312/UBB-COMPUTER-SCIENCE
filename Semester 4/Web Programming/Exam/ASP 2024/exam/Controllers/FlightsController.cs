@@ -6,7 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using exam.Data;
+using exam.Enum;
 using exam.Models;
+using Newtonsoft.Json;
 
 namespace exam.Controllers
 {
@@ -22,7 +24,17 @@ namespace exam.Controllers
         // GET: Flights
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Flights.ToListAsync());
+            Registration? currentRegistration = GetCurrentRegistration();
+
+            if (currentRegistration == null)
+            {
+                return View();
+            }
+            
+            return View(await _context.Flights.Where(flight => flight.Date.Equals(currentRegistration.DesiredDate) &&
+                                                               flight.DestinationCity.Equals(currentRegistration.CityDestination) &&
+                                                               flight.AvailableSeats > 0)
+                .ToListAsync());
         }
 
         // GET: Flights/Details/5
@@ -117,7 +129,7 @@ namespace exam.Controllers
         }
 
         // GET: Flights/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Reserve(int? id)
         {
             if (id == null)
             {
@@ -135,14 +147,25 @@ namespace exam.Controllers
         }
 
         // POST: Flights/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("Reserve")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> ReserveConfirmed(int id)
         {
             var flights = await _context.Flights.FindAsync(id);
-            if (flights != null)
+            
+            Registration? currentRegistration = GetCurrentRegistration();
+            
+            if (flights != null && currentRegistration != null)
             {
-                _context.Flights.Remove(flights);
+                flights.AvailableSeats--;
+                _context.Flights.Update(flights);
+                
+                Reservations reservations = new Reservations();
+                reservations.Person = currentRegistration.Name;
+                reservations.Type = ReservationType.Flight;
+                reservations.IdReservedResource = id;
+                
+                this._context.Reservations.Add(reservations);
             }
 
             await _context.SaveChangesAsync();
@@ -152,6 +175,25 @@ namespace exam.Controllers
         private bool FlightsExists(int id)
         {
             return _context.Flights.Any(e => e.Id == id);
+        }
+
+        public Registration? GetCurrentRegistration()
+        {
+            string? registrationInStringFormat = HttpContext.Session.GetString("Registration");
+
+            if (registrationInStringFormat == null)
+            {
+                return null;
+            }
+
+            Registration? currentRegistration = JsonConvert.DeserializeObject<Registration>(registrationInStringFormat);
+
+            if (currentRegistration == null)
+            {
+                return null;
+            }
+
+            return currentRegistration;
         }
     }
 }

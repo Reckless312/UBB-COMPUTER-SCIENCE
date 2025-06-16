@@ -8,7 +8,7 @@ public class Hotel
     public string Name { get; set; }
     
     [DataType(DataType.Date)]
-    public DateTime Date { get; set; }
+    public DateOnly Date { get; set; }
     public string City { get; set; }
     public int AvailableRooms { get; set; }
 }
