@@ -29,3 +29,10 @@ Archive with all problems from university
 - Systems for Design and Implementation 
 - Artificial Intelligence 
 - Software Engineering 
+
+## Semester 5
+- Formal Languages and Compilation Techniques
+- Parallel and Distributed Programming
+- Mobile Programming
+- Public-Key Cryptography
+- Virtual Reality
