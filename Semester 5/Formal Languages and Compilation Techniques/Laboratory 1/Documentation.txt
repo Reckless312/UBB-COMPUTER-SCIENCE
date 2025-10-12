@@ -1,0 +1,22 @@
+Grading System DSL
+
+-The DSL is made for school grade management. It allows you to create an empty list for grades (create course) or assigning a value to it (create course algebra = [1, 2, 3]), to which you could add more grades, sort or print as needed.
+
+-Control flow constructs like if and for are implemented to be able to iterate over the elements and apply custom filters (for x in numbers if x > 5 ... end end).
+
+-The DSL also provides the most common used functions, good examples would be the "final_grade" and "possible_grade" which will return the final grade for the course, or a possible grade based on extra grades (final_grade(algebra), possible_grade(algebra, [6,7])).
+
+Samples:
+
+create course algebra
+algebra add 8
+algebra sort asc
+algebra print
+
+for x in algebra
+	if x == 10
+		x print
+		
+sum(algebra)
+final_grade(algebra) print
+length(algebra)
