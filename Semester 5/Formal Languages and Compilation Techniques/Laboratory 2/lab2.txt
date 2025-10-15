@@ -1,0 +1,48 @@
+// Improvements from lab 1 before checking with LLM
+// -> changing the add statement to accept one or more than 1 value
+// -> added the "output" statement, similar to print, but it displays actual messages to the screen
+// -> added else and elif statements for the if statement in the examples
+// -> added function definitions for better examples
+
+// Program 1 -> simple check on a course
+create couse algebra
+algebra add 9, 5, 7
+if length(algebra) < 3
+	output "Student doesn't have enough grades"
+elif final_grade(algebra) < 5
+	output "Final grade is below 5"
+else
+	output "Student can pass the class!"
+	algebra print
+end
+
+
+// Program 2 -> multiple checks on courses
+
+def check_course (x)
+	if length(x) < 3
+		output "Student doesn't have enough grades"
+	elif final_grade(x) < 5
+		output "Final grade is below 5"
+	else
+		output "Student can pass the class!"
+		x print
+	end
+end
+	
+create course algebra
+create course geometry = [4,2,6]
+create course probability
+
+algebra add 9, 5, 7
+check_course(algebra)
+check_course(geometry)
+
+probability add 1, 2, 5, 7, 10, 10, 6
+
+for x in probability
+	if x > 5 
+		output x
+	end	
+end
+
