@@ -1,0 +1,22 @@
+Documentation
+
+Data Structures and operation for ST:
+1) Hash table
+- uses separate chaining method, each position in the hash table has a linked list
+to which we add a new node at the end. The end is chosen because either way we would do
+costly operation if we put the new element at the start of the linked list (having to change each index, and the PIF)
+- hash function is a simple ascii sum of the characters divided by global definition (const) representing the hash array size
+- uses malloc to allocate new nodes on the fly and letting the os clean them up at the end
+2) BST
+- uses strcmp to arange the tokens
+- the index is the length at the time of the insert for each element (not that usefull)
+- uses in order traversal to print the elements
+- malloc usage is the same as for the hash table.
+
+Lex:
+- in the definition area we declared our components, the most important being ST and PIF.
+- then we declared our regex patterns for our "identifiers"
+- the rules, what each keyword or pattern from the "identifiers" will result
+- the main entry point with yy variable help
+- lex uses the rules and check if our "program" is lexically correct
+- a file is expected for the executable file
