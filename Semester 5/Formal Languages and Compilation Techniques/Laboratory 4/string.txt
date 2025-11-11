@@ -1,0 +1,6 @@
+S
+S -> "A
+A -> 0B | 1B | 2B | 3B | 4B | 5B | 6B | 7B | 8B | 9B | aB | bB | cB | dB | eB | fB | gB | hB | iB | jB | kB | lB | mB | nB | oB | pB | qB | rB | sB | tB | uB | vB | wB | xB | yB | zB | AB | BB | CB | DB | EB | FB | GB | HB | IB | JB | KB | LB | MB | NB | OB | PB | QB | RB | SB | TB | UB | VB | WB | XB | YB | ZB | !B | ,B | 'B | .B | ;B | 0A | 1A | 2A | 3A | 4A | 5A | 6A | 7A | 8A | 9A | aA | bA | cA | dA | eA | fA | gA | hA | iA | jA | kA | lA | mA | nA | oA | pA | qA | rA | sA | tA | uA | vA | wA | xA | yA | zA | AA | BA | CA | DA | EA | FA | GA | HA | IA | JA | KA | LA | MA | NA | OA | PA | QA | RA | SA | TA | UA | VA | WA | XA | YA | ZA | !A | ,A | 'A | .A | ;A
+B -> "
+A -> 0..9 | B
+B -> " | epsilon
