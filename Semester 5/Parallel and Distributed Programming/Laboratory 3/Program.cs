@@ -1,118 +1,148 @@
-﻿using System.Text;
+﻿using System.Runtime.CompilerServices;
+using System.Text;
 
-int[,] firstMatrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-int[,] secondMatrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+// IDK SOMEHOW ON 12 THREADS -> 800 for both row and column; 1100 - 1200 for K wise; it takes around 1000 threads to hinder the overall performance;
 
-int firstMatrixNrRows = firstMatrix.GetLength(0), firstMatrixNrColumns = firstMatrix.GetLength(1);
-int secondMatrixNrRows = secondMatrix.GetLength(0), secondMatrixNrColumns = secondMatrix.GetLength(1);
+int nrThreads = 12;
+int randomMaxValue = 100;
+
+int firstMatrixNrRows = 2500;
+int firstMatrixNrColumns = 5000;
+int secondMatrixNrRows = 5000;
+int secondMatrixNrColumns = 2500;
+
 int productMatrixNrRows = firstMatrixNrRows, productMatrixNrColumns = secondMatrixNrColumns;
-int nrThreads = 2;
 
+int nrElements = productMatrixNrRows * productMatrixNrColumns;
+int nrElementsPerThread = nrElements / nrThreads;
+
+int[,] firstMatrix = new int[firstMatrixNrRows, firstMatrixNrColumns];
+int[,] secondMatrix = new int[secondMatrixNrRows, secondMatrixNrColumns];
 int[,] productMatrix = new int[productMatrixNrRows, productMatrixNrColumns];
 
-List<Thread> threads = new List<Thread>();
-MatrixProductMethod method = MatrixProductMethod.ColumnWise;
+string folder = "/home/Cora/GitHub/UBB-COMPUTER-SCIENCE/Semester 5/Parallel and Distributed Programming/Laboratory 3/";
+string matrixFolder = Path.Combine(folder, "matrix.txt");
+
+System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
+System.Diagnostics.Stopwatch stopwatchFirstMethod = new System.Diagnostics.Stopwatch();
+System.Diagnostics.Stopwatch stopwatchSecondMethod = new System.Diagnostics.Stopwatch();
+List<Thread> threads = [];
 
 bool IsProductPossible(int nrColumnsFirstMatrix, int nrRowsSecondMatrix)
 {
     return nrColumnsFirstMatrix == nrRowsSecondMatrix;
 }
 
-void InitializeThreads()
+void InitializeThreads(int method)
 {
     for (int i = 0; i < nrThreads; i++)
     {
         int threadId = i;
-        threads.Add(new Thread(() => ParalelProduct(threadId)));
+        threads.Add(new Thread(() => Execute(threadId, method)));
     }
 }
 
+void InitializeMatrixRandomly(int[,] matrix, int nrRows, int nrColumns)
+{
+    Random random = new Random();
+    for (int i = 0; i < nrRows; i++)
+    {
+        for (int j = 0; j < nrColumns; j++)
+        {
+            matrix[i, j] = random.Next(randomMaxValue);
+        }
+    }
+}
+
+void PrintMatrixToFolder(int[,] matrix, string header)
+{
+    int nrRows = matrix.GetLength(0);
+    int nrColumns = matrix.GetLength(1);
+    
+    File.AppendAllText(matrixFolder, header + "\n");
+    
+    for (int i = 0; i < nrRows; i++)
+    {
+        for (int j = 0; j < nrColumns; j++)
+        {
+            File.AppendAllText(matrixFolder, matrix[i, j] + " ");
+        }
+        File.AppendAllText(matrixFolder, "\n");
+    }
+}
+
+[MethodImpl(MethodImplOptions.NoOptimization)]
 void MatrixProductElement(int row, int column, int threadId)
 {
-    int i = 0, sum = 0;
+    int index = 0, sum = 0;
 
-    StringBuilder debugString = new StringBuilder();
+    //StringBuilder debugString = new StringBuilder();
     
-    debugString.Append("Thread: ").Append(threadId).Append(" | assigned for row: ").Append(row).Append(" column: ").Append(column).Append(" | ");
+    //debugString.Append("Thread: ").Append(threadId).Append(" | assigned for row: ").Append(row).Append(" column: ").Append(column).Append(" | ");
     
-    while (i < firstMatrixNrRows)
+    /*while (index < firstMatrixNrRows)
     {
-        sum += firstMatrix[row, i] * secondMatrix[i, column];
-        debugString.Append(firstMatrix[row, i]).Append(" * ").Append(secondMatrix[i, column]).Append(" + ");
-        i++;
-    }
-    productMatrix[row, column] = sum;
+        sum += firstMatrix[row, index] * secondMatrix[index, column];
+        //debugString.Append(firstMatrix[row, index]).Append(" * ").Append(secondMatrix[index, column]).Append(" + ");
+        index++;
+    }*/
     
-    debugString.Remove(debugString.Length - 3, 3);
-    Console.WriteLine(debugString.ToString());
+    productMatrix[row, column] = 1;
+    
+    //debugString.Remove(debugString.Length - 3, 3);
+    //Console.WriteLine(debugString);
 }
 
-void IterateRowWise(int threadId, int start, int end)
+void Iterate(int threadId, int start, int end, int method)
 {
-    for (int i = start; i < end; i++)
+    int k;
+
+    if (method == 0)
     {
-        MatrixProductElement(i / productMatrixNrColumns, i % productMatrixNrColumns, threadId);
+        for (int i = start; i < end; i++)
+        {
+            MatrixProductElement(i / productMatrixNrColumns, i % productMatrixNrColumns, threadId);
+        }
+    }
+    else if (method == 1)
+    {
+        for (int i = start; i < end; i++)
+        {
+            MatrixProductElement(i % productMatrixNrRows, i / productMatrixNrRows, threadId);
+        }
+    }
+    else
+    {
+        k = nrThreads;
+        start = threadId;
+        end = nrElements;
+        for (int i = start; i < end; i+=k)
+        {
+            MatrixProductElement(i / productMatrixNrColumns, i % productMatrixNrColumns, threadId);
+        }
     }
 }
 
-void ExecuteRowWise(int threadId, int nrElements, int nrElementsPerThread)
+void Execute(int threadId, int method)
 {
     int start = threadId * nrElementsPerThread;
     int end = start + nrElementsPerThread;
 
-    if (nrElementsPerThread == 0 && threadId == 0)
+    if (nrElementsPerThread == 0)
     {
-        IterateRowWise(threadId, 0, nrElements);
+        if (threadId == 0)
+        {
+            Iterate(threadId, 0, nrElements, method);
+        }
+
+        return;
     }
-            
-    IterateRowWise(threadId, start, end);
 
-    if (nrElementsPerThread != 0 && threadId == nrThreads - 1)
+    Iterate(threadId, start, end, method);
+
+    if (threadId == nrThreads - 1)
     {
-        IterateRowWise(threadId, end, nrElements);
-    }
-}
-
-void IterateColumnWise(int threadId, int start, int end)
-{
-    for (int i = start; i < end; i++)
-    {
-        MatrixProductElement(i / productMatrixNrRows, i % productMatrixNrRows, threadId);
-    }
-}
-
-void ExecuteColumnWise(int threadId, int nrElements, int nrElementsPerThread)
-{
-    int start = threadId * nrElementsPerThread;
-    int end = start + nrElementsPerThread;
-
-    if (nrElementsPerThread == 0 && threadId == 0)
-    {
-        IterateColumnWise(threadId, 0, nrElements);
-    }
-            
-    IterateColumnWise(threadId, start, end);
-
-    if (nrElementsPerThread != 0 && threadId == nrThreads - 1)
-    {
-        IterateColumnWise(threadId, end, nrElements);
-    }
-}
-
-void ParalelProduct(int threadId)
-{
-    int nrElements = productMatrixNrRows * productMatrixNrColumns;
-    int nrElementsPerThread = nrElements / nrThreads;
-    switch (method)
-    {
-        case MatrixProductMethod.RowWise:
-            ExecuteRowWise(threadId, nrElements, nrElementsPerThread);
-            break;
-        case MatrixProductMethod.ColumnWise:
-            ExecuteColumnWise(threadId, nrElements, nrElementsPerThread);       
-            break;
-        case MatrixProductMethod.KWise:
-            break;
+        Iterate(threadId, end, nrElements, method);
     }
 }
 
@@ -124,26 +154,74 @@ void Main()
         return;
     }
     
-    InitializeThreads();
-    
-    foreach (Thread thread in threads)
+    // Boom
+    if (firstMatrixNrRows <= 0 || firstMatrixNrColumns <= 0 || secondMatrixNrRows <= 0 || secondMatrixNrColumns <= 0)
     {
-        thread.Start();
+        Console.WriteLine("Can't calculate the product");
+        return;   
     }
     
-    foreach (Thread thread in threads)
+    File.WriteAllText(matrixFolder, "");
+    //PrintMatrixToFolder(firstMatrix, "First Matrix");
+    //PrintMatrixToFolder(secondMatrix, "Second Matrix");
+
+    for (int i = 0; i < 10; i++)
     {
-        thread.Join();
+        
+        threads.Clear();
+        InitializeThreads(0);
+    
+        stopwatch.Start();
+        foreach (Thread thread in threads)
+        {
+            thread.Start();
+        }
+    
+        foreach (Thread thread in threads)
+        {
+            thread.Join();
+        }
+        stopwatch.Stop();
+        
+        threads.Clear();
+        InitializeThreads(1);
+    
+        stopwatchFirstMethod.Start();
+        foreach (Thread thread in threads)
+        {
+            thread.Start();
+        }
+
+        foreach (Thread thread in threads)
+        {
+            thread.Join();
+        }
+        stopwatchFirstMethod.Stop();
+        
+        threads.Clear();
+        InitializeThreads(2);
+    
+        stopwatchSecondMethod.Start();
+        foreach (Thread thread in threads)
+        {
+            thread.Start();
+        }
+        
+        foreach (Thread thread in threads)
+        {
+            thread.Join();
+        }
+        stopwatchSecondMethod.Stop();
     }
     
-    Console.WriteLine("Done");
+    //PrintMatrixToFolder(productMatrix, "Product Matrix");
+    string totalTime = "Time taken row: " + stopwatch.Elapsed.TotalMilliseconds / 10 + " ms";
+    string firstMethodTime = "Time taken column: " + stopwatchFirstMethod.Elapsed.TotalMilliseconds / 10 + " ms";
+    string secondMethodTime = "Time taken k: " + stopwatchSecondMethod.Elapsed.TotalMilliseconds / 10 + " ms";
+    Console.WriteLine(totalTime);
+    Console.WriteLine(firstMethodTime);
+    Console.WriteLine(secondMethodTime);
+    File.AppendAllText(matrixFolder, totalTime);
 }
 
 Main();
-
-enum MatrixProductMethod
-{
-    RowWise,
-    ColumnWise,
-    KWise,
-}
