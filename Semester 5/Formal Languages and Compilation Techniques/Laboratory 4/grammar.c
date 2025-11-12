@@ -8,15 +8,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-grammar_vector* CreateGrammar(const char* filePath) {
+grammar_node* CreateGrammar(const char* filePath) {
     FILE *file = fopen(filePath, "r");
 
     if (file == NULL) {
         printf("Wrong file path: %s\n", filePath);
         return NULL;
     }
-
-    grammar_vector* grammar = malloc(sizeof(grammar_vector));
 
     char* line = NULL;
     size_t length = 0;
@@ -26,26 +24,72 @@ grammar_vector* CreateGrammar(const char* filePath) {
         return NULL;
     }
 
-    grammar->start = line[0];
+    line[strcspn(line, "\n")] = 0;
 
-    grammar_node* rule = malloc(sizeof(grammar_node));
+    const char* startingProduction = strdup(line);
 
-    grammar->grammar = rule;
+    grammar_node* startingGrammarNode = NULL;
+    grammar_node* currentGrammarNode = NULL;
 
-    int productionRulesLength = 0;
-    // S -> A | B
     while (getline(&line, &length, file) != -1) {
-        // Left side :)
-        char* symbol = strtok(line, " ->|");
-        strcpy(rule->start, symbol);
-        printf("%s\n", rule->start);
-        // Right side :(
+        line[strcspn(line, "\n")] = 0;
+
+        grammar_node* newNode = malloc(sizeof(grammar_node));
+        newNode->production = NULL;
+        newNode->next = NULL;
+
+        strcpy(newNode->start, startingProduction);
+
+        const char* symbol = strtok(line, " ->|");
+
+        if (symbol == NULL) {
+            printf("No left side provided");
+            free(newNode);
+            continue;
+        }
+
+        const char* leftSide = strdup(symbol);
+
+        symbol = strtok(NULL, " ->|");
+
+        if (symbol == NULL) {
+            printf("No right side provided");
+            free(newNode);
+            continue;
+        }
+
+        production_node* currentProduction = NULL;
+
+        if (currentGrammarNode == NULL) {
+            startingGrammarNode = newNode;
+        }
+        else {
+            currentGrammarNode->next = newNode;
+        }
+        currentGrammarNode = newNode;
+
         while (symbol != NULL) {
+            production_node* newProduction = malloc(sizeof(production_node));
+
+            strcpy(newProduction->start, leftSide);
+            strcpy(newProduction->end, symbol);
+            newProduction->next = NULL;
+
+            if (currentProduction == NULL) {
+                currentGrammarNode->production = newProduction;
+            }
+            else {
+                currentProduction->next = newProduction;
+            }
+            currentProduction = newProduction;
+
             symbol = strtok(NULL, " ->|");
         }
     }
 
+    free(line);
+
     fclose(file);
 
-    return grammar;
+    return startingGrammarNode;
 }

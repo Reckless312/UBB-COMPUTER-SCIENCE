@@ -7,21 +7,18 @@
 
 #define BUFFER_SIZE 1024
 
-typedef struct grammar_node{
-    // Need a starting symbol and a production rule.
-    // + a way to get to the next prod rule in the batch
-
+typedef struct production_node {
     char start[BUFFER_SIZE];
     char end[BUFFER_SIZE];
+    struct production_node* next;
+} production_node;
+
+typedef struct grammar_node {
+    char start[BUFFER_SIZE];
+    struct production_node* production;
     struct grammar_node* next;
 } grammar_node;
 
-typedef struct {
-    grammar_node* grammar;
-    char start;
-    int size;
-} grammar_vector;
-
-grammar_vector* CreateGrammar(const char* filePath);
+grammar_node* CreateGrammar(const char* filePath);
 
 #endif //LABORATORY_4_GRAMMAR_H
