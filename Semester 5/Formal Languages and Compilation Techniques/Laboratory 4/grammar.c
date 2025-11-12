@@ -41,7 +41,7 @@ grammar_node* CreateGrammar(const char* filePath) {
 
         strcpy(newNode->start, startingProduction);
 
-        const char* symbol = strtok(line, " ->|");
+        const char* symbol = strtok(line, "->|");
 
         if (symbol == NULL) {
             printf("No left side provided");
@@ -51,7 +51,7 @@ grammar_node* CreateGrammar(const char* filePath) {
 
         char* leftSide = strdup(symbol);
 
-        symbol = strtok(NULL, " ->|");
+        symbol = strtok(NULL, "->|");
 
         if (symbol == NULL) {
             printf("No right side provided");
@@ -84,7 +84,7 @@ grammar_node* CreateGrammar(const char* filePath) {
             }
             currentProduction = newProduction;
 
-            symbol = strtok(NULL, " ->|");
+            symbol = strtok(NULL, "->|");
         }
 
         free(leftSide);
@@ -112,7 +112,7 @@ void PrintGrammar(const grammar_node* grammar) {
     }
 }
 
-bool VerifyWord(const grammar_node* grammar, const char* word) {
+bool VerifyWordGrammar(const grammar_node* grammar, const char* word) {
     if (grammar == NULL || word == NULL) {
         printf("One parameter is null!\n");
         return false;
@@ -133,7 +133,7 @@ bool VerifyWord(const grammar_node* grammar, const char* word) {
     const grammar_node* currentGrammarNode = grammar;
 
     if (wordLength == 0) {
-        return CheckEpsilon(grammar);
+        return CheckEpsilonGrammar(grammar);
     }
 
     while (currentGrammarNode != NULL) {
@@ -188,7 +188,7 @@ bool VerifyWord(const grammar_node* grammar, const char* word) {
     return false;
 }
 
-bool CheckEpsilon (const grammar_node* grammar) {
+bool CheckEpsilonGrammar (const grammar_node* grammar) {
     const char* epsilon = "ε";
     const grammar_node* currentGrammarNode = grammar;
     const char* start = currentGrammarNode->start;

@@ -22,7 +22,7 @@ typedef struct grammar_node {
 
 grammar_node* CreateGrammar(const char* filePath);
 void PrintGrammar(const grammar_node* grammar);
-bool VerifyWord(const grammar_node* grammar, const char* word);
-bool CheckEpsilon (const grammar_node* grammar);
+bool VerifyWordGrammar(const grammar_node* grammar, const char* word);
+bool CheckEpsilonGrammar (const grammar_node* grammar);
 
 #endif //LABORATORY_4_GRAMMAR_H
