@@ -1,2 +1,8 @@
 S
-S -> true | false
+S -> tA | fB
+A -> rC
+C -> uD
+D -> e
+B -> aE
+E -> lF
+F -> sD

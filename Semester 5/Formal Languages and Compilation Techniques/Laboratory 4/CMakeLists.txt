@@ -6,4 +6,6 @@ set(CMAKE_C_STANDARD 11)
 add_executable(Laboratory_4 main.c
         grammar.c
         grammar.h
+        automata.c
+        automata.h
 )
