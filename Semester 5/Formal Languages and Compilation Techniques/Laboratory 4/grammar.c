@@ -112,7 +112,7 @@ void PrintGrammar(const grammar_node* grammar) {
     }
 }
 
-bool VerifyWord(grammar_node* grammar, const char* word) {
+bool VerifyWord(const grammar_node* grammar, const char* word) {
     if (grammar == NULL || word == NULL) {
         printf("One parameter is null!\n");
         return false;
@@ -131,6 +131,10 @@ bool VerifyWord(grammar_node* grammar, const char* word) {
     strcpy(start, grammar->start);
 
     const grammar_node* currentGrammarNode = grammar;
+
+    if (wordLength == 0) {
+        return CheckEpsilon(grammar);
+    }
 
     while (currentGrammarNode != NULL) {
         const production_node* currentProductionNode = currentGrammarNode->production;
@@ -181,5 +185,34 @@ bool VerifyWord(grammar_node* grammar, const char* word) {
         }
     }
 
+    return false;
+}
+
+bool CheckEpsilon (const grammar_node* grammar) {
+    const char* epsilon = "ε";
+    const grammar_node* currentGrammarNode = grammar;
+    const char* start = currentGrammarNode->start;
+
+    while (currentGrammarNode != NULL) {
+        const production_node* currentProductionNode = currentGrammarNode->production;
+
+        if (strcmp(currentProductionNode->start, start) != 0) {
+            currentGrammarNode = currentGrammarNode->next;
+            continue;
+        }
+        break;
+    }
+
+    if (currentGrammarNode == NULL) {
+        return false;
+    }
+
+    const production_node* currentProductionNode = currentGrammarNode->production;
+    while (currentProductionNode != NULL) {
+        if (strcmp(currentProductionNode->end, epsilon) == 0) {
+            return true;
+        }
+        currentProductionNode = currentProductionNode->next;
+    }
     return false;
 }

@@ -6,6 +6,7 @@
 #define LABORATORY_4_GRAMMAR_H
 
 #define BUFFER_SIZE 1024
+#include <stdbool.h>
 
 typedef struct production_node {
     char start[BUFFER_SIZE];
@@ -21,5 +22,7 @@ typedef struct grammar_node {
 
 grammar_node* CreateGrammar(const char* filePath);
 void PrintGrammar(const grammar_node* grammar);
+bool VerifyWord(const grammar_node* grammar, const char* word);
+bool CheckEpsilon (const grammar_node* grammar);
 
 #endif //LABORATORY_4_GRAMMAR_H
