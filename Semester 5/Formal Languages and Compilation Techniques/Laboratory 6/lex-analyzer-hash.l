@@ -5,6 +5,7 @@
 #include <string.h>
 #include "grammar.h"
 #include "automata.h"
+#include "spec.tab.h"
 
 #define ST_SIZE 10
 #define PIF_SIZE 100
@@ -169,49 +170,49 @@ STRING       \".*\"
 /*** Rule Section ***/
 %%
 					/* yytext is the text in the buffer */
-create_course                                   { addToPIF(yytext, createPair(-1, -1)); }
-add                                   { addToPIF(yytext, createPair(-1, -1)); }
-sort                                  { addToPIF(yytext, createPair(-1, -1)); }
-print                                  { addToPIF(yytext, createPair(-1, -1)); }
-if                                  { addToPIF(yytext, createPair(-1, -1)); }
-end                                   { addToPIF(yytext, createPair(-1, -1)); }
-elif                                  { addToPIF(yytext, createPair(-1, -1)); }
-else                                  { addToPIF(yytext, createPair(-1, -1)); }
-for                                  { addToPIF(yytext, createPair(-1, -1)); }
-in                                   { addToPIF(yytext, createPair(-1, -1)); }
-\,                                   { addToPIF(yytext, createPair(-1, -1)); }
-\==                                 { addToPIF(yytext, createPair(-1, -1)); }
-\!=                                  { addToPIF(yytext, createPair(-1, -1)); }
-\<                                  { addToPIF(yytext, createPair(-1, -1)); }
-\<=                                 { addToPIF(yytext, createPair(-1, -1)); }
-\>                                   { addToPIF(yytext, createPair(-1, -1)); }
-\>=                                  { addToPIF(yytext, createPair(-1, -1)); }
-\!                                  { addToPIF(yytext, createPair(-1, -1)); }
-\'                                  { addToPIF(yytext, createPair(-1, -1)); }
-\.                                 { addToPIF(yytext, createPair(-1, -1)); }
-\;                                  { addToPIF(yytext, createPair(-1, -1)); }
-\/                                   { addToPIF(yytext, createPair(-1, -1)); }
-\-                                   { addToPIF(yytext, createPair(-1, -1)); }
-\(                                   { addToPIF(yytext, createPair(-1, -1)); }
-\)                                   { addToPIF(yytext, createPair(-1, -1)); }
-\_                                   { addToPIF(yytext, createPair(-1, -1)); }
-\=                                   { addToPIF(yytext, createPair(-1, -1)); }
-\[                                   { addToPIF(yytext, createPair(-1, -1)); }
-\]                                   { addToPIF(yytext, createPair(-1, -1)); }
-and                                  { addToPIF(yytext, createPair(-1, -1)); }
-or                                   { addToPIF(yytext, createPair(-1, -1)); }
-asc                                  { addToPIF(yytext, createPair(-1, -1)); }
-desc                                  { addToPIF(yytext, createPair(-1, -1)); }
-length                                  { addToPIF(yytext, createPair(-1, -1)); }
-sum                                 { addToPIF(yytext, createPair(-1, -1)); }
-final_grade                                   { addToPIF(yytext, createPair(-1, -1)); }
-possible_grade                                   { addToPIF(yytext, createPair(-1, -1)); }
-output                                   { addToPIF(yytext, createPair(-1, -1)); }
-def                                   { addToPIF(yytext, createPair(-1, -1)); }
-{BOOLEAN}				{ if(VerifyWordAutomata(booleanAutomata, yytext) == true) {Pair stCode = insert(symbolTable, yytext); addToPIF(yytext, stCode);} else {printf("Invalid boolean %s at line %d !\n", yytext, lineNumber);}}
-{IDENTIFIER}				{ if(VerifyWordAutomata(identifierAutomata, yytext) == true) {Pair stCode = insert(symbolTable, yytext); addToPIF(yytext, stCode);} else {printf("Invalid identifier %s at line %d !\n", yytext, lineNumber);}}
-{GRADE}                           { if(VerifyWordAutomata(numberAutomata, yytext) == true) {Pair stCode = insert(symbolTable, yytext); addToPIF(yytext, stCode);} else {printf("Invalid number %s at line %d !\n", yytext, lineNumber);}}
-{STRING}				{ if(VerifyWordAutomata(stringAutomata, yytext) == true) {Pair stCode = insert(symbolTable, yytext); addToPIF(yytext, stCode);} else {printf("Invalid string %s at line %d !\n", yytext, lineNumber);}}
+create_course                                   { addToPIF(yytext, createPair(-1, -1)); return CREATECOURSE;}
+add                                   { addToPIF(yytext, createPair(-1, -1)); return ADDCOURSE;}
+sort                                  { addToPIF(yytext, createPair(-1, -1)); return SORTCOURSE;}
+print                                  { addToPIF(yytext, createPair(-1, -1)); return PRINTCOURSE;}
+if                                  { addToPIF(yytext, createPair(-1, -1)); return IF;}
+end                                   { addToPIF(yytext, createPair(-1, -1)); return END;}
+elif                                  { addToPIF(yytext, createPair(-1, -1)); return ELIF;}
+else                                  { addToPIF(yytext, createPair(-1, -1)); return ELSE;}
+for                                  { addToPIF(yytext, createPair(-1, -1)); return FOR;}
+in                                   { addToPIF(yytext, createPair(-1, -1)); return IN;}
+\,                                   { addToPIF(yytext, createPair(-1, -1)); return COMMA;}
+\==                                 { addToPIF(yytext, createPair(-1, -1)); return DOUBLEEQUAL;}
+\!=                                  { addToPIF(yytext, createPair(-1, -1)); return DIFFERENTOPERATOR;}
+\<                                  { addToPIF(yytext, createPair(-1, -1)); return LESSOPERATOR;}
+\<=                                 { addToPIF(yytext, createPair(-1, -1)); return LESSOREQUALOPERATOR;}
+\>                                   { addToPIF(yytext, createPair(-1, -1)); return GREATEROPERATOR;}
+\>=                                  { addToPIF(yytext, createPair(-1, -1)); return GREATEROREQUALOPERATOR;}
+\!                                  { addToPIF(yytext, createPair(-1, -1)); return EXCLAMATION;}
+\'                                  { addToPIF(yytext, createPair(-1, -1)); return UPPERCOMMA;}
+\.                                 { addToPIF(yytext, createPair(-1, -1)); return DOT;}
+\;                                  { addToPIF(yytext, createPair(-1, -1)); return DOTANDCOMMA;}
+\/                                   { addToPIF(yytext, createPair(-1, -1)); return SLASH;}
+\-                                   { addToPIF(yytext, createPair(-1, -1)); return DASH;}
+\(                                   { addToPIF(yytext, createPair(-1, -1)); return OPENROUNDEDPARANTHESIS;}
+\)                                   { addToPIF(yytext, createPair(-1, -1)); return CLOSEROUNDEDPARANTHESIS;}
+\_                                   { addToPIF(yytext, createPair(-1, -1)); return UNDERLINE;}
+\=                                   { addToPIF(yytext, createPair(-1, -1)); return EQUAL;}
+\[                                   { addToPIF(yytext, createPair(-1, -1)); return OPENSQUAREDPARANTHESIS;}
+\]                                   { addToPIF(yytext, createPair(-1, -1)); return CLOSESQUAREDPARANTHESIS;}
+and                                  { addToPIF(yytext, createPair(-1, -1)); return AND;}
+or                                   { addToPIF(yytext, createPair(-1, -1)); return OR;}
+asc                                  { addToPIF(yytext, createPair(-1, -1)); return ASC;}
+desc                                  { addToPIF(yytext, createPair(-1, -1)); return DESC;}
+length                                  { addToPIF(yytext, createPair(-1, -1)); return LENGTH;}
+sum                                 { addToPIF(yytext, createPair(-1, -1)); return SUM;}
+final_grade                                   { addToPIF(yytext, createPair(-1, -1)); return FINALGRADE;}
+possible_grade                                   { addToPIF(yytext, createPair(-1, -1)); return POSSIBLEGRADE;}
+output                                   { addToPIF(yytext, createPair(-1, -1)); return OUTPUT;}
+def                                   { addToPIF(yytext, createPair(-1, -1)); return DEF;}
+{BOOLEAN}				{ if(VerifyWordAutomata(booleanAutomata, yytext) == true) {Pair stCode = insert(symbolTable, yytext); addToPIF(yytext, stCode); return BOOLEAN;} else {printf("Invalid boolean %s at line %d !\n", yytext, lineNumber);}}
+{IDENTIFIER}				{ if(VerifyWordAutomata(identifierAutomata, yytext) == true) {Pair stCode = insert(symbolTable, yytext); addToPIF(yytext, stCode); return IDENTIFIER;} else {printf("Invalid identifier %s at line %d !\n", yytext, lineNumber);}}
+{GRADE}                           { if(VerifyWordAutomata(numberAutomata, yytext) == true) {Pair stCode = insert(symbolTable, yytext); addToPIF(yytext, stCode); return GRADE;} else {printf("Invalid number %s at line %d !\n", yytext, lineNumber);}}
+{STRING}				{ if(VerifyWordAutomata(stringAutomata, yytext) == true) {Pair stCode = insert(symbolTable, yytext); addToPIF(yytext, stCode); return STRING;} else {printf("Invalid string %s at line %d !\n", yytext, lineNumber);}}
 [\n]					{ ++lineNumber; }
 [ \t\n]+             			{ ; /* eat up whitespace */ }
 .                			{ errorFound = 1; printf("Illegal token %s at line %d !", yytext, lineNumber); printf("\n"); }
