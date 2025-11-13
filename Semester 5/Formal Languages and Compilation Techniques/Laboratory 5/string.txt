@@ -1,0 +1,3 @@
+S
+S->"A|ε
+A->0A|1A|2A|3A|4A|5A|6A|7A|8A|9A|aA|bA|cA|dA|eA|fA|gA|hA|iA|jA|kA|lA|mA|nA|oA|pA|qA|rA|sA|tA|uA|vA|wA|xA|yA|zA|AA|BA|CA|DA|EA|FA|GA|HA|IA|JA|KA|LA|MA|NA|OA|PA|QA|RA|SA|TA|UA|VA|WA|XA|YA|ZA|!A|,A|'A|.A|;A|A| A|"
