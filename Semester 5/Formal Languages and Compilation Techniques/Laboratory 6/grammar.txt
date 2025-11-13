@@ -1,0 +1,110 @@
+program:
+  statement
+  | statement program
+
+statement:
+  create
+  | add
+  | sort
+  | print
+  | if
+  | for
+  | output
+  | define_function
+  | assign
+
+create:
+  CREATECOURSE id
+  | CREATECOURSE id EQUAL OPENSQUAREDPARANTHESIS grade_list CLOSESQUAREDPARANTHESIS
+     
+add:
+  id ADDCOURSE grade_list
+
+sort:
+  id SORTCOURSE order
+
+print:
+  id PRINTCOURSE
+
+if:
+  IF condition statements elif else END
+
+elif:
+  EPSILON
+  | ELIF condition statements elif
+
+else:
+  EPSILON
+  | ELSE statements
+
+for:
+  FOR variable IN id statements END
+
+statements:
+  statement
+  | statement statements
+
+condition:
+  expression
+
+expression:
+  variable
+  | variable compare_operator value
+  | expression logical_operator expression
+  | function OPENROUNDEDPARANTHESIS args CLOSEROUNDEDPARANTHESIS
+  | bool
+
+grades:
+  value
+  | value COMMA grades
+
+id:
+  identifier
+
+args:
+  id
+  | id COMMA args
+
+variable:
+  identifier
+
+identifier:
+  IDENTIFIER
+
+compare_operator:
+  DOUBLEEQUAL
+  | DIFFERENTOPERATOR
+  | LESSOPERATOR
+  | LESSOREQUALOPERATOR
+  | GREATEROPERATOR
+  | GREATEROREQUALOPERATOR
+
+logical_operator:
+  AND 
+  | OR 
+
+order:
+  ASC 
+  | DESC 
+
+value:
+  GRADE 
+
+function:
+  LENGTH
+  | SUM
+  | FINALGRADE
+  | POSSIBLEGRADE
+
+bool:
+  BOOLEAN
+
+output:
+  STRING 
+  | id
+
+define_function:
+  DEF id OPENROUNDEDPARANTHESIS args CLOSEROUNDEDPARANTHESIS statements END 
+
+assign:
+  id EQUAL expression
