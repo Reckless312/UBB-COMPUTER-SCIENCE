@@ -1,0 +1,6 @@
+Created for both grammar and automata a node which represents a state.
+Linked list between each state, returning the head when we create the "object"
+Each node keeps the productions / functions that can be reached from that state.
+They are represented as a different type of node.
+
+The grammar takes a file path, the automata takes a grammar.
