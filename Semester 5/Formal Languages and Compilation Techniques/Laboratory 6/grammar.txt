@@ -1,110 +1,148 @@
 program:
-  statement
-  | statement program
+    statement { printf("Program -> statement\n"); }
+    | statement program { printf("Program -> statement, program\n"); }
+    ;
 
 statement:
-  create
-  | add
-  | sort
-  | print
-  | if
-  | for
-  | output
-  | define_function
-  | assign
+    create { printf("Statement -> create\n"); }
+    | add { printf("Statement -> add\n"); }
+    | sort { printf("Statement -> sort\n"); }
+    | print { printf("Statement -> print\n"); }
+    | if { printf("Statement -> if\n"); }
+    | for { printf("Statement -> for\n"); }
+    | output { printf("Statement -> output\n"); }
+    | define_function { printf("Statement -> define_function\n"); }
+    | assign { printf("Statement -> assign\n"); }
+    | comment { printf("Statement -> comment\n"); }
+    | call { printf("Statement -> call\n"); }
+    ;
 
 create:
-  CREATECOURSE id
-  | CREATECOURSE id EQUAL OPENSQUAREDPARANTHESIS grade_list CLOSESQUAREDPARANTHESIS
-     
+    CREATECOURSE id { printf("Create -> CREATECOURSE id\n"); }
+    | CREATECOURSE id EQUAL OPENSQUAREDPARANTHESIS grades CLOSESQUAREDPARANTHESIS { printf("Create -> CREATECOURSE id = [grades]"); }
+    ;
+
 add:
-  id ADDCOURSE grade_list
+    id ADDCOURSE OPENROUNDEDPARANTHESIS grades CLOSEROUNDEDPARANTHESIS { printf("Add -> id ADDCOURSE [grades]\n"); }
+    ;
 
 sort:
-  id SORTCOURSE order
+    id SORTCOURSE order { printf("Sort -> id SORTCOURSE order\n"); }
+    ;
 
 print:
-  id PRINTCOURSE
+    id PRINTCOURSE { printf("Print -> id PRINTCOURSE\n"); }
+    ;
 
 if:
-  IF condition statements elif else END
+    IF condition statements elif else END { printf("If -> IF ... END\n"); }
+    ;
 
 elif:
-  EPSILON
-  | ELIF condition statements elif
+    /* epsilon */ { }
+    | ELIF condition statements elif { printf("Elif -> ELIF ...\n"); }
+    ;
 
 else:
-  EPSILON
-  | ELSE statements
+    /* epsilon */ { }
+    | ELSE statements { printf("Else -> ELSE ...\n"); }
+    ;
 
 for:
-  FOR variable IN id statements END
+    FOR variable IN id statements END { printf("For -> FOR variable IN id ... END\n"); }
+    ;
 
 statements:
-  statement
-  | statement statements
+    statement { }
+    | statement statements { }
+    ;
 
 condition:
-  expression
+    expression { }
+    ;
 
 expression:
-  variable
-  | variable compare_operator value
-  | expression logical_operator expression
-  | function OPENROUNDEDPARANTHESIS args CLOSEROUNDEDPARANTHESIS
-  | bool
+    variable { }
+    | expression compare_operator expression { }
+    | expression logical_operator expression { }
+    | function OPENROUNDEDPARANTHESIS args CLOSEROUNDEDPARANTHESIS { }
+    | bool { }
+    | value { }
+    ;
 
 grades:
-  value
-  | value COMMA grades
+    value { }
+    | value COMMA grades { }
+    ;
 
 id:
-  identifier
+    identifier { }
+    ;
 
 args:
-  id
-  | id COMMA args
+    id { }
+    | id COMMA args { }
+    ;
 
 variable:
-  identifier
+    identifier { }
+    ;
 
 identifier:
-  IDENTIFIER
+    IDENTIFIER { }
+    ;
 
 compare_operator:
-  DOUBLEEQUAL
-  | DIFFERENTOPERATOR
-  | LESSOPERATOR
-  | LESSOREQUALOPERATOR
-  | GREATEROPERATOR
-  | GREATEROREQUALOPERATOR
+    DOUBLEEQUAL
+    | DIFFERENTOPERATOR
+    | LESSOPERATOR
+    | LESSOREQUALOPERATOR
+    | GREATEROPERATOR
+    | GREATEROREQUALOPERATOR
+    ;
 
 logical_operator:
-  AND 
-  | OR 
+    AND
+    | OR
+    ;
 
 order:
-  ASC 
-  | DESC 
+    ASC {$$ = "ASC";}
+    | DESC {$$ = "DESC";}
+    ;
 
 value:
-  GRADE 
+    GRADE { }
+    ;
 
 function:
-  LENGTH
-  | SUM
-  | FINALGRADE
-  | POSSIBLEGRADE
+    LENGTH
+    | SUM
+    | FINALGRADE
+    | POSSIBLEGRADE
+    | identifier
+    ;
 
 bool:
-  BOOLEAN
+    BOOLEAN { }
+    ;
 
 output:
-  STRING 
-  | id
+    OUTPUT STRING
+    | OUTPUT id
+    ;
 
 define_function:
-  DEF id OPENROUNDEDPARANTHESIS args CLOSEROUNDEDPARANTHESIS statements END 
+    DEF id OPENROUNDEDPARANTHESIS args CLOSEROUNDEDPARANTHESIS statements END
+    ;
 
 assign:
-  id EQUAL expression
+    id EQUAL expression
+    ;
+
+comment:
+    COMMENT { printf("comment -> Comment\n"); }
+
+call:
+    CALL id OPENROUNDEDPARANTHESIS args CLOSEROUNDEDPARANTHESIS
+    ;
