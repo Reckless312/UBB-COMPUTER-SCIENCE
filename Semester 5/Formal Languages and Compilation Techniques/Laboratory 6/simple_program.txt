@@ -1,6 +1,6 @@
-// Program 1 -> simple check on a course
+// "Program 1 -> simple check on a course"
 create_course algebra
-algebra add 9, 5, 7
+algebra add (9, 5, 7)
 if length(algebra) < 3
 	output "Student doesn't have enough grades"
 elif final_grade(algebra) < 5

@@ -35,7 +35,7 @@ def pollard_p1(n, k, b=13):
 
 
 if __name__ == "__main__":
-    number = 1241143
+    number = 12411431
     try:
         bound = int(input("Enter the bound: "))
         k = find_k(bound)

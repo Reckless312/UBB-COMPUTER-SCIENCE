@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "grammar.h"
+#include "automata.h"
 
 #define ST_UPPER_BOUND 100
 #define PIF_SIZE 100
@@ -65,6 +66,11 @@ grammar_node* stringGrammar;
 grammar_node* numberGrammar;
 grammar_node* booleanGrammar; 
 
+automata_node* identifierAutomata;
+automata_node* stringAutomata;
+automata_node* numberAutomata;
+automata_node* booleanAutomata;
+
 typedef struct {
     char token[257];
     int symbolTableCode;
@@ -110,10 +116,7 @@ void showProgramInternalForm() {
 %}
 
 
-GRADE   (10|[1-9])
-BOOLEAN (true|false)
-IDENTIFIER   [a-zA-Z][a-z0-9A-Z]*
-STRING       \"[a-zA-Z 1-9_]*\"
+TOKEN [^ \t\n]+
 
 /*** Rule Section ***/
 %%
@@ -158,13 +161,30 @@ def                                   { addToPIF(yytext, -1); }
 \[                                   { addToPIF(yytext, -1); }
 \]                                   { addToPIF(yytext, -1); }
 \"                                   { addToPIF(yytext, -1); }
-{BOOLEAN}				{ if (VerifyWordGrammar(booleanGrammar, yytext) == true) {int stCode = insert(&symbolTable, yytext); addToPIF(yytext, stCode);} else {printf("Invalid boolean %s at line %d !\n", yytext, lineNumber);}}
-{IDENTIFIER}		    { if (VerifyWordGrammar(identifierGrammar, yytext) == true) {int stCode = insert(&symbolTable, yytext); addToPIF(yytext, stCode);} else {printf("Invalid identifier %s at line %d !\n", yytext, lineNumber);} }
-{GRADE}                 { if (VerifyWordGrammar(numberGrammar, yytext) == true) {int stCode = insert(&symbolTable, yytext); addToPIF(yytext, stCode);} else {printf("Invalid number %s at line %d !\n", yytext, lineNumber);} }
-{STRING}				{ if (VerifyWordGrammar(stringGrammar, yytext) == true) {int stCode = insert(&symbolTable, yytext); addToPIF(yytext, stCode);} else {printf("Invalid string %s at line %d !\n", yytext, lineNumber);} }
+{TOKEN}                              { 
+                                        if (VerifyWordAutomata(booleanAutomata, yytext) == true) {
+                                            int stCode = insert(&symbolTable, yytext); 
+                                            addToPIF(yytext, stCode);
+                                        }
+                                        else if (VerifyWordAutomata(identifierAutomata, yytext) == true) {
+                                                int stCode = insert(&symbolTable, yytext); 
+                                                addToPIF(yytext, stCode);
+                                        }
+                                        else if (VerifyWordAutomata(numberAutomata, yytext) == true) {
+                                                int stCode = insert(&symbolTable, yytext); 
+                                                addToPIF(yytext, stCode);
+                                        }
+                                        else if (VerifyWordAutomata(stringAutomata, yytext) == true) {
+                                                int stCode = insert(&symbolTable, yytext); 
+                                                addToPIF(yytext, stCode);
+                                        }
+                                        else {
+                                                errorFound = 1; 
+                                                printf("Invalid token %s at line %d !\n", yytext, lineNumber);
+                                        }
+                                    }
 [\n]					{ ++lineNumber; }
 [ \t]+             			{ ; /* eat up whitespace */ }
-.                			{ errorFound = 1; printf("Illegal token %s at line %d !", yytext, lineNumber); printf("\n"); }
 %%
 
 /* yywrap() - wraps the above rule section */
@@ -176,6 +196,11 @@ int main(int argc, char** argv) {
     stringGrammar = CreateGrammar(stringFilePath);
     numberGrammar = CreateGrammar(numberFilePath);
     booleanGrammar = CreateGrammar(booleanFilePath); 
+
+    identifierAutomata = CreateAutomata(identifierGrammar);
+    stringAutomata = CreateAutomata(stringGrammar);
+    numberAutomata = CreateAutomata(numberGrammar);
+    booleanAutomata = CreateAutomata(booleanGrammar);
 
     symbolTable = NULL;
 	FILE *fp;

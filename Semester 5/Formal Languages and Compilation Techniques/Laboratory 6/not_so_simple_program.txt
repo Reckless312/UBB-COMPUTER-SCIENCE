@@ -1,6 +1,6 @@
 // Program 2 -> multiple checks on courses
 
-def check_course (x)
+def checkCourse (x)
 	if length(x) < 3
 		output "Student doesn't have enough grades"
 	elif final_grade(x) < 5
@@ -11,15 +11,15 @@ def check_course (x)
 	end
 end
 	
-create course algebra
-create course geometry = [4,2,6]
-create course probability
+create_course algebra
+create_course geometry = [4,2,6]
+create_course probability
 
-algebra add 9, 5, 7
-check_course(algebra)
-check_course(geometry)
+algebra add (9, 5, 7)
+call checkCourse(algebra)
+call checkCourse(geometry)
 
-probability add 1, 2, 5, 7, 10, 10, 6
+probability add (1, 2, 5, 7, 10, 10, 6)
 
 for x in probability
 	if x > 5 
