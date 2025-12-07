@@ -14,8 +14,8 @@ extern automata_node* booleanAutomata;
 
 extern ST* symbolTable;
 
-int errorFound = 0;
-int lineNumber = 1;
+extern int errorFound;
+extern int lineNumber;
 
 %}
 

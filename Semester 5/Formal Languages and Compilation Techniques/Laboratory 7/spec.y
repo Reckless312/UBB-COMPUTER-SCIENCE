@@ -25,6 +25,8 @@
     automata_node* booleanAutomata;
 
     ST* symbolTable;
+    int errorFound = 0;
+    int lineNumber = 1;
 %}
 
 %union {int num; char* str; bool boolean; }
@@ -215,7 +217,14 @@ int main(int argc, char** argv) {
     FILE *fp;
     fp = fopen(argv[1], "r");
     yyin = fp;
+
     yyparse();
+
+    if (errorFound == 0) {
+    		showSymbolTable(symbolTable);
+    		showProgramInternalForm();
+	}
+    
     return 0;
 }
 
