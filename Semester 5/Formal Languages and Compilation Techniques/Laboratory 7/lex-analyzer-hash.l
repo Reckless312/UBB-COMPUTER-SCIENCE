@@ -5,14 +5,11 @@
 #include <string.h>
 #include "automata.h"
 #include "y.tab.h"
-#include "pif.h"
 
 extern automata_node* identifierAutomata;
 extern automata_node* stringAutomata;
 extern automata_node* numberAutomata;
 extern automata_node* booleanAutomata;
-
-ST* symbolTable;
 
 int errorFound = 0;
 int lineNumber = 1;

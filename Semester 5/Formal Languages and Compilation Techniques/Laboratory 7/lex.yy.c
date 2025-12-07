@@ -522,20 +522,34 @@ char *yytext;
 #include <string.h>
 #include <stdlib.h>
 #include <string.h>
+#include "grammar.h"
 #include "automata.h"
 #include "y.tab.h"
+#include "pif.h"
 
-extern automata_node* identifierAutomata;
-extern automata_node* stringAutomata;
-extern automata_node* numberAutomata;
-extern automata_node* booleanAutomata;
+const char * identifierFilePath = "/home/Cora/GitHub/UBB-COMPUTER-SCIENCE/Semester 5/Formal Languages and Compilation Techniques/Laboratory 5/identifier.txt";
+const char * stringFilePath = "/home/Cora/GitHub/UBB-COMPUTER-SCIENCE/Semester 5/Formal Languages and Compilation Techniques/Laboratory 5/string.txt";
+const char * numberFilePath = "/home/Cora/GitHub/UBB-COMPUTER-SCIENCE/Semester 5/Formal Languages and Compilation Techniques/Laboratory 5/numerical.txt";
+const char * booleanFilePath = "/home/Cora/GitHub/UBB-COMPUTER-SCIENCE/Semester 5/Formal Languages and Compilation Techniques/Laboratory 5/boolean.txt";
+
+grammar_node* identifierGrammar;
+grammar_node* stringGrammar;
+grammar_node* numberGrammar;
+grammar_node* booleanGrammar; 
+
+automata_node* identifierAutomata;
+automata_node* stringAutomata;
+automata_node* numberAutomata;
+automata_node* booleanAutomata;
+
+ST* symbolTable;
 
 int errorFound = 0;
 int lineNumber = 1;
 
-#line 536 "lex.yy.c"
+#line 550 "lex.yy.c"
 /*** Rule Section ***/
-#line 538 "lex.yy.c"
+#line 552 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -752,11 +766,11 @@ YY_DECL
 		}
 
 	{
-#line 25 "lex-analyzer-hash.l"
+#line 39 "lex-analyzer-hash.l"
 
-#line 27 "lex-analyzer-hash.l"
+#line 41 "lex-analyzer-hash.l"
 					/* yytext is the text in the buffer */
-#line 759 "lex.yy.c"
+#line 773 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -815,208 +829,208 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 28 "lex-analyzer-hash.l"
+#line 42 "lex-analyzer-hash.l"
 { return CREATECOURSE;}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 29 "lex-analyzer-hash.l"
+#line 43 "lex-analyzer-hash.l"
 { return ADDCOURSE;}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 30 "lex-analyzer-hash.l"
+#line 44 "lex-analyzer-hash.l"
 { return SORTCOURSE;}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 31 "lex-analyzer-hash.l"
+#line 45 "lex-analyzer-hash.l"
 { return PRINTCOURSE;}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 32 "lex-analyzer-hash.l"
+#line 46 "lex-analyzer-hash.l"
 { return IF;}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 33 "lex-analyzer-hash.l"
+#line 47 "lex-analyzer-hash.l"
 { return END;}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 34 "lex-analyzer-hash.l"
+#line 48 "lex-analyzer-hash.l"
 { return ELIF;}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 35 "lex-analyzer-hash.l"
+#line 49 "lex-analyzer-hash.l"
 { return ELSE;}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 36 "lex-analyzer-hash.l"
+#line 50 "lex-analyzer-hash.l"
 { return FOR;}
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 37 "lex-analyzer-hash.l"
+#line 51 "lex-analyzer-hash.l"
 { return IN;}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 38 "lex-analyzer-hash.l"
+#line 52 "lex-analyzer-hash.l"
 { return COMMA;}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 39 "lex-analyzer-hash.l"
+#line 53 "lex-analyzer-hash.l"
 { return DOUBLEEQUAL;}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 40 "lex-analyzer-hash.l"
+#line 54 "lex-analyzer-hash.l"
 { return DIFFERENTOPERATOR;}
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 41 "lex-analyzer-hash.l"
+#line 55 "lex-analyzer-hash.l"
 { return LESSOPERATOR;}
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 42 "lex-analyzer-hash.l"
+#line 56 "lex-analyzer-hash.l"
 { return LESSOREQUALOPERATOR;}
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 43 "lex-analyzer-hash.l"
+#line 57 "lex-analyzer-hash.l"
 { return GREATEROPERATOR;}
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 44 "lex-analyzer-hash.l"
+#line 58 "lex-analyzer-hash.l"
 { return GREATEROREQUALOPERATOR;}
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 45 "lex-analyzer-hash.l"
+#line 59 "lex-analyzer-hash.l"
 { return EXCLAMATION;}
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 46 "lex-analyzer-hash.l"
+#line 60 "lex-analyzer-hash.l"
 { return UPPERCOMMA;}
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 47 "lex-analyzer-hash.l"
+#line 61 "lex-analyzer-hash.l"
 { return DOT;}
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 48 "lex-analyzer-hash.l"
+#line 62 "lex-analyzer-hash.l"
 { return DOTANDCOMMA;}
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 49 "lex-analyzer-hash.l"
+#line 63 "lex-analyzer-hash.l"
 { return SLASH;}
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 50 "lex-analyzer-hash.l"
+#line 64 "lex-analyzer-hash.l"
 { return DASH;}
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 51 "lex-analyzer-hash.l"
+#line 65 "lex-analyzer-hash.l"
 { return OPENROUNDEDPARANTHESIS;}
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 52 "lex-analyzer-hash.l"
+#line 66 "lex-analyzer-hash.l"
 { return CLOSEROUNDEDPARANTHESIS;}
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 53 "lex-analyzer-hash.l"
+#line 67 "lex-analyzer-hash.l"
 { return UNDERLINE;}
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 54 "lex-analyzer-hash.l"
+#line 68 "lex-analyzer-hash.l"
 { return EQUAL;}
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 55 "lex-analyzer-hash.l"
+#line 69 "lex-analyzer-hash.l"
 { return OPENSQUAREDPARANTHESIS;}
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 56 "lex-analyzer-hash.l"
+#line 70 "lex-analyzer-hash.l"
 { return CLOSESQUAREDPARANTHESIS;}
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 57 "lex-analyzer-hash.l"
+#line 71 "lex-analyzer-hash.l"
 { return AND;}
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 58 "lex-analyzer-hash.l"
+#line 72 "lex-analyzer-hash.l"
 { return OR;}
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 59 "lex-analyzer-hash.l"
+#line 73 "lex-analyzer-hash.l"
 { return ASC;}
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 60 "lex-analyzer-hash.l"
+#line 74 "lex-analyzer-hash.l"
 { return DESC;}
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 61 "lex-analyzer-hash.l"
+#line 75 "lex-analyzer-hash.l"
 { return LENGTH;}
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 62 "lex-analyzer-hash.l"
+#line 76 "lex-analyzer-hash.l"
 { return SUM;}
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 63 "lex-analyzer-hash.l"
+#line 77 "lex-analyzer-hash.l"
 { return FINALGRADE;}
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 64 "lex-analyzer-hash.l"
+#line 78 "lex-analyzer-hash.l"
 { return POSSIBLEGRADE;}
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 65 "lex-analyzer-hash.l"
+#line 79 "lex-analyzer-hash.l"
 { return OUTPUT;}
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 66 "lex-analyzer-hash.l"
+#line 80 "lex-analyzer-hash.l"
 { return DEF;}
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 67 "lex-analyzer-hash.l"
+#line 81 "lex-analyzer-hash.l"
 { return CALL;}
 	YY_BREAK
 case 41:
 /* rule 41 can match eol */
 YY_RULE_SETUP
-#line 68 "lex-analyzer-hash.l"
+#line 82 "lex-analyzer-hash.l"
 { if (VerifyWordAutomata(stringAutomata, yytext) == true) {
                                                 yylval.str = strdup(yytext); return STRING;
                                         } 
@@ -1024,17 +1038,17 @@ YY_RULE_SETUP
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
-#line 72 "lex-analyzer-hash.l"
+#line 86 "lex-analyzer-hash.l"
 { yylval.num = atoi(yytext); return GRADE; }
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
-#line 73 "lex-analyzer-hash.l"
+#line 87 "lex-analyzer-hash.l"
 { return COMMENT; }
 	YY_BREAK
 case 44:
 YY_RULE_SETUP
-#line 74 "lex-analyzer-hash.l"
+#line 88 "lex-analyzer-hash.l"
 {
                                         if (VerifyWordAutomata(booleanAutomata, yytext) == true) {
                                             yylval.boolean = (strcmp(yytext, "true") == 0) ? true : false;
@@ -1057,21 +1071,21 @@ YY_RULE_SETUP
 case 45:
 /* rule 45 can match eol */
 YY_RULE_SETUP
-#line 92 "lex-analyzer-hash.l"
+#line 106 "lex-analyzer-hash.l"
 { ++lineNumber; }
 	YY_BREAK
 case 46:
 /* rule 46 can match eol */
 YY_RULE_SETUP
-#line 93 "lex-analyzer-hash.l"
+#line 107 "lex-analyzer-hash.l"
 { ; /* eat up whitespace */ }
 	YY_BREAK
 case 47:
 YY_RULE_SETUP
-#line 94 "lex-analyzer-hash.l"
+#line 108 "lex-analyzer-hash.l"
 ECHO;
 	YY_BREAK
-#line 1074 "lex.yy.c"
+#line 1088 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -2076,7 +2090,36 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 94 "lex-analyzer-hash.l"
+#line 108 "lex-analyzer-hash.l"
 
 
-int yyrap (void) {return 1;}
+int yyrap () {}
+
+int main(int argc, char** argv) {
+    identifierGrammar = CreateGrammar(identifierFilePath);
+    stringGrammar = CreateGrammar(stringFilePath);
+    numberGrammar = CreateGrammar(numberFilePath);
+    booleanGrammar = CreateGrammar(booleanFilePath);
+
+    identifierAutomata = CreateAutomata(identifierGrammar);
+    stringAutomata = CreateAutomata(stringGrammar);
+    numberAutomata = CreateAutomata(numberGrammar);
+    booleanAutomata = CreateAutomata(booleanGrammar);
+
+    symbolTable = (ST*)malloc(sizeof(ST));
+    initializeHashMap(symbolTable);
+
+    FILE *fp;
+    fp = fopen(argv[1], "r");
+
+    /* yyin - takes the file pointer which contains the input*/
+    yyin = fp;
+
+    /* yylex() - this is the main flex function which runs the Rule Section*/ 
+    yylex();
+
+    if (errorFound == 0) {
+        showSymbolTable(symbolTable);
+        showProgramInternalForm();
+    }
+}

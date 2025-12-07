@@ -1,5 +1,0 @@
-The grammar is almost a 1:1 definition with the BNF from lab 1.
-I added a call keyword, because I wanted to call a function without it being a implicit expression.
-It uses the "tokens" returned by lex, and also declares its owns.
-Some other modifications from the original BNF might be including paranthesis in some places, but still small changes.
-It also just prints the "statements", as in hardcoded prints, not passing the values given by $1, $2,...
