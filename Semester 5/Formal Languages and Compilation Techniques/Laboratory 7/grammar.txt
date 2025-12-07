@@ -1,0 +1,148 @@
+program:
+    statement { printf("Program -> statement\n"); }
+    | statement program { printf("Program -> statement, program\n"); }
+    ;
+
+statement:
+    create { printf("Statement -> create\n"); }
+    | add { printf("Statement -> add\n"); }
+    | sort { printf("Statement -> sort\n"); }
+    | print { printf("Statement -> print\n"); }
+    | if { printf("Statement -> if\n"); }
+    | for { printf("Statement -> for\n"); }
+    | output { printf("Statement -> output\n"); }
+    | define_function { printf("Statement -> define_function\n"); }
+    | assign { printf("Statement -> assign\n"); }
+    | comment { printf("Statement -> comment\n"); }
+    | call { printf("Statement -> call\n"); }
+    ;
+
+create:
+    CREATECOURSE id { printf("Create -> CREATECOURSE id\n"); }
+    | CREATECOURSE id EQUAL OPENSQUAREDPARANTHESIS grades CLOSESQUAREDPARANTHESIS { printf("Create -> CREATECOURSE id = [grades]"); }
+    ;
+
+add:
+    id ADDCOURSE OPENROUNDEDPARANTHESIS grades CLOSEROUNDEDPARANTHESIS { printf("Add -> id ADDCOURSE [grades]\n"); }
+    ;
+
+sort:
+    id SORTCOURSE order { printf("Sort -> id SORTCOURSE order\n"); }
+    ;
+
+print:
+    id PRINTCOURSE { printf("Print -> id PRINTCOURSE\n"); }
+    ;
+
+if:
+    IF condition statements elif else END { printf("If -> IF ... END\n"); }
+    ;
+
+elif:
+    /* epsilon */ { }
+    | ELIF condition statements elif { printf("Elif -> ELIF ...\n"); }
+    ;
+
+else:
+    /* epsilon */ { }
+    | ELSE statements { printf("Else -> ELSE ...\n"); }
+    ;
+
+for:
+    FOR variable IN id statements END { printf("For -> FOR variable IN id ... END\n"); }
+    ;
+
+statements:
+    statement { }
+    | statement statements { }
+    ;
+
+condition:
+    expression { }
+    ;
+
+expression:
+    variable { }
+    | expression compare_operator expression { }
+    | expression logical_operator expression { }
+    | function OPENROUNDEDPARANTHESIS args CLOSEROUNDEDPARANTHESIS { }
+    | bool { }
+    | value { }
+    ;
+
+grades:
+    value { }
+    | value COMMA grades { }
+    ;
+
+id:
+    identifier { }
+    ;
+
+args:
+    id { }
+    | id COMMA args { }
+    ;
+
+variable:
+    identifier { }
+    ;
+
+identifier:
+    IDENTIFIER { }
+    ;
+
+compare_operator:
+    DOUBLEEQUAL
+    | DIFFERENTOPERATOR
+    | LESSOPERATOR
+    | LESSOREQUALOPERATOR
+    | GREATEROPERATOR
+    | GREATEROREQUALOPERATOR
+    ;
+
+logical_operator:
+    AND
+    | OR
+    ;
+
+order:
+    ASC {$$ = "ASC";}
+    | DESC {$$ = "DESC";}
+    ;
+
+value:
+    GRADE { }
+    ;
+
+function:
+    LENGTH
+    | SUM
+    | FINALGRADE
+    | POSSIBLEGRADE
+    | identifier
+    ;
+
+bool:
+    BOOLEAN { }
+    ;
+
+output:
+    OUTPUT STRING
+    | OUTPUT id
+    ;
+
+define_function:
+    DEF id OPENROUNDEDPARANTHESIS args CLOSEROUNDEDPARANTHESIS statements END
+    ;
+
+assign:
+    id EQUAL expression
+    ;
+
+comment:
+    COMMENT { printf("comment -> Comment\n"); }
+
+call:
+    CALL id OPENROUNDEDPARANTHESIS args CLOSEROUNDEDPARANTHESIS
+    ;
