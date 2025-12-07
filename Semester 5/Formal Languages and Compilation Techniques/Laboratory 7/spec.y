@@ -4,6 +4,8 @@
     #include <stdbool.h>
     #include "grammar.h"
     #include "automata.h"
+    #include "pif.h"
+
     int yylex(void);
     void yyerror(char *s);
     extern FILE *yyin;
@@ -21,6 +23,8 @@
     automata_node* stringAutomata;
     automata_node* numberAutomata;
     automata_node* booleanAutomata;
+
+    ST* symbolTable;
 %}
 
 %union {int num; char* str; bool boolean; }
@@ -204,6 +208,9 @@ int main(int argc, char** argv) {
     stringAutomata = CreateAutomata(stringGrammar);
     numberAutomata = CreateAutomata(numberGrammar);
     booleanAutomata = CreateAutomata(booleanGrammar);
+
+    symbolTable = (ST*)malloc(sizeof(ST));
+    initializeHashMap(symbolTable);
 
     FILE *fp;
     fp = fopen(argv[1], "r");
