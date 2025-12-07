@@ -5,6 +5,9 @@
     #include "grammar.h"
     #include "automata.h"
     #include "pif.h"
+    #include "production.h"
+
+    
 
     int yylex(void);
     void yyerror(char *s);
@@ -213,6 +216,9 @@ int main(int argc, char** argv) {
 
     symbolTable = (ST*)malloc(sizeof(ST));
     initializeHashMap(symbolTable);
+
+    InitializeProductionRules();
+    //PrintProductions();
 
     FILE *fp;
     fp = fopen(argv[1], "r");

@@ -21,7 +21,7 @@ extern int lineNumber;
 
 STRING   \"([^\"\\]|\\.)*\"
 COMMENT \/\/[^\n]*
-GENERAL [a-zA-Z_][a-zA-Z0-9_]*
+GENERAL [a-zA-Z0-9_][a-zA-Z0-9_]*
 
 /*** Rule Section ***/
 %%
