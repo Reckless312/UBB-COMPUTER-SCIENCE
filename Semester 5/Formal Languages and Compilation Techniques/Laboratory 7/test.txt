@@ -1,2 +1,2 @@
-create_course marcel
+create_course algebra
 algebra add (9, 5, 7)

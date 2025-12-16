@@ -76,8 +76,7 @@
     #include "automata.h"
     #include "pif.h"
     #include "production.h"
-
-    
+    #include "LL1.h"
 
     int yylex(void);
     void yyerror(char *s);
@@ -101,7 +100,7 @@
     int errorFound = 0;
     int lineNumber = 1;
 
-#line 105 "y.tab.c"
+#line 104 "y.tab.c"
 
 # ifndef YY_CAST
 #  ifdef __cplusplus
@@ -248,10 +247,10 @@ extern int yydebug;
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 union YYSTYPE
 {
-#line 35 "spec.y"
+#line 34 "spec.y"
 int num; char* str; bool boolean; 
 
-#line 255 "y.tab.c"
+#line 254 "y.tab.c"
 
 };
 typedef union YYSTYPE YYSTYPE;
@@ -739,13 +738,13 @@ static const yytype_int8 yytranslate[] =
 /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,    57,    57,    58,    62,    63,    64,    65,    66,    67,
-      68,    69,    70,    71,    72,    76,    77,    81,    85,    89,
-      93,    97,    98,   102,   103,   107,   111,   112,   116,   120,
-     121,   122,   123,   124,   125,   129,   130,   134,   138,   139,
-     143,   147,   151,   152,   153,   154,   155,   156,   160,   161,
-     165,   166,   170,   174,   175,   176,   177,   178,   182,   186,
-     187,   191,   195,   199,   202
+       0,    56,    56,    57,    61,    62,    63,    64,    65,    66,
+      67,    68,    69,    70,    71,    75,    76,    80,    84,    88,
+      92,    96,    97,   101,   102,   106,   110,   111,   115,   119,
+     120,   121,   122,   123,   124,   128,   129,   133,   137,   138,
+     142,   146,   150,   151,   152,   153,   154,   155,   159,   160,
+     164,   165,   169,   173,   174,   175,   176,   177,   181,   185,
+     186,   190,   194,   198,   201
 };
 #endif
 
@@ -1378,277 +1377,277 @@ yyreduce:
   switch (yyn)
     {
   case 2: /* program: statement  */
-#line 57 "spec.y"
+#line 56 "spec.y"
               { printf("Program -> statement\n"); }
-#line 1384 "y.tab.c"
+#line 1383 "y.tab.c"
     break;
 
   case 3: /* program: statement program  */
-#line 58 "spec.y"
+#line 57 "spec.y"
                         { printf("Program -> statement, program\n"); }
-#line 1390 "y.tab.c"
+#line 1389 "y.tab.c"
     break;
 
   case 4: /* statement: create  */
-#line 62 "spec.y"
+#line 61 "spec.y"
            { printf("Statement -> create\n"); }
-#line 1396 "y.tab.c"
+#line 1395 "y.tab.c"
     break;
 
   case 5: /* statement: add  */
-#line 63 "spec.y"
+#line 62 "spec.y"
           { printf("Statement -> add\n"); }
-#line 1402 "y.tab.c"
+#line 1401 "y.tab.c"
     break;
 
   case 6: /* statement: sort  */
-#line 64 "spec.y"
+#line 63 "spec.y"
            { printf("Statement -> sort\n"); }
-#line 1408 "y.tab.c"
+#line 1407 "y.tab.c"
     break;
 
   case 7: /* statement: print  */
-#line 65 "spec.y"
+#line 64 "spec.y"
             { printf("Statement -> print\n"); }
-#line 1414 "y.tab.c"
+#line 1413 "y.tab.c"
     break;
 
   case 8: /* statement: if  */
-#line 66 "spec.y"
+#line 65 "spec.y"
          { printf("Statement -> if\n"); }
-#line 1420 "y.tab.c"
+#line 1419 "y.tab.c"
     break;
 
   case 9: /* statement: for  */
-#line 67 "spec.y"
+#line 66 "spec.y"
           { printf("Statement -> for\n"); }
-#line 1426 "y.tab.c"
+#line 1425 "y.tab.c"
     break;
 
   case 10: /* statement: output  */
-#line 68 "spec.y"
+#line 67 "spec.y"
              { printf("Statement -> output\n"); }
-#line 1432 "y.tab.c"
+#line 1431 "y.tab.c"
     break;
 
   case 11: /* statement: define_function  */
-#line 69 "spec.y"
+#line 68 "spec.y"
                       { printf("Statement -> define_function\n"); }
-#line 1438 "y.tab.c"
+#line 1437 "y.tab.c"
     break;
 
   case 12: /* statement: assign  */
-#line 70 "spec.y"
+#line 69 "spec.y"
              { printf("Statement -> assign\n"); }
-#line 1444 "y.tab.c"
+#line 1443 "y.tab.c"
     break;
 
   case 13: /* statement: comment  */
-#line 71 "spec.y"
+#line 70 "spec.y"
               { printf("Statement -> comment\n"); }
-#line 1450 "y.tab.c"
+#line 1449 "y.tab.c"
     break;
 
   case 14: /* statement: call  */
-#line 72 "spec.y"
+#line 71 "spec.y"
            { printf("Statement -> call\n"); }
-#line 1456 "y.tab.c"
+#line 1455 "y.tab.c"
     break;
 
   case 15: /* create: CREATECOURSE id  */
-#line 76 "spec.y"
+#line 75 "spec.y"
                     { printf("Create -> CREATECOURSE id\n"); }
-#line 1462 "y.tab.c"
+#line 1461 "y.tab.c"
     break;
 
   case 16: /* create: CREATECOURSE id EQUAL OPENSQUAREDPARANTHESIS grades CLOSESQUAREDPARANTHESIS  */
-#line 77 "spec.y"
+#line 76 "spec.y"
                                                                                   { printf("Create -> CREATECOURSE id = [grades]"); }
-#line 1468 "y.tab.c"
+#line 1467 "y.tab.c"
     break;
 
   case 17: /* add: id ADDCOURSE OPENROUNDEDPARANTHESIS grades CLOSEROUNDEDPARANTHESIS  */
-#line 81 "spec.y"
+#line 80 "spec.y"
                                                                        { printf("Add -> id ADDCOURSE [grades]\n"); }
-#line 1474 "y.tab.c"
+#line 1473 "y.tab.c"
     break;
 
   case 18: /* sort: id SORTCOURSE order  */
-#line 85 "spec.y"
+#line 84 "spec.y"
                         { printf("Sort -> id SORTCOURSE order\n"); }
-#line 1480 "y.tab.c"
+#line 1479 "y.tab.c"
     break;
 
   case 19: /* print: id PRINTCOURSE  */
-#line 89 "spec.y"
+#line 88 "spec.y"
                    { printf("Print -> id PRINTCOURSE\n"); }
-#line 1486 "y.tab.c"
+#line 1485 "y.tab.c"
     break;
 
   case 20: /* if: IF condition statements elif else END  */
-#line 93 "spec.y"
+#line 92 "spec.y"
                                           { printf("If -> IF ... END\n"); }
-#line 1492 "y.tab.c"
+#line 1491 "y.tab.c"
     break;
 
   case 21: /* elif: %empty  */
-#line 97 "spec.y"
+#line 96 "spec.y"
                   { }
-#line 1498 "y.tab.c"
+#line 1497 "y.tab.c"
     break;
 
   case 22: /* elif: ELIF condition statements elif  */
-#line 98 "spec.y"
+#line 97 "spec.y"
                                      { printf("Elif -> ELIF ...\n"); }
-#line 1504 "y.tab.c"
+#line 1503 "y.tab.c"
     break;
 
   case 23: /* else: %empty  */
-#line 102 "spec.y"
+#line 101 "spec.y"
                   { }
-#line 1510 "y.tab.c"
+#line 1509 "y.tab.c"
     break;
 
   case 24: /* else: ELSE statements  */
-#line 103 "spec.y"
+#line 102 "spec.y"
                       { printf("Else -> ELSE ...\n"); }
-#line 1516 "y.tab.c"
+#line 1515 "y.tab.c"
     break;
 
   case 25: /* for: FOR variable IN id statements END  */
-#line 107 "spec.y"
+#line 106 "spec.y"
                                       { printf("For -> FOR variable IN id ... END\n"); }
-#line 1522 "y.tab.c"
+#line 1521 "y.tab.c"
     break;
 
   case 26: /* statements: statement  */
-#line 111 "spec.y"
+#line 110 "spec.y"
               { }
-#line 1528 "y.tab.c"
+#line 1527 "y.tab.c"
     break;
 
   case 27: /* statements: statement statements  */
-#line 112 "spec.y"
+#line 111 "spec.y"
                            { }
-#line 1534 "y.tab.c"
+#line 1533 "y.tab.c"
     break;
 
   case 28: /* condition: expression  */
-#line 116 "spec.y"
+#line 115 "spec.y"
                { }
-#line 1540 "y.tab.c"
+#line 1539 "y.tab.c"
     break;
 
   case 29: /* expression: variable  */
-#line 120 "spec.y"
+#line 119 "spec.y"
              { }
-#line 1546 "y.tab.c"
+#line 1545 "y.tab.c"
     break;
 
   case 30: /* expression: expression compare_operator expression  */
-#line 121 "spec.y"
+#line 120 "spec.y"
                                              { }
-#line 1552 "y.tab.c"
+#line 1551 "y.tab.c"
     break;
 
   case 31: /* expression: expression logical_operator expression  */
-#line 122 "spec.y"
+#line 121 "spec.y"
                                              { }
-#line 1558 "y.tab.c"
+#line 1557 "y.tab.c"
     break;
 
   case 32: /* expression: function OPENROUNDEDPARANTHESIS args CLOSEROUNDEDPARANTHESIS  */
-#line 123 "spec.y"
+#line 122 "spec.y"
                                                                    { }
-#line 1564 "y.tab.c"
+#line 1563 "y.tab.c"
     break;
 
   case 33: /* expression: bool  */
-#line 124 "spec.y"
+#line 123 "spec.y"
            { }
-#line 1570 "y.tab.c"
+#line 1569 "y.tab.c"
     break;
 
   case 34: /* expression: value  */
-#line 125 "spec.y"
+#line 124 "spec.y"
             { }
-#line 1576 "y.tab.c"
+#line 1575 "y.tab.c"
     break;
 
   case 35: /* grades: value  */
-#line 129 "spec.y"
+#line 128 "spec.y"
           { }
-#line 1582 "y.tab.c"
+#line 1581 "y.tab.c"
     break;
 
   case 36: /* grades: value COMMA grades  */
-#line 130 "spec.y"
+#line 129 "spec.y"
                          { }
-#line 1588 "y.tab.c"
+#line 1587 "y.tab.c"
     break;
 
   case 37: /* id: identifier  */
-#line 134 "spec.y"
+#line 133 "spec.y"
                { }
-#line 1594 "y.tab.c"
+#line 1593 "y.tab.c"
     break;
 
   case 38: /* args: id  */
-#line 138 "spec.y"
+#line 137 "spec.y"
        { }
-#line 1600 "y.tab.c"
+#line 1599 "y.tab.c"
     break;
 
   case 39: /* args: id COMMA args  */
-#line 139 "spec.y"
+#line 138 "spec.y"
                     { }
-#line 1606 "y.tab.c"
+#line 1605 "y.tab.c"
     break;
 
   case 40: /* variable: identifier  */
-#line 143 "spec.y"
+#line 142 "spec.y"
                { }
-#line 1612 "y.tab.c"
+#line 1611 "y.tab.c"
     break;
 
   case 41: /* identifier: IDENTIFIER  */
-#line 147 "spec.y"
+#line 146 "spec.y"
                { }
-#line 1618 "y.tab.c"
+#line 1617 "y.tab.c"
     break;
 
   case 50: /* order: ASC  */
-#line 165 "spec.y"
+#line 164 "spec.y"
         {(yyval.str) = "ASC";}
-#line 1624 "y.tab.c"
+#line 1623 "y.tab.c"
     break;
 
   case 51: /* order: DESC  */
-#line 166 "spec.y"
+#line 165 "spec.y"
            {(yyval.str) = "DESC";}
-#line 1630 "y.tab.c"
+#line 1629 "y.tab.c"
     break;
 
   case 52: /* value: GRADE  */
-#line 170 "spec.y"
+#line 169 "spec.y"
           { }
-#line 1636 "y.tab.c"
+#line 1635 "y.tab.c"
     break;
 
   case 58: /* bool: BOOLEAN  */
-#line 182 "spec.y"
+#line 181 "spec.y"
             { }
-#line 1642 "y.tab.c"
+#line 1641 "y.tab.c"
     break;
 
   case 63: /* comment: COMMENT  */
-#line 199 "spec.y"
+#line 198 "spec.y"
             { printf("comment -> Comment\n"); }
-#line 1648 "y.tab.c"
+#line 1647 "y.tab.c"
     break;
 
 
-#line 1652 "y.tab.c"
+#line 1651 "y.tab.c"
 
       default: break;
     }
@@ -1841,7 +1840,7 @@ yyreturnlab:
   return yyresult;
 }
 
-#line 204 "spec.y"
+#line 203 "spec.y"
 
 
 int main(int argc, char** argv) {
@@ -1861,15 +1860,61 @@ int main(int argc, char** argv) {
     InitializeProductionRules();
     //PrintProductions();
 
+    FillFirst();
+    FillFollow();
+    FillParsingTable();
+    //PrintParsingTable();
+
     FILE *fp;
     fp = fopen(argv[1], "r");
     yyin = fp;
 
-    yyparse();
+    int token;
+
+    while ((token = yylex()) != 0) {
+        int* getToWord;
+        if (token == BOOLEAN) {
+            if (yylval.boolean == true) {
+                printf("true: ");
+                getToWord = ParseWord("true");
+            }
+            else {
+                printf("false: ");
+                getToWord = ParseWord("false");
+            }
+        }
+        else if (token == IDENTIFIER) {
+            printf("%s: ", yylval.str);
+            getToWord = ParseWord(yylval.str);
+        }
+        else if (token == GRADE) {
+            char str[100];
+            sprintf(str, "%d", yylval.num);
+            printf("%s: ", str);
+            getToWord = ParseWord(str);
+        }
+        else if (token == STRING) {
+            printf("%s: ", yylval.str);
+            getToWord = ParseWord(yylval.str);
+        }
+        else {
+            continue;
+        }
+
+        for (int i = 0; i < 512; i++) {
+            if (getToWord[i] == -1) {
+                break;
+            }
+            printf("%d, ", getToWord[i]);
+        }
+        printf("\n");
+    }
+
+    //yyparse();
 
     if (errorFound == 0) {
-    		showSymbolTable(symbolTable);
-    		showProgramInternalForm();
+        //showSymbolTable(symbolTable);
+        //showProgramInternalForm();
 	}
     
     return 0;

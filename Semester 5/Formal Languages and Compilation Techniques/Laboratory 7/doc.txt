@@ -1,0 +1,3 @@
+This LL1 implementation is based on a regular right linear grammar.
+Because of that, the FIRST implementation cuts some corners, along side the FOLLOW and the main TABEL
+LL1.h and LL1.c contains the implementation, alongside production.h and .c that use the new production-rules.txt (simpler and much more readable)

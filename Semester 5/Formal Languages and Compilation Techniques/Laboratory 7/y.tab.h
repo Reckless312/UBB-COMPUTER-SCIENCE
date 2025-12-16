@@ -157,7 +157,7 @@ extern int yydebug;
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 union YYSTYPE
 {
-#line 35 "spec.y"
+#line 34 "spec.y"
 int num; char* str; bool boolean; 
 
 #line 164 "y.tab.h"

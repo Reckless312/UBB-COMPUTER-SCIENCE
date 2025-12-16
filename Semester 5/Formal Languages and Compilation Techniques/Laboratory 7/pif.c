@@ -1,4 +1,4 @@
-#include "pif.h"
+gcc -o parser *.o -lm#include "pif.h"
 #include <stdio.h>
 #include <string.h>
 

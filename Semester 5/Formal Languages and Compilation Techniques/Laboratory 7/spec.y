@@ -6,8 +6,7 @@
     #include "automata.h"
     #include "pif.h"
     #include "production.h"
-
-    
+    #include "LL1.h"
 
     int yylex(void);
     void yyerror(char *s);
@@ -220,15 +219,61 @@ int main(int argc, char** argv) {
     InitializeProductionRules();
     //PrintProductions();
 
+    FillFirst();
+    FillFollow();
+    FillParsingTable();
+    //PrintParsingTable();
+
     FILE *fp;
     fp = fopen(argv[1], "r");
     yyin = fp;
 
-    yyparse();
+    int token;
+
+    while ((token = yylex()) != 0) {
+        int* getToWord;
+        if (token == BOOLEAN) {
+            if (yylval.boolean == true) {
+                printf("true: ");
+                getToWord = ParseWord("true");
+            }
+            else {
+                printf("false: ");
+                getToWord = ParseWord("false");
+            }
+        }
+        else if (token == IDENTIFIER) {
+            printf("%s: ", yylval.str);
+            getToWord = ParseWord(yylval.str);
+        }
+        else if (token == GRADE) {
+            char str[100];
+            sprintf(str, "%d", yylval.num);
+            printf("%s: ", str);
+            getToWord = ParseWord(str);
+        }
+        else if (token == STRING) {
+            printf("%s: ", yylval.str);
+            getToWord = ParseWord(yylval.str);
+        }
+        else {
+            continue;
+        }
+
+        for (int i = 0; i < 512; i++) {
+            if (getToWord[i] == -1) {
+                break;
+            }
+            printf("%d, ", getToWord[i]);
+        }
+        printf("\n");
+    }
+
+    //yyparse();
 
     if (errorFound == 0) {
-    		showSymbolTable(symbolTable);
-    		showProgramInternalForm();
+        //showSymbolTable(symbolTable);
+        //showProgramInternalForm();
 	}
     
     return 0;
